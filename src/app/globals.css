@@ -14,25 +14,21 @@ body {
 
 .slick-slide > div {
   margin: 0 0px;
-  width: 100%;
-  border-radius: 0.75rem;
   /* border: 1px solid red; */
   /* border-radius: 0.5rem; */
   /* height: 400px; */
 }
 
 .slick-list {
-  border-radius: 0.75rem;
+  /*border-radius: 0.75rem;*/
   /* height: 30px; */
 }
 
-.slick-arrow:nth-child(1) {
-  border: 1px solid blue;
+.slider-container:focus-visible,
+.slider-container:focus {
+  outline: none !important;
 }
 
-.slick-arrow:nth-child(3) {
-  border: 1px solid blue;
-}
-
-.next-slick-arrow {
+.slick-slide div {
+  outline: none !important;
 }

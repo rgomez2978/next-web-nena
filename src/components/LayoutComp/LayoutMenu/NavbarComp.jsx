@@ -2,12 +2,11 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import { Button } from 'primereact/button';
 import { Sidebar } from 'primereact/sidebar';
 import SidebarComp from '@/components/LayoutComp/LayoutMenu/SidebarComp';
 import { menuWebOptions } from "@/mocks/Menu";
 import useScrollPosition from '@/hooks/useScrollPosition'
-
+import ButtonComp from "@/components/ButtonComp/index";
 /**
  * Component: Logo de la web
  * @returns
@@ -78,16 +77,17 @@ const NavbarComp = ({ multi }) => {
             <Sidebar header={customHeader} visible={isOpenSlide} onHide={() => handleToggleMenu(false)}>
               <SidebarComp />
             </Sidebar>
-            <Button
+
+            <ButtonComp
               onClick={() => handleToggleMenu(true)}
-              className="flex px-3 py-2 font-semibold text-white rounded-md  bg-transparent hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase" aria-label="sesion">
-              <i className="pi pi-bars text-lg "></i>
-            </Button>
+              cssClassName={`flex px-3 py-2 font-semibold text-white rounded-md  bg-transparent hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase`}
+              cssIcon='pi pi-bars text-lg'
+            />
           </div>
         </div>
 
         {/* WEB */}
-        <div className=" flex w-full h-18 justify-center items-center lg:-ml-20">
+        <div className=" flex w-full h-18 justify-center items-center lg:-ml-5">
           <div className="hidden md:flex flex-row mx-3 lg:mx-6 sm:space-x-3 xl:space-x-6 ">
             {menuWebOptions.options.map(({ id, name, link, active }) => (
               <Link key={id}
@@ -99,11 +99,12 @@ const NavbarComp = ({ multi }) => {
             ))}
           </div>
           <div className="hidden md:flex justify-center">
-            <Button
-              className={`${backgroundColorClassButton} flex px-3 lg:px-2 py-2 font-semibold text-white  rounded-md hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase`} aria-label="sesion">
-              <i className="pi pi-user text-xs lg:text-sm "></i>
-              <span className="pl-2 text-nowrap text-xs md:hidden lg:text-xs lg:flex">iniciar sesion</span>
-            </Button>
+            <ButtonComp
+              cssClassName={`${backgroundColorClassButton} flex px-3 lg:px-2 py-2 font-semibold text-white  rounded-md hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase`}
+              cssIcon='pi pi-user text-xs lg:text-sm'
+              cssText='pl-2 text-nowrap text-xs md:hidden lg:text-xs lg:flex'
+              text='iniciar sesion'
+            />
           </div>
         </div>
 

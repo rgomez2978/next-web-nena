@@ -7,12 +7,12 @@ import CarouselComp from "@/components/CarouselComp/index";
 
 
 
-const HeaderCarouselComp = ({ img }) => {
+const HeaderCarouselComp = ({ img, cssClass }) => {
 
   return (
     <>
-      <div className="mt-20 relative w-ful">
-        <CarouselComp img={img} type='single' slides={1} />
+      <div className={`mt-20 mx-auto ${cssClass} !w-[90%] md:!w-[80%] `}>
+        <CarouselComp img={img} type='single' slides={1} cssClass={cssClass} />
       </div>
     </>
 

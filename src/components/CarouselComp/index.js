@@ -2,6 +2,9 @@
 'use client';
 import React, { useRef } from "react";
 import Slider from "react-slick";
+import { ChevronLeft, ChevronRight } from "react-feather";
+import ButtonComp from "@/components/ButtonComp/index";
+
 // import { Skeleton } from 'primereact/skeleton';
 
 // const imageLoader = () => {
@@ -18,35 +21,48 @@ import Slider from "react-slick";
  * Banner carousel
  * @returns
  */
-const CarouselFull = ({ images, settings }) => {
-  console.log('CarouselFull', images, settings)
+const CarouselFull = ({ images, settings, cssClass }) => {
 
   let sliderRef = useRef(null);
 
   return (
     <>
+      <div className="slider-container">
 
-      <div className="absolute z-30 flex w-full justify-between items-center xs:container  mt-20 sm:mt-32 md:mt-40  border border-red-500 ">
-        <button className=" bg-gray-400 button" onClick={() => sliderRef.slickPrev()}>
-          Previous
-        </button>
-        <button className="bg-gray-400 button" onClick={() => sliderRef.slickNext()}>
-          Next
-        </button>
-      </div>
+        <div className={images.length === 1 ? 'hidden' : `absolute z-30 justify-between items-center xs:container  px-4 flex w-[90%] md:w-[80%] border border-red-500 ${cssClass} `}>
+          <button className="button rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary" onClick={() => sliderRef.slickPrev()}>
+            <ChevronLeft className=" text-gray-500 w-6 md:w-8 h-6 md:h-8" />
+          </button>
+          <button className="button rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary" onClick={() => sliderRef.slickNext()}>
+            <ChevronRight className=" text-gray-500 w-6 md:w-8 h-6 md:h-8" />
+          </button>
+        </div>
 
-      <div className="slider-container w-full">
         <Slider
           {...settings}
           ref={slider => { sliderRef = slider; }}
+          className=""
         >
           {images && images.map(({ id, title, alt, item }) => {
             return (
               <div key={id}>
+                {title !== '' && (
+                  <div className={`absolute flex flex-col  items-center justify-center ${cssClass} border border-blue-500`}>
+                    <div
+                      className="uppercase justify-center text-white text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-3xl text-center font-black w-[90%] md:w-[85%] lg:w-[80%] mb-2 md:mb-4 lg:mb-5"
+                    >{title}
+                    </div>
+                    <ButtonComp
+                      cssClassName={`flex px-3 lg:px-2 py-2 font-semibold text-nena-primary hover:text-white rounded-md bg-white  hover:bg-nena-primary focus:outline-none focus:ring focus:ring-transparent focus:ring-opacity-80 normal-case`}
+                      cssText='flex pl-2 text-nowrap text-xs lg:text-base xl:text-lg'
+                      text='Postulate como proveedor '
+                    />
+                  </div>
+                )}
                 <img
                   src={item}
                   alt={title}
-                  className="w-[100%] bg-slate-400 object-cover h-[200px] sm:h-[300px]  md:h-[300px]  lg:h-[350px] rounded-xl"
+                  className={`object-cover outline-none ${cssClass} `}
                 />
               </div>
             )
@@ -102,17 +118,18 @@ const CarouselMulti = ({ images, settings }) => {
 
 
 
-const CarouselComp = ({ img, type, slides }) => {
+const CarouselComp = ({ img, type, slides, cssClass }) => {
   console.log('CarouselComp', img, type)
   const placehold = 'https://placehold.co/1200x300/png'
 
   const settings = {
-    className: 'w-[100%] object-cover h-[200px] md:h-[400px] rounded-xl',
+    className: `${cssClass}`,
+    swipe: img.length === 1 ? false : true,
     arrows: type === 'single' ? false : false,
-    dots: type === 'single' ? true : false,
-    infinite: true,
+    dots: type === 'single' ? false : false,
+    infinite: img.length === 1 ? false : true,
+    initialSlide: type = 'single' ? 1 : slides,
     speed: 500,
-    // initialSlide: 1,
     slidesToShow: slides,
     slidesToScroll: slides,
     autoplay: true,
@@ -125,8 +142,9 @@ const CarouselComp = ({ img, type, slides }) => {
         settings: {
           slidesToShow: type = 'single' ? 1 : slides,
           slidesToScroll: type = 'single' ? 1 : slides,
-          infinite: true,
-          dots: true
+          dots: false,
+          infinite: img.length === 1 ? false : true,
+
         }
       },
       {
@@ -135,6 +153,8 @@ const CarouselComp = ({ img, type, slides }) => {
           slidesToShow: type = 'single' ? 1 : slides,
           slidesToScroll: type = 'single' ? 1 : slides,
           initialSlide: type = 'single' ? 1 : slides,
+          dots: false,
+          infinite: img.length === 1 ? false : true,
         }
       },
       {
@@ -142,14 +162,16 @@ const CarouselComp = ({ img, type, slides }) => {
         settings: {
           slidesToShow: type = 'single' ? 1 : slides,
           slidesToScroll: type = 'single' ? 1 : slides,
+          dots: false,
+          infinite: img.length === 1 ? false : true,
         }
       }
     ]
   };
 
   const LoadCarouselComponent = type !== undefined && type !== 'single'
-    ? <CarouselFull images={img} settings={settings} />
-    : <CarouselMulti images={img} settings={settings} />;
+    ? <CarouselFull images={img} settings={settings} cssClass={cssClass} />
+    : <CarouselMulti images={img} settings={settings} cssClass={cssClass} />;
 
   return (
     LoadCarouselComponent

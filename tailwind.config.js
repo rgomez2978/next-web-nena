@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',
+      },
+      textIndent: {
+        '128': '32rem',
+      },
       colors: {
         "nena-primary": "#114C78",
         "nena-secondary": "#62B1DB",
