@@ -14,27 +14,7 @@ import ButtonComp from "@/components/ButtonComp/index";
 // };
 
 
-const NextArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'red' }}
-      onClick={onClick}
-    />
-  );
-};
 
-const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'green' }}
-      onClick={onClick}
-    />
-  );
-};
 
 
 /**
@@ -49,18 +29,19 @@ const CarouselFull = ({ images, settings, cssClass }) => {
     <>
       <div className="slider-container">
 
-        {/* <div className={images.length === 1 ? 'hidden' : `absolute z-30 justify-between items-center xs:container  px-4 flex w-[90%] md:w-[80%] border border-red-500 ${cssClass} `}>
+        <div className={images.length === 1 ? 'hidden' : `absolute z-30 justify-between items-center xs:container  px-4 flex w-[90%] md:w-[80%] border border-red-500 ${cssClass} `}>
           <button className="button rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary" onClick={() => sliderRef.slickPrev()}>
             <ChevronLeft className=" text-gray-500 w-6 md:w-8 h-6 md:h-8" />
           </button>
           <button className="button rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary" onClick={() => sliderRef.slickNext()}>
             <ChevronRight className=" text-gray-500 w-6 md:w-8 h-6 md:h-8" />
           </button>
-        </div> */}
+        </div>
 
         <Slider
           {...settings}
-        // ref={slider => { sliderRef = slider; }}
+          ref={slider => { sliderRef = slider; }}
+          className=""
         >
           {images && images.map(({ id, title, alt, item }) => {
             return (
@@ -148,9 +129,7 @@ const CarouselComp = ({ img, type, slides, cssClass }) => {
     className: `${cssClass}`,
     swipe: img.length === 1 ? false : true,
     arrows: type === 'single' ? false : false,
-    dots: true,
-
-    // dots: type === 'single' ? false : false,
+    dots: type === 'single' ? false : false,
     infinite: img.length === 1 ? false : true,
     initialSlide: type = 'single' ? img.length === 1 ? 0 : 1 : slides,
     speed: 500,
@@ -158,8 +137,8 @@ const CarouselComp = ({ img, type, slides, cssClass }) => {
     slidesToScroll: slides,
     autoplay: true,
     autoplaySpeed: 2000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
