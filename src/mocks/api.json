@@ -4,49 +4,50 @@
       "id": "1",
       "title": "Somos una empresa con 37 años de experiencia en la distribución de medicamentos y misceláneos al mayor, llevando salud y bienestar a toda Venezuela.",
       "alt": "banner 1",
-      "item": "/images/banners/bg_nena_blue.png",
+      "url": "/images/banners/bg_nena_blue.png",
+      "buttonText": "Postulate como proveedor",
       "status": true
     },
     {
       "id": "11",
       "title": "Somos una empresa con 37 años de experiencia en la distribución de medicamentos y misceláneos al mayor, llevando salud y bienestar a toda Venezuela.",
       "alt": "banner 1",
-      "item": "/images/banners/bg_nena_blue.png",
-      "status": true
+      "url": "/images/banners/bg_nena_blue.png",
+      "status": false
     },
     {
       "id": "2",
       "title": "",
       "alt": "banner 1",
-      "item": "/images/banners/01042024_030810.jpg",
+      "url": "/images/banners/01042024_030810.jpg",
       "status": false
     },
     {
       "id": "3",
       "title": "",
       "alt": "banner 2",
-      "item": "/images/banners/01042024_030929.jpg",
+      "url": "/images/banners/01042024_030929.jpg",
       "status": false
     },
     {
       "id": "4",
       "title": "",
       "alt": "banner 3",
-      "item": "/images/banners/01062023_033504.jpg",
+      "url": "/images/banners/01062023_033504.jpg",
       "status": false
     },
     {
       "id": "5",
       "title": "banner 4",
       "alt": "banner 4",
-      "item": "/images/banners/05062020_0159.jpg",
+      "url": "/images/banners/05062020_0159.jpg",
       "status": false
     },
     {
       "id": "6",
       "title": "",
       "alt": "banner 5",
-      "item": "/images/banners/05062020_0158.jpg",
+      "url": "/images/banners/05062020_0158.jpg",
       "status": false
     }
   ],

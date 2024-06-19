@@ -1,14 +1,14 @@
 import HeaderFullComp from './componens/HeaderFullComp'
 import HeaderCarouselComp from './componens/HeaderCarouselComp'
 
-const HeaderComp = ({ images, multi, cssClass }) => {
-  const loadImage = multi !== undefined
-    ? images
+const HeaderComp = ({ data, type, cssClass, slides }) => {
+  const loadData = type !== undefined
+    ? data
     : '/images/banners/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.jpg';
 
-  const loadHeaderComponent = multi !== undefined
-    ? <HeaderCarouselComp img={loadImage} cssClass={cssClass} />
-    : <HeaderFullComp img={loadImage} />;
+  const loadHeaderComponent = type !== undefined || type === 'carousel'
+    ? <HeaderCarouselComp data={loadData} type={type} slides={slides} cssClass={cssClass} />
+    : <HeaderFullComp data={loadData} />;
 
   return (
     loadHeaderComponent

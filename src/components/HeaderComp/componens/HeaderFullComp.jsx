@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const HeaderFullComp = ({ img, height }) => {
-
+const HeaderFullComp = ({ data }) => {
   return (
     <div className="relative h-screen w-full">
       <Image
-        src={img}
+        src={data}
         alt="Background Image"
         className="object-cover object-center w-full h-full"
         layout="fill"

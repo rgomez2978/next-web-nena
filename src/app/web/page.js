@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react'
 import { searchBannerFetch } from '@/services/servicesWeb'
 import HeaderComp from "@/components/HeaderComp/HeaderComp";
+import ProductComp from "@/components/ProductComp/index";
 
 
 export default function PageInicio() {
-  const [loadimages, setLoadimages] = useState([])
+  const [loadImages, setLoadImages] = useState([])
+  const [loadProducts, setLoadProducts] = useState([])
 
   /**
    * Carga los datos de las imagenes asociadas al banner
@@ -16,33 +18,58 @@ export default function PageInicio() {
     const filteredData = data.filter(item => item.status === true);
 
     filteredData && filteredData !== undefined
-      ? setLoadimages(filteredData)
+      ? setLoadImages(filteredData)
       : null;
+  }
+
+
+  /**
+   * Carga los datos de las productos
+   */
+  const getProducts = async () => {
+    // const data = await searchProductsFetch()
+    // const filteredData = data.filter(item => item.status === true);
+
+    // filteredData && filteredData !== undefined
+    //   ? setLoadImages(filteredData)
+    //   : null;
   }
 
   useEffect(() => {
     getBanners()
+    getProducts()
   }, [])
 
 
 
-  // console.log('loadimages', loadimages, loadimages.length)
+  // console.log('loadImages', loadImages, loadImages.length)
 
   return (
     <>
       <div className='flex flex-col items-center justify-center '>
 
-        <div className='w-full'>
-          {(loadimages && loadimages.length > 0) && (
+        <div className='w-full h-full'>
+          {(loadImages && loadImages.length > 0) && (
             <HeaderComp
-              images={loadimages}
-              multi
+              data={loadImages}
+              type={loadImages && loadImages.length > 1 ? 'multi' : 'single'}
+              slides={1}
               cssClass="rounded-2xl w-[100%] h-[200px] sm:h-[200px] md:h-[300px] lg:h-[350px]"
             />
           )}
         </div>
 
-
+        <div className='w-full h-full'>
+          {(loadProducts && loadProducts.length > 0) && (
+            <ProductComp
+              products={loadProducts}
+              type='carousel'
+              model='product'
+              cssClass=""
+            // cssClass="rounded-2xl w-[100%] h-[200px] sm:h-[200px] md:h-[300px] lg:h-[350px]"
+            />
+          )}
+        </div>
 
 
         <main className=' w-[90%] md:w-[80%] '>
