@@ -53,6 +53,7 @@ const HeaderCarouselComp = ({ data, cssClass, type, slides }) => {
         <CarouselComp data={data} type={type} slides={slides} cssClass={cssClass}>
 
           {data && data.map(({ id, title, url, buttonText }) => {
+
             return (
               <HeaderCarouselSlide
                 key={id}

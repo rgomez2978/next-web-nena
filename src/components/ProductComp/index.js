@@ -1,6 +1,11 @@
 
 /* eslint-disable @next/next/no-img-element */
+'use client';
+
 import CarouselComp from "@/components/CarouselComp/index";
+import ButtonComp from "@/components/ButtonComp/index";
+import Slider from "react-slick";
+import React, { useRef } from "react";
 
 
 /**
@@ -9,33 +14,19 @@ import CarouselComp from "@/components/CarouselComp/index";
  * @returns
  */
 const ProductBannerComp = ({ title, buttonText, imageUrl, cssClass }) => {
+  console.log('ProductBannerComp', title, imageUrl, cssClass)
+
   const placehold = 'https://placehold.co/1200x300/png'
   return (
-    <div className={`flex flex-col items-center justify-center ${cssClass} `}
+    <div className={` ${cssClass}`}
       style={{
         backgroundImage: `url(${imageUrl})`,
-        // backgroundImage: `url(${placehold})`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: `top`,
         backgroundSize: `cover`
       }}
     >
-      {title !== '' && (
-        <div className="flex flex-col items-center ">
-          <h3
-            className="uppercase justify-center text-white text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-3xl text-center font-black w-[90%] md:w-[85%] lg:w-[80%] mb-2 md:mb-4 lg:mb-5 "
-          >{title}
-          </h3>
-
-          {buttonText && (
-            <ButtonComp
-              cssClassName={`flex px-3 lg:px-2 py-2 font-semibold text-nena-primary hover:text-white rounded-md bg-white  hover:bg-nena-primary focus:outline-none focus:ring focus:ring-transparent focus:ring-opacity-80 normal-case`}
-              cssText='flex pl-2 text-nowrap text-xs lg:text-base xl:text-lg'
-              text={buttonText}
-            />
-          )}
-        </div>
-      )}
+      <div className=" h-[200px] w-[300px]"> </div>
     </div >
   )
 }
@@ -95,35 +86,186 @@ const ProductCardComp = ({ title, buttonText, imageUrl, cssClass }) => {
   )
 }
 
+const ProductGridComp = ({ data, cssClass, type, slides }) => {
+  console.log('ProductGridComp', data)
+
+  const placehold = 'https://placehold.co/1200x300/png'
+  let sliderRef = useRef(null);
+
+  const settings = {
+    swipe: data.length === 1 ? false : true,
+    arrows: type === 'single' ? false : false,
+    dots: type === 'single' ? false : true,
+    infinite: data.length === 1 ? false : true,
+    initialSlide: slides,
+    speed: 500,
+    slidesToShow: slides,
+    slidesToScroll: slides,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: slides,
+          slidesToScroll: slides,
+          dots: false,
+          infinite: data.length === 1 ? false : true,
+
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: slides,
+          slidesToScroll: slides,
+          initialSlide: slides,
+          dots: false,
+          infinite: data.length === 1 ? false : true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: slides,
+          slidesToScroll: slides,
+          dots: false,
+          infinite: data.length === 1 ? false : true,
+        }
+      }
+    ]
+  };
+
+  return (
+    <>
+      <div className={`mx-auto  ${cssClass} px-3`}>
+        <div className={`grid grid-rows-1 md:grid-flow-col gap-3 h-full ${cssClass}`}>
+
+          <div className="md:row-span-3 md:col-span-2 rounded-2xl ">
+            <div className="h-[190px] w-auto">
+
+              {/* <ProductBannerComp
+                key={data[0].items[0].id}
+                title={data[0].items[0].title}
+                imageUrl={data[0].items[0].url}
+                cssClass={cssClass}
+              /> */}
+
+
+              {/* <CarouselComp
+                data={data[0]}
+                type={data[0] && data[0].length > 1 ? 'multi' : 'single'}
+                slides={1}
+              // cssClass={cssClass}
+              >
+
+
+              </CarouselComp>
+
+              */}
+
+              <div className="slider-container">
+                <Slider {...settings}
+                  ref={slider => { sliderRef = slider; }}
+                >
+
+                  {data[0] && data[0].items.map(({ id, url }) => {
+                    return (
+                      <ProductBannerComp
+                        key={id}
+                        imageUrl={url}
+                        cssClass={cssClass}
+                      />
+                    )
+                  })}
+                </Slider>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div className={` ${cssClass} grid gap-3`}>
+            <div
+              className={`md:col-span-2 rounded-2xl bg-red-500 text-white p-4`}
+              style={{
+                backgroundImage: `url(${data[1].url})`,
+                backgroundRepeat: `no-repeat`,
+                backgroundPosition: `top`,
+                backgroundSize: `cover`
+              }}
+            >
+              <div className="h-[100px]"></div>
+            </div>
+
+            <div
+              className={`md:col-span-2 rounded-2xl bg-green-500 text-white p-4 `}
+              style={{
+                backgroundImage: `url(${data[2].url})`,
+                backgroundRepeat: `no-repeat`,
+                backgroundPosition: `top`,
+                backgroundSize: `cover`,
+              }}
+            >
+              <div className="h-[100px]"></div>
+              {/* <h2 className="text-xl font-bold mb-2">Banner 3</h2> */}
+              {/* <p>Contenido del banner 3.</p> */}
+            </div>
+          </div>
+
+        </div>
+      </div >
+
+    </>
+  )
+}
+
+
+
+
+
+
 
 
 const ProductComp = ({ data, cssClass, type, slides }) => {
+  console.log('ProductComp', data, cssClass, type, slides)
   return (
     <>
-      <div className={`mt-20 mx-auto ${cssClass} !w-[90%] md:!w-[84%] `}>
-        <CarouselComp data={data} type={type} slides={slides} cssClass={cssClass}>
+      <div className={`mx-auto ${cssClass} !w-[90%] md:!w-[84%] `}>
 
-          {data && data.map(({ id, title, url, buttonText }) => {
-            return (
-              type !== undefined && type === 'banner'
-                ? <ProductBannerComp
-                  key={id}
-                  title={title}
-                  imageUrl={url}
-                  buttonText={buttonText}
-                  cssClass={cssClass}
-                />
-                : <ProductCardComp
-                  key={id}
-                  title={title}
-                  imageUrl={url}
-                  buttonText={buttonText}
-                  cssClass={cssClass}
-                />
-            )
-          })}
+        {type && type === 'grid' ? (
+          <ProductGridComp
+            data={data}
+            type={type}
+            slides={slides}
+            cssClass={cssClass}
+          />
+        ) : (
+          <CarouselComp data={data} type={type} slides={slides} cssClass={cssClass}>
+            {data && data.map(({ id, title, url, buttonText }) => {
+              return (
+                type !== undefined && type === 'grid'
+                  ? <ProductBannerComp
+                    key={id}
+                    imageUrl={url}
+                    cssClass={cssClass}
+                  />
+                  : <ProductCardComp
+                    key={id}
+                    title={title}
+                    imageUrl={url}
+                    buttonText={buttonText}
+                    cssClass={cssClass}
+                  />
+              )
+            })}
+          </CarouselComp>
+        )}
 
-        </CarouselComp>
+
+
+
+
       </div>
     </>
   )

@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react'
-import { searchBannerFetch } from '@/services/servicesWeb'
+import { searchBannerFetch, searchProductBannerFetch } from '@/services/servicesWeb'
 import HeaderComp from "@/components/HeaderComp/HeaderComp";
 import ProductComp from "@/components/ProductComp/index";
 
 
 export default function PageInicio() {
   const [loadImages, setLoadImages] = useState([])
-  const [loadProducts, setLoadProducts] = useState([])
+  const [loadProductsBanners, setLoadProductsBanners] = useState([])
 
   /**
    * Carga los datos de las imagenes asociadas al banner
@@ -27,12 +27,13 @@ export default function PageInicio() {
    * Carga los datos de las productos
    */
   const getProducts = async () => {
-    // const data = await searchProductsFetch()
-    // const filteredData = data.filter(item => item.status === true);
+    const data = await searchProductBannerFetch()
+    const filteredData = data.filter(item => item.status === true);
+    console.log('getProducts', filteredData)
 
-    // filteredData && filteredData !== undefined
-    //   ? setLoadImages(filteredData)
-    //   : null;
+    filteredData && filteredData !== undefined
+      ? setLoadProductsBanners(filteredData)
+      : null;
   }
 
   useEffect(() => {
@@ -42,11 +43,11 @@ export default function PageInicio() {
 
 
 
-  // console.log('loadImages', loadImages, loadImages.length)
+  console.log('loadProducts', loadProductsBanners, loadProductsBanners.length)
 
   return (
     <>
-      <div className='flex flex-col items-center justify-center '>
+      <div className='flex flex-col items-start justify-center '>
 
         <div className='w-full h-full'>
           {(loadImages && loadImages.length > 0) && (
@@ -59,14 +60,15 @@ export default function PageInicio() {
           )}
         </div>
 
-        <div className='w-full h-full'>
-          {(loadProducts && loadProducts.length > 0) && (
+        <div className='w-full h-full mt-10 '>
+          {(loadProductsBanners && loadProductsBanners.length > 0) && (
             <ProductComp
-              products={loadProducts}
-              type='carousel'
-              model='product'
-              cssClass=""
-            // cssClass="rounded-2xl w-[100%] h-[200px] sm:h-[200px] md:h-[300px] lg:h-[350px]"
+              data={loadProductsBanners}
+              type='grid'
+
+              slides={loadProductsBanners.length}
+              // cssClass=""
+              cssClass="rounded-2xl h-full  md:h-[300px] lg:h-[320px]"
             />
           )}
         </div>
