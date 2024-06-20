@@ -1,14 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react'
-import { searchBannerFetch, searchProductBannerFetch } from '@/services/servicesWeb'
+import { searchBannerFetch, searchProductTopFetch, searchProductFeaturedFetch } from '@/services/servicesWeb'
 import HeaderComp from "@/components/HeaderComp/HeaderComp";
 import ProductComp from "@/components/ProductComp/index";
+import TitleComp from '@/components/TitleComp';
 
 
 export default function PageInicio() {
   const [loadImages, setLoadImages] = useState([])
-  const [loadProductsBanners, setLoadProductsBanners] = useState([])
+  const [loadProductsTop, setLoadProductsTop] = useState([])
+  const [loadProductsFeatured, setLoadProductsFeatured] = useState([])
 
   /**
    * Carga los datos de las imagenes asociadas al banner
@@ -16,34 +18,43 @@ export default function PageInicio() {
   const getBanners = async () => {
     const data = await searchBannerFetch()
     const filteredData = data.filter(item => item.status === true);
-
     filteredData && filteredData !== undefined
       ? setLoadImages(filteredData)
       : null;
   }
 
-
   /**
-   * Carga los datos de las productos
+   * Carga los datos de las productos top
    */
-  const getProducts = async () => {
-    const data = await searchProductBannerFetch()
+  const getProductsTop = async () => {
+    const data = await searchProductTopFetch()
     const filteredData = data.filter(item => item.status === true);
-    console.log('getProducts', filteredData)
-
     filteredData && filteredData !== undefined
-      ? setLoadProductsBanners(filteredData)
+      ? setLoadProductsTop(filteredData)
       : null;
   }
 
+  /**
+   * Carga los datos de las productos destacados
+   */
+  const getProductsFeatured = async () => {
+    const data = await searchProductFeaturedFetch()
+    const filteredData = data.filter(item => item.status === true);
+    filteredData && filteredData !== undefined
+      ? setLoadProductsFeatured(filteredData)
+      : null;
+  }
+
+
   useEffect(() => {
     getBanners()
-    getProducts()
+    getProductsTop()
+    getProductsFeatured()
   }, [])
 
 
 
-  console.log('loadProducts', loadProductsBanners, loadProductsBanners.length)
+  console.log('loadProducts', loadProductsTop, loadProductsTop.length)
 
   return (
     <>
@@ -54,27 +65,61 @@ export default function PageInicio() {
             <HeaderComp
               data={loadImages}
               type={loadImages && loadImages.length > 1 ? 'multi' : 'single'}
+              speed={1500}
+              autoplay={true}
+              speedAutoplay={4000}
+              arrows={true}
+              dots={false}
               slides={1}
               cssClass="rounded-2xl w-[100%] h-[200px] sm:h-[200px] md:h-[300px] lg:h-[350px]"
             />
           )}
         </div>
 
-        <div className='w-full h-full mt-10 '>
-          {(loadProductsBanners && loadProductsBanners.length > 0) && (
+        <div className='w-full h-full mt-10 bg-transparent'>
+          <TitleComp
+            title={'Productos Top'}
+            description={''}
+            type={'dark'}
+          />
+          {(loadProductsTop && loadProductsTop.length > 0) && (
             <ProductComp
-              data={loadProductsBanners}
+              data={loadProductsTop}
               type='grid'
-
-              slides={loadProductsBanners.length}
-              // cssClass=""
-              cssClass="rounded-2xl h-full  md:h-[300px] lg:h-[320px]"
+              speed={1000}
+              autoplay={true}
+              speedAutoplay={3000}
+              arrows={true}
+              dots={false}
+              slides={1}
+              cssClass="rounded-2xl w-full h-auto md:h-[230px] lg:h-[300px] xl:h-[320px]"
             />
           )}
         </div>
 
+        <div className='w-full h-full mt-10 bg-nena-secondary py-10'>
+          <TitleComp
+            title={'Productos Destacados'}
+            description={''}
+            type={'ligth'}
+          />
+          {(loadProductsFeatured && loadProductsFeatured.length > 0) && (
+            <ProductComp
+              data={loadProductsFeatured}
+              type='slide'
+              model='top'
+              speed={1000}
+              autoplay={true}
+              speedAutoplay={3000}
+              arrows={true}
+              dots={false}
+              slides={loadProductsFeatured.length / 2}
+              cssClass="rounded-2xl w-auto h-[100px] md:h-[170px] lg:h-[200px] xl:h-[230px]"
+            />
+          )}
+        </div>
 
-        <main className=' w-[90%] md:w-[80%] '>
+        <main className='container mx-auto w-[90%] md:w-[82%] border border-green-500  '>
           <div className='text-blue mt-10'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque ea impedit magni nisi dolor maxime, maiores quibusdam ut blanditiis facere deserunt aperiam recusandae! Iste aliquam amet numquam itaque ipsum!
           </div>

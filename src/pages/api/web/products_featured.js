@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   // const { API_URL } = process.env
   const token = await getToken({ req })
 
-  const data = await fetch('http://localhost:4000/products_banner', {
+  const data = await fetch('http://localhost:4000/products_featured', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

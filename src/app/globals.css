@@ -13,7 +13,7 @@ body {
 }
 
 .slick-slide > div {
-  margin: 0px 15px;
+  margin: 0px 10px;
   /* border: 1px solid red; */
   /* border-radius: 0.5rem; */
   /* height: 400px; */
@@ -31,4 +31,28 @@ body {
 
 .slick-slide div {
   outline: none !important;
+}
+
+.slick-arrow.slick-prev:before {
+  content: "";
+}
+
+.slick-arrow.slick-next:before {
+  content: "";
+}
+
+.custom-next-arrow,
+.custom-prev-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.custom-prev-arrow {
+  right: 0;
+}
+
+.custom-next-arrow {
+  right: 0;
 }

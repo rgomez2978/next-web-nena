@@ -14,20 +14,15 @@ import React, { useRef } from "react";
  * @returns
  */
 const ProductBannerComp = ({ title, buttonText, imageUrl, cssClass }) => {
-  console.log('ProductBannerComp', title, imageUrl, cssClass)
-
-  const placehold = 'https://placehold.co/1200x300/png'
   return (
-    <div className={` ${cssClass}`}
+    <div className={`${cssClass}`}
       style={{
         backgroundImage: `url(${imageUrl})`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: `top`,
         backgroundSize: `cover`
       }}
-    >
-      <div className=" h-[200px] w-[300px]"> </div>
-    </div >
+    />
   )
 }
 
@@ -86,137 +81,63 @@ const ProductCardComp = ({ title, buttonText, imageUrl, cssClass }) => {
   )
 }
 
-const ProductGridComp = ({ data, cssClass, type, slides }) => {
-  console.log('ProductGridComp', data)
+/**
+ * Template products grid
+ * @param {*} param0
+ * @returns
+ */
 
-  const placehold = 'https://placehold.co/1200x300/png'
-  let sliderRef = useRef(null);
-
-  const settings = {
-    swipe: data.length === 1 ? false : true,
-    arrows: type === 'single' ? false : false,
-    dots: type === 'single' ? false : true,
-    infinite: data.length === 1 ? false : true,
-    initialSlide: slides,
-    speed: 500,
-    slidesToShow: slides,
-    slidesToScroll: slides,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: slides,
-          slidesToScroll: slides,
-          dots: false,
-          infinite: data.length === 1 ? false : true,
-
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: slides,
-          slidesToScroll: slides,
-          initialSlide: slides,
-          dots: false,
-          infinite: data.length === 1 ? false : true,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: slides,
-          slidesToScroll: slides,
-          dots: false,
-          infinite: data.length === 1 ? false : true,
-        }
-      }
-    ]
-  };
-
+const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay, arrows, slides, dots }) => {
   return (
-    <>
-      <div className={`mx-auto  ${cssClass} px-3`}>
-        <div className={`grid grid-rows-1 md:grid-flow-col gap-3 h-full ${cssClass}`}>
-
-          <div className="md:row-span-3 md:col-span-2 rounded-2xl ">
-            <div className="h-[190px] w-auto">
-
-              {/* <ProductBannerComp
-                key={data[0].items[0].id}
-                title={data[0].items[0].title}
-                imageUrl={data[0].items[0].url}
-                cssClass={cssClass}
-              /> */}
-
-
-              {/* <CarouselComp
-                data={data[0]}
-                type={data[0] && data[0].length > 1 ? 'multi' : 'single'}
-                slides={1}
-              // cssClass={cssClass}
-              >
-
-
-              </CarouselComp>
-
-              */}
-
-              <div className="slider-container">
-                <Slider {...settings}
-                  ref={slider => { sliderRef = slider; }}
-                >
-
-                  {data[0] && data[0].items.map(({ id, url }) => {
-                    return (
-                      <ProductBannerComp
-                        key={id}
-                        imageUrl={url}
-                        cssClass={cssClass}
-                      />
-                    )
-                  })}
-                </Slider>
-
-              </div>
-            </div>
+    <div className={`mx-auto  ${cssClass} px-6 md:px-12`}>
+      <div className={`flex flex-col md:flex-row md:space-y-0 md:space-x-1  ${cssClass} `}>
+        <div className={` ${cssClass} md:w-[60%] lg:w-[60%] xl:w-[70%] mb-3`}>
+          <div className="w-full !px-0">
+            <CarouselComp
+              data={data[0].items}
+              type={'single'}
+              speed={speed}
+              autoplay={autoplay}
+              speedAutoplay={speedAutoplay}
+              arrows={arrows}
+              dots={dots}
+              slides={1}>
+              {data[0].items && data[0].items.map(({ id, url }) => {
+                return (
+                  <ProductBannerComp
+                    key={id}
+                    imageUrl={url}
+                    cssClass={`${cssClass} h-[140px] w-[100%] `}
+                  />
+                )
+              })}
+            </CarouselComp>
           </div>
-
-
-          <div className={` ${cssClass} grid gap-3`}>
-            <div
-              className={`md:col-span-2 rounded-2xl bg-red-500 text-white p-4`}
-              style={{
-                backgroundImage: `url(${data[1].url})`,
-                backgroundRepeat: `no-repeat`,
-                backgroundPosition: `top`,
-                backgroundSize: `cover`
-              }}
-            >
-              <div className="h-[100px]"></div>
-            </div>
-
-            <div
-              className={`md:col-span-2 rounded-2xl bg-green-500 text-white p-4 `}
-              style={{
-                backgroundImage: `url(${data[2].url})`,
-                backgroundRepeat: `no-repeat`,
-                backgroundPosition: `top`,
-                backgroundSize: `cover`,
-              }}
-            >
-              <div className="h-[100px]"></div>
-              {/* <h2 className="text-xl font-bold mb-2">Banner 3</h2> */}
-              {/* <p>Contenido del banner 3.</p> */}
-            </div>
-          </div>
-
         </div>
-      </div >
 
-    </>
+        <div className={` ${cssClass} mx-auto w-[96%] md:w-[40%] flex flex-col  space-y-3 lg:space-y-2`}>
+          <div className={`rounded-xl h-[120px] sm:h-[140px]  md:h-full  text-white `}
+            style={{
+              backgroundImage: `url(${data[1].url})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundPosition: `center center`,
+              backgroundSize: `cover`
+            }}
+          >
+          </div>
+          <div
+            className={`rounded-xl h-[120px] sm:h-[140px] md:h-full  text-white  `}
+            style={{
+              backgroundImage: `url(${data[2].url})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundPosition: `center center`,
+              backgroundSize: `cover`,
+            }}
+          >
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -227,24 +148,38 @@ const ProductGridComp = ({ data, cssClass, type, slides }) => {
 
 
 
-const ProductComp = ({ data, cssClass, type, slides }) => {
-  console.log('ProductComp', data, cssClass, type, slides)
+const ProductComp = ({ data, cssClass, type, model, speed, autoplay, speedAutoplay, arrows, slides, dots }) => {
   return (
     <>
-      <div className={`mx-auto ${cssClass} !w-[90%] md:!w-[84%] `}>
-
+      <div className={` ${cssClass} mx-auto !w-[100%] md:!w-[90%] `}>
         {type && type === 'grid' ? (
           <ProductGridComp
             data={data}
             type={type}
+            model={model}
+            speed={speed}
+            autoplay={autoplay}
+            speedAutoplay={speedAutoplay}
+            arrows={arrows}
+            dots={dots}
             slides={slides}
             cssClass={cssClass}
           />
         ) : (
-          <CarouselComp data={data} type={type} slides={slides} cssClass={cssClass}>
+          <CarouselComp
+            data={data}
+            type={type}
+            model={model}
+            speed={speed}
+            autoplay={autoplay}
+            speedAutoplay={speedAutoplay}
+            arrows={arrows}
+            dots={dots}
+            slides={slides}
+            cssClass={cssClass}>
             {data && data.map(({ id, title, url, buttonText }) => {
               return (
-                type !== undefined && type === 'grid'
+                type !== undefined && type === 'slide'
                   ? <ProductBannerComp
                     key={id}
                     imageUrl={url}
@@ -261,11 +196,6 @@ const ProductComp = ({ data, cssClass, type, slides }) => {
             })}
           </CarouselComp>
         )}
-
-
-
-
-
       </div>
     </>
   )

@@ -67,8 +67,8 @@ const NavbarComp = ({ multi }) => {
 
   return (
 
-    <nav className={`fixed py-2 p-4 z-30 w-full text-white transition-colors duration-500 ease-in-out ${backgroundColorClass} `}>
-      <div className="w-full h-18 px-3 md:px-8 md:flex items-center justify-center md:mx-auto  ">
+    <nav className={`fixed z-40 py-2 p-4 z-30 w-full text-white transition-colors duration-500 ease-in-out ${backgroundColorClass} `}>
+      <div className="  w-full h-18 px-3 md:px-8 md:flex items-center justify-center md:mx-auto  ">
 
         {/* MOBILE */}
         <div className="flex md:hidden  w-full justify-between">

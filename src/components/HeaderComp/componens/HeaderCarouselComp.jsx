@@ -9,7 +9,6 @@ import ButtonComp from "@/components/ButtonComp/index";
  * @returns
  */
 const HeaderCarouselSlide = ({ title, buttonText, imageUrl, cssClass }) => {
-  const placehold = 'https://placehold.co/1200x300/png'
   return (
     <div className={`flex flex-col items-center justify-center ${cssClass} `}
       style={{
@@ -46,14 +45,21 @@ const HeaderCarouselSlide = ({ title, buttonText, imageUrl, cssClass }) => {
  * @param {*} param0
  * @returns
  */
-const HeaderCarouselComp = ({ data, cssClass, type, slides }) => {
+const HeaderCarouselComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay, arrows, dots, slides }) => {
   return (
     <>
       <div className={`mt-20 mx-auto ${cssClass} !w-[90%] md:!w-[84%] `}>
-        <CarouselComp data={data} type={type} slides={slides} cssClass={cssClass}>
-
+        <CarouselComp
+          data={data}
+          type={type}
+          speed={speed}
+          autoplay={autoplay}
+          speedAutoplay={speedAutoplay}
+          arrows={arrows}
+          dots={dots}
+          slides={slides}
+          cssClass={cssClass}>
           {data && data.map(({ id, title, url, buttonText }) => {
-
             return (
               <HeaderCarouselSlide
                 key={id}
@@ -64,7 +70,6 @@ const HeaderCarouselComp = ({ data, cssClass, type, slides }) => {
               />
             )
           })}
-
         </CarouselComp>
       </div>
     </>
