@@ -1,12 +1,11 @@
 'use client'
 import { useEffect } from 'react';
 import { Inter } from "next/font/google";
-import NavbarComp from "@/components/LayoutComp/LayoutMenu/NavbarComp";
+import LayoutComp from "@/components/LayoutComp/index";
+import HeaderComp from "@/components/HeaderComp/index";
 import { PrimeReactProvider } from 'primereact/api';
 import Provider from "@/components/provider";
 import AOS from 'aos';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import 'aos/dist/aos.css';
 import "primereact/resources/themes/saga-blue/theme.css";
 import 'primeicons/primeicons.css';
@@ -35,8 +34,22 @@ export default function RootLayout({ children }) {
           <Provider>
             <main className="flex flex-col items-center justify-between w-full min-h-screen">
               <div className="w-full min-h-full">
-                <NavbarComp multi />
-                <div className="mx-auto z-10 mt-0 ">
+                <LayoutComp type={'menu'} model={'full'} />
+                <div className="mx-auto z-10 w-full">
+
+                  <div className='w-full h-full'>
+                    <HeaderComp
+                      type={'full'} //multi - full
+                      speed={1500}
+                      autoplay={true}
+                      speedAutoplay={4000}
+                      arrows={true}
+                      dots={false}
+                      slides={1}
+                      cssClass="w-[100%] h-[250px] lg:h-[500px] shadow-xl"
+                    />
+                  </div>
+
                   {children}
                 </div>
               </div>

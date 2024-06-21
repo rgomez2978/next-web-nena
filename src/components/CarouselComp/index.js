@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "react-feather";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 /**
@@ -65,7 +67,7 @@ const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrow
         settings: {
           slidesToShow: slides,
           slidesToScroll: 1,
-          dots: false,
+          dots: dots,
           infinite: data.length === 1 ? false : true,
         }
       },

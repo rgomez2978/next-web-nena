@@ -16,7 +16,9 @@ const HeaderCarouselSlide = ({ title, buttonText, imageUrl, cssClass }) => {
         // backgroundImage: `url(${placehold})`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: `top`,
+        // backgroundSize: `100% 90%`
         backgroundSize: `cover`
+        // backgroundSize: `contain`
       }}
     >
       {title !== '' && (
@@ -48,7 +50,7 @@ const HeaderCarouselSlide = ({ title, buttonText, imageUrl, cssClass }) => {
 const HeaderCarouselComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay, arrows, dots, slides }) => {
   return (
     <>
-      <div className={`mt-20 mx-auto ${cssClass} !w-[90%] md:!w-[84%] `}>
+      <div className={`mx-auto ${cssClass} !w-[100%]`}>
         <CarouselComp
           data={data}
           type={type}
