@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Somos una empresa con 37 años de experiencia en la distribución de medicamentos y misceláneos al mayor, llevando salud y bienestar a toda Venezuela.",
       "alt": "banner 1",
-      "url": "/images/banners/bg_nena_blue.png",
+      "url": "/images/banners/header/bg_nena_blue.png",
       "buttonText": "Postulate como proveedor",
       "type": 2,
       "status": true
@@ -13,7 +13,7 @@
       "id": "2",
       "title": "",
       "alt": "banner 1",
-      "url": "/images/banners/01042024_030810.jpg",
+      "url": "/images/banners/header/01042024_030810.jpg",
       "type": 2,
       "status": true
     },
@@ -21,7 +21,7 @@
       "id": "3",
       "title": "",
       "alt": "banner 2",
-      "url": "/images/banners/01042024_030929.jpg",
+      "url": "/images/banners/header/01042024_030929.jpg",
       "type": 2,
       "status": true
     },
@@ -29,7 +29,7 @@
       "id": "4",
       "title": "",
       "alt": "banner 3",
-      "url": "/images/banners/01062023_033504.jpg",
+      "url": "/images/banners/header/01062023_033504.jpg",
       "type": 2,
       "status": false
     },
@@ -37,7 +37,7 @@
       "id": "5",
       "title": "banner 4",
       "alt": "banner 4",
-      "url": "/images/banners/05062020_0159.jpg",
+      "url": "/images/banners/header/05062020_0159.jpg",
       "type": 2,
       "status": false
     },
@@ -45,7 +45,7 @@
       "id": "6",
       "title": "",
       "alt": "banner 5",
-      "url": "/images/banners/05062020_0158.jpg",
+      "url": "/images/banners/header/05062020_0158.jpg",
       "type": 2,
       "status": false
     },
@@ -53,7 +53,7 @@
       "id": "6",
       "title": "",
       "alt": "banner 5",
-      "url": "/images/banners/05062020_0158.jpg",
+      "url": "/images/banners/header/05062020_0158.jpg",
       "type": 2,
       "status": false
     }
@@ -518,53 +518,53 @@
   ],
   "products_top": [
     {
-      "id": "1",
+      "id": 1,
       "items": [
         {
-          "id": "1",
-          "title": "banner 1",
-          "alt": "banner 1",
-          "url": "/images/banners/02052024_120643.jpg",
+          "id": 1,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/1.jpg",
           "status": true
         },
         {
-          "id": "2",
-          "title": "banner 2",
-          "alt": "banner 2",
-          "url": "/images/banners/01042024_030929.jpg",
+          "id": 2,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/2.jpg",
           "status": true
         },
         {
-          "id": "3",
-          "title": "banner 3",
-          "alt": "banner 3",
-          "url": "/images/banners/05062020_0158.jpg",
+          "id": 3,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/3.jpg",
           "status": true
         },
         {
-          "id": "4",
-          "title": "banner 4",
-          "alt": "banner 4",
-          "url": "/images/banners/05062020_0159.jpg",
+          "id": 4,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/6.jpg",
           "status": true
         }
       ],
       "status": true
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "banner 2",
       "alt": "banner 2",
-      "url": "/images/banners/07032024_101841.png",
+      "url": "/images/banners/products_top/4.png",
       "type": "single",
       "items": [],
       "status": true
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "banner 3",
       "alt": "banner 3",
-      "url": "/images/banners/14032024_083246.jpg",
+      "url": "/images/banners/products_top/5.jpg",
       "type": "single",
       "items": [],
       "status": true
@@ -572,37 +572,46 @@
   ],
   "products_featured": [
     {
-      "id": "1",
-      "title": "banner 1",
-      "alt": "banner 1",
-      "url": "/images/banners/02052024_121002.jpg",
+      "id": 1,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/1.jpg",
       "type": "single",
       "items": [],
       "status": true
     },
     {
-      "id": "2",
-      "title": "banner 2",
-      "alt": "banner 2",
-      "url": "/images/banners/16042024_041002.jpg",
+      "id": 2,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/2.jpg",
       "type": "single",
       "items": [],
       "status": true
     },
     {
-      "id": "3",
-      "title": "banner 3",
-      "alt": "banner 3",
-      "url": "/images/banners/01042024_032552.jpg",
+      "id": 3,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/3.jpg",
       "type": "single",
       "items": [],
       "status": true
     },
     {
-      "id": "4",
-      "title": "banner 4",
-      "alt": "banner 4",
-      "url": "/images/banners/01022023_074244.jpg",
+      "id": 4,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/4.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    },
+    {
+      "id": 5,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/5.jpg",
       "type": "single",
       "items": [],
       "status": true

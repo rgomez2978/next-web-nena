@@ -49,7 +49,6 @@ const customHeader = () => {
  * @returns
  */
 const LayoutNavbarComp = ({ type }) => {
-  console.log('LayoutNavbarComp', type)
   const [isOpenSlide, setIsOpenSlide] = useState(false)
   const scrollPosition = useScrollPosition();
 

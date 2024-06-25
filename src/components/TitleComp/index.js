@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 
 
 const TitleComp = ({ title, description, type }) => {
-  console.log('TitleComp', title, description)
   const [activeCicle, setActiveCicle] = useState(false)
   const [words, setWords] = useState([])
   const [wordscant, setWordscant] = useState(0)
@@ -23,7 +22,6 @@ const TitleComp = ({ title, description, type }) => {
 
 
   useEffect(() => {
-    console.log('useEffect', title, description, activeCicle)
     if (title !== '') {
       if (!activeCicle) {
         const split = title.split(" ");

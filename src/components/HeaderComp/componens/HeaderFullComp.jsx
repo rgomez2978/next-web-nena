@@ -7,31 +7,31 @@ const HeaderFullComp = ({ data }) => {
       id: 1,
       title: 'Distribuimos salud y bienestar a toda venezuela',
       description: 'Siempre listos y preparados para hacer llegar tus pedidos.',
-      url: '/images/banners/full/27.jpg',
+      url: '/images/banners/header/27.jpg',
     },
     {
       id: 2,
       title: 'Comprometidos contigo cada día!',
       description: 'Siempre listos y preparados para hacer llegar tus pedidos.',
-      url: '/images/banners/full/IMG_8296.jpg',
+      url: '/images/banners/header/IMG_8296.jpg',
     },
     {
       id: 3,
       title: 'Seguimos trabajando para surtir tu farmacia',
       description: '',
-      url: '/images/banners/full/8.jpg',
+      url: '/images/banners/header/8.jpg',
     },
     {
       id: 4,
       title: 'Ahora más que nunca, codo a codo contigo!',
       description: '',
-      url: '/images/banners/full/20230325_123737.jpg',
+      url: '/images/banners/header/20230325_123737.jpg',
     },
     {
       id: 5,
       title: 'Aquí se distribuye compromiso y calidad',
       description: '',
-      url: '/images/banners/full/20230224_084643.jpg',
+      url: '/images/banners/header/20230224_084643.jpg',
     }
   ]
 

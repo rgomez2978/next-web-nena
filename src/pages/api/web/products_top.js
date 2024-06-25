@@ -1,10 +1,10 @@
 import { getToken } from 'next-auth/jwt'
 
 export default async function handler(req, res) {
-  // const { API_URL } = process.env
+  const { API_URL } = process.env
   const token = await getToken({ req })
 
-  const data = await fetch('http://localhost:4000/products_top', {
+  const data = await fetch(`${API_URL}/products_top`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

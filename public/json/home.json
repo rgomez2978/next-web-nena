@@ -1,0 +1,172 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "title": "Distribuimos salud y bienestar a toda venezuela",
+      "description": "Siempre listos y preparados para hacer llegar tus pedidos.",
+      "alt": "",
+      "url": "/images/banners/header/1.jpg",
+      "links": [
+        {
+          "id": 1,
+          "order": 1,
+          "text": "Postulate como proveedor",
+          "type": "link",
+          "icon": "",
+          "url": "",
+          "title": "Ver video",
+          "description": ""
+        }
+      ],
+      "type": 1,
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "Comprometidos contigo cada día!",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/2.jpg",
+      "links": [],
+      "type": 1,
+      "status": true
+    },
+    {
+      "id": 3,
+      "title": "Seguimos trabajando para surtir tu farmacia",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/3.jpg",
+      "links": [],
+      "type": 1,
+      "status": true
+    },
+    {
+      "id": 4,
+      "title": "Ahora más que nunca, codo a codo contigo!",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/4.jpg",
+      "links": [],
+      "type": 1,
+      "status": true
+    },
+    {
+      "id": 4,
+      "title": "Aquí se distribuye compromiso y calidad",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/5.jpg",
+      "links": [],
+      "type": 1,
+      "status": true
+    }
+  ],
+  "products_top": [
+    {
+      "id": 1,
+      "items": [
+        {
+          "id": 1,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/1.jpg",
+          "status": true
+        },
+        {
+          "id": 2,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/2.jpg",
+          "status": true
+        },
+        {
+          "id": 3,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/3.jpg",
+          "status": true
+        },
+        {
+          "id": 4,
+          "title": "",
+          "alt": "",
+          "url": "/images/banners/products_top/6.jpg",
+          "status": true
+        }
+      ],
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "banner 2",
+      "alt": "banner 2",
+      "url": "/images/banners/products_top/4.png",
+      "type": "single",
+      "items": [],
+      "status": true
+    },
+    {
+      "id": 3,
+      "title": "banner 3",
+      "alt": "banner 3",
+      "url": "/images/banners/products_top/5.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    }
+  ],
+  "products_featured": [
+    {
+      "id": 1,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/1.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/2.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    },
+    {
+      "id": 3,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/3.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    },
+    {
+      "id": 4,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/4.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    },
+    {
+      "id": 5,
+      "title": "",
+      "alt": "",
+      "url": "/images/banners/products_featured/5.jpg",
+      "type": "single",
+      "items": [],
+      "status": true
+    }
+  ],
+  "media_featured": [
+    {}
+  ],
+  "business_partners": [
+    {}
+  ]
+}

@@ -43,3 +43,11 @@ export const fetchData = async (
   const data = await res.json()
   return data || []
 }
+
+
+export const fetchDataJSON = (url) => {
+  return fetch(url)
+    .then(response => response.json())
+    .then(data => data)
+    .catch(error => console.error('Error fetching data:', error));
+}

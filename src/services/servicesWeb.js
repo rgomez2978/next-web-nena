@@ -6,8 +6,11 @@ import { fetchData } from '@/utils/index'
  * @param {string} obj objeto de filtro
  * @returns json
  */
-export const searchBannerFetch = () => {
-  return fetchData('/api/web/banner')
+export const getDataHomeFetch = (type, section) => {
+  console.log('getDataHomeFetch', type, section)
+  return type !== 'file'
+    ? fetchData(`/api/web/${section}`)
+    : fetchData(`http://localhost:3000/json/${section}.json`)
 }
 
 

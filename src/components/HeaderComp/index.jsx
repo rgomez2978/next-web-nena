@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import HeaderFullComp from './componens/HeaderFullComp'
 import HeaderCarouselComp from './componens/HeaderCarouselComp'
-import { searchBannerFetch } from '@/services/servicesWeb'
+import { getDataHomeFetch } from '@/services/servicesWeb'
 const HeaderComp = ({ type, cssClass, speed, autoplay, speedAutoplay, arrows, dots, slides }) => {
 
   const [loadImages, setLoadImages] = useState([])
@@ -9,12 +9,13 @@ const HeaderComp = ({ type, cssClass, speed, autoplay, speedAutoplay, arrows, do
   /**
   * Carga los datos de las imagenes asociadas al banner
   */
-  const getBanners = async () => {
-    const data = await searchBannerFetch()
-    const filteredData = data.filter(item => item.status === true);
-    filteredData && filteredData !== undefined
-      ? setLoadImages(filteredData)
-      : null;
+  const getHeaders = async () => {
+    const data = await getDataHomeFetch('file', 'home')
+    console.log('getHeaders :>> ', data);
+    // const filteredData = data.filter(item => item.status === true);
+    // filteredData && filteredData !== undefined
+    //   ? setLoadImages(filteredData)
+    //   : null;
   }
 
 
@@ -23,7 +24,7 @@ const HeaderComp = ({ type, cssClass, speed, autoplay, speedAutoplay, arrows, do
     : '/images/banners/full/IMG_8296.jpg';
 
   useEffect(() => {
-    getBanners()
+    getHeaders()
   }, [])
 
 

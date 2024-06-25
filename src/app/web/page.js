@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import {
+  getDataHomeFetch,
   searchProductTopFetch,
   searchProductFeaturedFetch
 } from '@/services/servicesWeb'
@@ -11,6 +12,13 @@ import TitleComp from '@/components/TitleComp';
 export default function PageInicio() {
   const [loadProductsTop, setLoadProductsTop] = useState([])
   const [loadProductsFeatured, setLoadProductsFeatured] = useState([])
+
+  /**
+    * Carga la info de la pagina home
+    */
+  const getDataFetch = () => {
+    getDataHomeFetch('file', 'home')
+  }
 
   /**
    * Carga los datos de las productos top
@@ -36,8 +44,9 @@ export default function PageInicio() {
 
 
   useEffect(() => {
-    getProductsTop()
-    getProductsFeatured()
+    getDataFetch()
+    // getProductsTop()
+    // getProductsFeatured()
   }, [])
 
 

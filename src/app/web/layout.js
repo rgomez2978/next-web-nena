@@ -1,6 +1,6 @@
 'use client'
 import { useEffect } from 'react';
-import { Inter } from "next/font/google";
+import { Inter, Mulish } from "next/font/google";
 import LayoutComp from "@/components/LayoutComp/index";
 import HeaderComp from "@/components/HeaderComp/index";
 import { PrimeReactProvider } from 'primereact/api';
@@ -11,6 +11,10 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import 'primeicons/primeicons.css';
 import "../globals.css";
 
+const mulish = Mulish({
+  subsets: ['latin'],
+  weight: ['400', '700']
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <PrimeReactProvider>
       <html >
-        <body className={`${inter.className} h-full`} >
+        <body className={`${mulish.className} h-full`} >
           <Provider>
             <main className="flex flex-col items-center justify-between w-full min-h-screen">
               <div className="w-full min-h-full">
