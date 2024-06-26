@@ -7,6 +7,7 @@ import LayoutSidebarComp from '@/components/LayoutComp/components/LayoutSidebarC
 import { menuWebOptions } from "@/mocks/Menu";
 import useScrollPosition from '@/hooks/useScrollPosition'
 import { Button } from 'primereact/button';
+import useStore from '@/stores/index';
 
 /**
  * Component: Logo de la web
@@ -49,8 +50,8 @@ const customHeader = () => {
  * @returns
  */
 const LayoutNavbarComp = ({ type }) => {
-  const [isOpenSlide, setIsOpenSlide] = useState(false)
   const scrollPosition = useScrollPosition();
+  const { isMenuOpen, setIsMenuOpen } = useStore();
 
   const backgroundColorClass = type !== undefined && type !== 'full'
     ? 'bg-nena-primary' : scrollPosition > 100 ? 'bg-nena-primary' : 'bg-transparent';
@@ -58,13 +59,6 @@ const LayoutNavbarComp = ({ type }) => {
   const backgroundColorClassButton = type !== undefined && type !== 'full'
     ? 'bg-nena-secondary' : scrollPosition > 100 ? 'bg-nena-secondary' : 'bg-nena-primary';
 
-  /**
-   * Metodo: Toggle Menu Sidebar
-   * @param {*} value valor booleano
-   */
-  const handleToggleMenu = (value) => {
-    setIsOpenSlide(value)
-  }
 
   return (
     <nav className={`fixed py-2 p-4 z-30 w-full text-white transition-colors duration-500 ease-in-out ${backgroundColorClass} `}>
@@ -74,12 +68,12 @@ const LayoutNavbarComp = ({ type }) => {
         <div className="flex md:hidden  w-full justify-between">
           <Logo />
           <div className="flex justify-content-center items-center md:hidden">
-            <Sidebar header={customHeader} visible={isOpenSlide} onHide={() => handleToggleMenu(false)} >
+            <Sidebar header={customHeader} visible={isMenuOpen} onHide={() => setIsMenuOpen(false)} >
               <LayoutSidebarComp />
             </Sidebar>
 
             <Button
-              onClick={() => handleToggleMenu(true)}
+              onClick={() => setIsMenuOpen(true)}
               className={`flex px-3 py-2 font-semibold text-white rounded-md  bg-transparent hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase`} aria-label="sesion">
               <i className={`pi pi-bars text-lg`}></i>
             </Button>

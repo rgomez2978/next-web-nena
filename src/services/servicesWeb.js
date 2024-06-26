@@ -7,7 +7,7 @@ import { fetchData } from '@/utils/index'
  * @returns json
  */
 export const getDataHomeFetch = (type, section) => {
-  console.log('getDataHomeFetch', type, section)
+  // console.log('getDataHomeFetch', type, section)
   return type !== 'file'
     ? fetchData(`/api/web/${section}`)
     : fetchData(`http://localhost:3000/json/${section}.json`)

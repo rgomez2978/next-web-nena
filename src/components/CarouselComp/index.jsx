@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
  */
 const PrevArrow = ({ className, onClick, model }) => {
   return (
-    <div className={`${className}  ${model === 'top' ? 'custom-next-arrow !w-full absolute -mt-10 ' : 'ml-12 z-30'}`}>
+    <div className={`${className}  ${model === 'top' ? 'custom-next-arrow !w-full absolute -mt-10 ' : 'ml-12 z-20'}`}>
       <button className="button rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary" onClick={onClick}>
         <ChevronLeft className=" text-gray-500 w-6 md:w-8 h-6 md:h-8" />
       </button>
@@ -30,7 +30,7 @@ const PrevArrow = ({ className, onClick, model }) => {
  */
 const NextArrow = ({ className, onClick, model }) => {
   return (
-    <div className={`${className}  ${model === 'top' ? 'custom-next-arrow' : 'mr-16 z-30'}`}>
+    <div className={`${className}  ${model === 'top' ? 'custom-next-arrow' : 'mr-16 z-20'}`}>
 
       <button className="button rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary" onClick={onClick}>
         <ChevronRight className=" text-gray-500 w-6 md:w-8 h-6 md:h-8" />
@@ -49,7 +49,11 @@ const NextArrow = ({ className, onClick, model }) => {
 const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrows, dots, slides, children, cssClass }) => {
 
   const settings = {
-    swipe: data.length === 1 ? false : true,
+    swipe: type === 'slide' || type === 'grid' ? data.length === 1 ? false : true : false,
+    fade: type === 'slide' || type === 'grid' ? false : true,
+    lazyLoad: true,
+    waitForAnimate: false,
+    pauseOnHover: false,
     arrows: arrows,
     dots: dots,
     infinite: data.length === 1 ? false : true,

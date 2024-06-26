@@ -3,8 +3,6 @@
 'use client';
 
 import CarouselComp from "@/components/CarouselComp/index";
-import ButtonComp from "@/components/ButtonComp/index";
-import Slider from "react-slick";
 import React, { useRef } from "react";
 
 
@@ -13,9 +11,9 @@ import React, { useRef } from "react";
  * @param {*} param0
  * @returns
  */
-const ProductBannerComp = ({ title, buttonText, imageUrl, cssClass }) => {
+const ProductBannerComp = ({ imageUrl, cssClass, separator }) => {
   return (
-    <div className={`${cssClass}`}
+    <div className={`${cssClass} ${separator}`}
       style={{
         backgroundImage: `url(${imageUrl})`,
         backgroundRepeat: `no-repeat`,
@@ -141,14 +139,12 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
   )
 }
 
-
-
-
-
-
-
-
-const ProductComp = ({ data, cssClass, type, model, speed, autoplay, speedAutoplay, arrows, slides, dots }) => {
+/**
+ * Select template products
+ * @param {*} param0
+ * @returns
+ */
+const ProductComp = ({ data, cssClass, type, model, speed, autoplay, speedAutoplay, arrows, slides, separator, dots }) => {
   return (
     <>
       <div className={` ${cssClass} mx-auto !w-[100%] md:!w-[90%] `}>
@@ -184,6 +180,7 @@ const ProductComp = ({ data, cssClass, type, model, speed, autoplay, speedAutopl
                     key={id}
                     imageUrl={url}
                     cssClass={cssClass}
+                    separator={separator}
                   />
                   : <ProductCardComp
                     key={id}
