@@ -86,6 +86,8 @@ const ProductCardComp = ({ title, buttonText, imageUrl, cssClass }) => {
  */
 
 const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay, arrows, slides, dots }) => {
+  console.log(`ProductGridComp - > ${type}`, data)
+
   return (
     <div className={`mx-auto  ${cssClass} px-6 md:px-12`}>
       <div className={`flex flex-col md:flex-row md:space-y-0 md:space-x-1  ${cssClass} `}>
@@ -93,7 +95,7 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
           <div className="w-full !px-0">
             <CarouselComp
               data={data[0].items}
-              type={'single'}
+              type={'fade'}
               speed={speed}
               autoplay={autoplay}
               speedAutoplay={speedAutoplay}
@@ -145,6 +147,7 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
  * @returns
  */
 const ProductComp = ({ data, cssClass, type, model, speed, autoplay, speedAutoplay, arrows, slides, separator, dots }) => {
+  console.log(`ProductComp - > ${type}`, data)
   return (
     <>
       <div className={` ${cssClass} mx-auto !w-[100%] md:!w-[90%] `}>

@@ -56,7 +56,7 @@ const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrow
     pauseOnHover: false,
     arrows: arrows,
     dots: dots,
-    infinite: data.length === 1 ? false : true,
+    infinite: true,
     initialSlide: slides,
     speed: speed,
     slidesToShow: slides,
@@ -72,7 +72,7 @@ const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrow
           slidesToShow: slides,
           slidesToScroll: 1,
           dots: dots,
-          infinite: data.length === 1 ? false : true,
+          infinite: true,
         }
       },
       {
@@ -82,7 +82,7 @@ const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrow
           slidesToScroll: 1,
           initialSlide: slides,
           dots: false,
-          infinite: data.length === 1 ? false : true,
+          infinite: true,
         }
       },
       {
@@ -91,7 +91,7 @@ const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrow
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
-          infinite: data.length === 1 ? false : true,
+          infinite: true,
         }
       }
     ]

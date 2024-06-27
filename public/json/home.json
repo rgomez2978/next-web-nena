@@ -154,8 +154,40 @@
       "status": true
     }
   ],
-  "media_featured": [
-    {}
+  "last_videos": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Mejoramos tu experiencia en nuestra plataforma ",
+      "description": "",
+      "items": [
+        {
+          "id": 1,
+          "title": "Lorem Ipsum is simply dummy.",
+          "status": true
+        },
+        {
+          "id": 2,
+          "title": "Industry's standard dummy text .",
+          "status": true
+        },
+        {
+          "id": 3,
+          "title": "Scrambled it to make a type.",
+          "status": true
+        }
+      ],
+      "videos": [
+        {
+          "id": 1,
+          "order": 1,
+          "url": "/videos/test.mp4",
+          "url2": "https://www.youtube.com/watch?v=S_15MSgqu-E&t=1s&ab_channel=DrogueriaNena",
+          "status": true
+        }
+      ],
+      "status": true
+    }
   ],
   "business_partners": [
     {}
