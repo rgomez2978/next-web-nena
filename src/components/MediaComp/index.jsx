@@ -1,45 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import MediaVideoComp from './components/MediaVideoComp';
+import MediaYoutubeComp from './components/MediaYoutubeComp';
 
 
 const MediaComp = ({
-  type, //img- video
-  resourceUrl,
+  type, //local - web
+  data,
 }) => {
-
-  console.log('MediaComp', type, resourceUrl)
-
-  const videoRef = useRef(null);
-
-
-  useEffect(() => {
-    // videoRef.play()
-    console.log('videoRef.current', videoRef.current)
-
-    videoRef.current.play()
-  }, [])
-
 
   return (
     <>
-
-      {type === 'img' ? (
-        <></>
+      {type !== 'web' ? (
+        <MediaVideoComp data={data} />
       ) : (
-        <video
-          ref={videoRef}
-          preload="auto"
-          controls
-          className='flex flex-row w-full rounded-2xl'
-        >
-          <source
-            src={resourceUrl}
-            type="video/mp4"
-            className='w-full h-auto rounded-2xl'
-          />
-        </video>
-
+        <MediaYoutubeComp data={data} />
       )}
-
     </>
   )
 }

@@ -1,11 +1,9 @@
 'use client'
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import { Sidebar } from 'primereact/sidebar';
 import LayoutSidebarComp from '@/components/LayoutComp/components/LayoutSidebarComp';
-import { menuWebOptions } from "@/mocks/Menu";
 import useScrollPosition from '@/hooks/useScrollPosition'
+import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
 import useStore from '@/stores/index';
 
@@ -20,7 +18,7 @@ const Logo = () => {
       width={200}
       height={0}
       src="/images/logo.png"
-      className='w-48 h-18'
+      className='w-52 h-18'
     />
   )
 }
@@ -51,7 +49,7 @@ const customHeader = () => {
  */
 const LayoutNavbarComp = ({ type }) => {
   const scrollPosition = useScrollPosition();
-  const { isMenuOpen, setIsMenuOpen } = useStore();
+  const { isMenuOpen, setIsMenuOpen, menuTop, setMenuTop } = useStore();
 
   const backgroundColorClass = type !== undefined && type !== 'full'
     ? 'bg-nena-primary' : scrollPosition > 100 ? 'bg-nena-primary' : 'bg-transparent';
@@ -83,7 +81,7 @@ const LayoutNavbarComp = ({ type }) => {
         {/* WEB */}
         <div className=" flex w-full h-18 justify-center items-center lg:-ml-5">
           <div className="hidden md:flex flex-row mx-3 lg:mx-6 sm:space-x-3 xl:space-x-6 ">
-            {menuWebOptions.options.map(({ id, name, link, active }) => (
+            {menuTop.map(({ id, name, link, active }) => (
               <Link key={id}
                 href={link}
                 className="font-bold text-white uppercase text-sm lg:text-base hover:text-nena-secondary hover:font-bold text-nowrap flex items-center align-items-center gap-2 w-auto"
