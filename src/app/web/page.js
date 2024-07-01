@@ -13,12 +13,14 @@ import SectionProducsTop from '@/pages/sections/SectionProducsTop';
 import SectionProductsFeatured from '@/pages/sections/SectionProductsFeatured';
 import SectionHeader from '@/pages/sections/SectionHeader';
 import SectionLastsVideos from '@/pages/sections/SectionLastsVideos';
+import SectionBusinessPartners from '@/pages/sections/SectionBusinessPartners';
 
 export default function PageInicio() {
   const [loadHeader, setLoadHeader] = useState([])
   const [loadProductsTop, setLoadProductsTop] = useState([])
   const [loadProductsFeatured, setLoadProductsFeatured] = useState([])
   const [loadLastVideos, setLoadLastVideos] = useState([])
+  const [loadBusinessPartners, setLoadBusinessPartners] = useState([])
   const { setLoading, data, setData } = useStore();
 
 
@@ -47,6 +49,7 @@ export default function PageInicio() {
         case 'products_top': setLoadProductsTop(filteredData); break;
         case 'products_featured': setLoadProductsFeatured(filteredData); break;
         case 'last_videos': setLoadLastVideos(filteredData); break;
+        case 'business_partners': setLoadBusinessPartners(filteredData); break;
         default: break;
       }
       setLoading(true);
@@ -65,6 +68,7 @@ export default function PageInicio() {
     getDataFilter('products_top')
     getDataFilter('products_featured')
     getDataFilter('last_videos')
+    getDataFilter('business_partners')
   }, [data])
 
 
@@ -102,6 +106,13 @@ export default function PageInicio() {
               title={'Últimos Videos'}
               description={''}
               data={loadLastVideos}
+            />
+
+            <SectionBusinessPartners
+              titleType={'dark'}
+              title={'Nuestros Socios comerciales'}
+              description={''}
+              data={loadBusinessPartners}
             />
 
           </div>

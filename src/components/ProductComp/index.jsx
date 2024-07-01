@@ -1,9 +1,8 @@
 
 /* eslint-disable @next/next/no-img-element */
 'use client';
-
-import CarouselComp from "@/components/CarouselComp/index";
 import React, { useRef } from "react";
+import CarouselComp from "@/components/CarouselComp/index";
 
 
 /**
@@ -86,12 +85,10 @@ const ProductCardComp = ({ title, buttonText, imageUrl, cssClass }) => {
  */
 
 const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay, arrows, slides, dots }) => {
-  console.log(`ProductGridComp - > ${type}`, data)
-
   return (
-    <div className={`mx-auto  ${cssClass} px-6 md:px-12`}>
-      <div className={`flex flex-col md:flex-row md:space-y-0 md:space-x-1  ${cssClass} `}>
-        <div className={` ${cssClass} md:w-[60%] lg:w-[60%] xl:w-[70%] mb-3`}>
+    <div className={`mx-auto  ${cssClass} px-6 md:px-0 lg:px-12 `}>
+      <div className={`flex flex-col md:flex-row md:space-y-0 md:space-x-3 lg:space-x-2  ${cssClass} `}>
+        <div className={` ${cssClass} md:w-[60%] lg:w-[60%] xl:w-[70%] mb-3 h-full`}>
           <div className="w-full !px-0">
             <CarouselComp
               data={data[0].items}
@@ -107,7 +104,7 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
                   <ProductBannerComp
                     key={id}
                     imageUrl={url}
-                    cssClass={`${cssClass} h-[140px] w-[100%] `}
+                    cssClass={`${cssClass} h-[180px] `}
                   />
                 )
               })}
@@ -115,8 +112,11 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
           </div>
         </div>
 
-        <div className={` ${cssClass} mx-auto w-[96%] md:w-[40%] flex flex-col  space-y-3 lg:space-y-2`}>
-          <div className={`rounded-xl h-[120px] sm:h-[140px]  md:h-full  text-white `}
+        <div
+          className={` ${cssClass} mx-auto md:w-[40%] flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-3 lg:space-y-2 `}>
+          <div
+            className={`rounded-xl w-full h-[120px] sm:h-[140px]  md:h-full  text-white `}
+            // className={`rounded-xl w-full h-full  text-white `}
             style={{
               backgroundImage: `url(${data[1].url})`,
               backgroundRepeat: `no-repeat`,
@@ -126,7 +126,7 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
           >
           </div>
           <div
-            className={`rounded-xl h-[120px] sm:h-[140px] md:h-full  text-white  `}
+            className={`rounded-xl w-full h-[120px] sm:h-[140px] md:h-full  text-white  `}
             style={{
               backgroundImage: `url(${data[2].url})`,
               backgroundRepeat: `no-repeat`,

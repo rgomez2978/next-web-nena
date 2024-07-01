@@ -191,6 +191,54 @@
     }
   ],
   "business_partners": [
-    {}
+    {
+      "id": 1,
+      "order": 1,
+      "title": "logo lasante",
+      "url": "/images/partners/lasante.png",
+      "status": true
+    },
+    {
+      "id": 2,
+      "order": 2,
+      "title": "logo fc",
+      "url": "/images/partners/fc.png",
+      "status": true
+    },
+    {
+      "id": 3,
+      "order": 3,
+      "title": "logo calox",
+      "url": "/images/partners/calox.png",
+      "status": true
+    },
+    {
+      "id": 4,
+      "order": 4,
+      "title": "logo farmacorp",
+      "url": "/images/partners/farmacorp.png",
+      "status": true
+    },
+    {
+      "id": 5,
+      "order": 5,
+      "title": "logo vincenti",
+      "url": "/images/partners/vincenti.png",
+      "status": true
+    },
+    {
+      "id": 6,
+      "order": 6,
+      "title": "logo leti",
+      "url": "/images/partners/leti.png",
+      "status": true
+    },
+    {
+      "id": 7,
+      "order": 7,
+      "title": "logo colmed",
+      "url": "/images/partners/colmed.png",
+      "status": true
+    }
   ]
 }

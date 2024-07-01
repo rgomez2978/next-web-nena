@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'Mulish', 'sans-serif'],
+      },
       spacing: {
         '128': '32rem',
       },
@@ -30,12 +33,18 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'translateY(-5px)' },
           '70%': { transform: 'translateY(5px)' },
-        }
+        },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+
       }
     },
   },

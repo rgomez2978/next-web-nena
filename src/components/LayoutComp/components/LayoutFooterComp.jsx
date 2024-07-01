@@ -16,16 +16,15 @@ const LayoutFooterComp = () => {
           <div className='mb-10 lg:mb-0 lg:mr-10'>
             <Image alt="logo nena" width={300} height={0} src="/images/logo_rif.png" className='w-64 h-18' />
 
-
             <div className="mt-6 lg:max-w-sm space-y-5">
-
               <div className='space-y-2'>
                 <p className="text-base md:text-sm text-white">
                   <strong>SEDE PRINCIPAL:</strong> Carrera 3 con Calle 3. Edif. Dronena Zona Industrial III. Barquisimeto, Estado Lara, Venezuela.
                 </p>
-                <div className='flex flex-row'>
-                  <PhoneCall className='w-5 h-5 mr-3' />
-                  <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+58-251-269.01.11</a>
+                <div className='text-base md:text-sm flex flex-row'>
+                  <PhoneCall className='w-5 md:w-4 h-5 md:h-4 mr-2' />
+                  <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
+                    className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+58-251-269.01.11</a>
                 </div>
               </div>
 
@@ -33,8 +32,8 @@ const LayoutFooterComp = () => {
                 <p className="text-base md:text-sm text-white">
                   <strong>SEDE SUCURSAL CAPITAL:</strong> Zona Ind. del Este, Av. 2, Edif. Drogueria Nena. Guarenas, Estado Miranda, Venezuela.
                 </p>
-                <div className='flex flex-row'>
-                  <PhoneCall className='w-5 h-5 mr-3' />
+                <div className='text-base md:text-sm flex flex-row'>
+                  <PhoneCall className='w-5 md:w-4 h-5 md:h-4 mr-2' />
                   <a
                     href="tel:+58-212-219.42.00"
                     className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+58-212-219.42.00

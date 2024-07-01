@@ -69,7 +69,7 @@ const CarouselComp = ({ data, type, model, speed, autoplay, speedAutoplay, arrow
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: slides,
+          slidesToShow: 2,
           slidesToScroll: 1,
           dots: dots,
           infinite: true,

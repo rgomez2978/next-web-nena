@@ -52,7 +52,6 @@ const useStore = create((set) => ({
       active: false,
     },
   ],
-
   menuFooter: [
     {
       id: 1,
@@ -146,6 +145,13 @@ const useStore = create((set) => ({
     },
 
   ],
+
+
+
+
+
+
+
 
   setMenuTop: (newMenuTop) => set({ menuTop: newMenuTop }),
 
