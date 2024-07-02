@@ -1,0 +1,14 @@
+export { default as BreadcrumbsComp } from './BreadcrumbsComp';
+export { default as ButtonComp } from './ButtonComp';
+export { default as CarouselComp } from './CarouselComp';
+export { default as HeroComp } from './HeroComp';
+export { default as HeroPageComp } from './HeroComp/components/HeroPageComp';
+export { default as HeroCarouselComp } from './HeroComp/components/HeroCarouselComp';
+export { default as LoadingComp } from './LoadingComp';
+export { default as MediaComp } from './MediaComp';
+export { default as MediaVideoComp } from './MediaComp/components/MediaVideoComp';
+export { default as MediaYoutubeComp } from './MediaComp/components/MediaYoutubeComp';
+export { default as PartnersComp } from './PartnersComp';
+export { default as TitleComp } from './TitleComp';
+export { default as ProductComp } from './ProductComp';
+// export { default as ProductComp } from './ProductComp/components/';

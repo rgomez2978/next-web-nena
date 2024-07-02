@@ -5,10 +5,12 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  extensions: ['.js', '.jsx', '.json', '.woff2'],
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'Mulish', 'sans-serif'],
+        // inter: ['Inter', 'Mulish', 'sans-serif'],
+        segoe: ["var(--font-segoe)"],
       },
       spacing: {
         '128': '32rem',

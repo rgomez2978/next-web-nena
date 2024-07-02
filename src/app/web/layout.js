@@ -1,20 +1,14 @@
 'use client'
 import { useEffect } from 'react';
-import { Inter, Mulish } from "next/font/google";
+import { segoe } from '@/app/fonts';
 import { PrimeReactProvider } from 'primereact/api';
-import Provider from "@/components/provider";
+import Provider from "@/components/layout/provider";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "primereact/resources/themes/saga-blue/theme.css";
 import 'primeicons/primeicons.css';
 import "../globals.css";
 
-const mulish = Mulish({
-  subsets: ['latin'],
-  weight: ['400', '700']
-});
-
-const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
 //   title: "Create Next App",
@@ -32,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <PrimeReactProvider>
       <html >
-        <body className={`${mulish.className} h-full`} >
+        <body className={`${segoe.variable} h-full antialiased `} >
           <Provider>
             <main className="flex flex-col items-center justify-between w-full min-h-screen">
               {children}

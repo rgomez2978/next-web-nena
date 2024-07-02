@@ -3,17 +3,13 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { getDataHomeFetch } from '@/services/servicesWeb'
-import ProductComp from "@/components/ProductComp/index";
-import TitleComp from '@/components/TitleComp';
-import HeaderComp from '@/components/HeaderComp';
-import LoadingComp from '@/components/LoadingComp';
-import LayoutComp from '@/components/LayoutComp';
+import LayoutComp from '@/components/layout/index';
 import useStore from '@/stores/index';
-import SectionProducsTop from '@/pages/sections/SectionProducsTop';
-import SectionProductsFeatured from '@/pages/sections/SectionProductsFeatured';
-import SectionHeader from '@/pages/sections/SectionHeader';
-import SectionLastsVideos from '@/pages/sections/SectionLastsVideos';
-import SectionBusinessPartners from '@/pages/sections/SectionBusinessPartners';
+import SectionProducsTop from '@/components/blocks/SectionProducsTop';
+import SectionProductsFeatured from '@/components/blocks/SectionProductsFeatured';
+import SectionHero from '@/components/blocks/SectionHero';
+import SectionLastsVideos from '@/components/blocks/SectionLastsVideos';
+import SectionBusinessPartners from '@/components/blocks/SectionBusinessPartners';
 
 export default function PageInicio() {
   const [loadHeader, setLoadHeader] = useState([])
@@ -78,13 +74,12 @@ export default function PageInicio() {
       <LayoutComp type={'menu'} model={'full'} >
         <div className="mx-auto z-10 w-full">
           <div className='w-full h-full'>
-            <SectionHeader
+            <SectionHero
               data={loadHeader}
               type={'full'}
             />
           </div>
           <div className='flex flex-col items-start justify-center '>
-
             <SectionProducsTop
               titleType={'dark'}
               title={'Productos Top'}
@@ -114,7 +109,6 @@ export default function PageInicio() {
               description={''}
               data={loadBusinessPartners}
             />
-
           </div>
         </div>
       </LayoutComp>
