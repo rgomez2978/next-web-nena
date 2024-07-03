@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import useStore from '@/stores/index';
 import Link from 'next/link';
 import { PhoneCall } from "react-feather";
+import useStore from '@/stores/index';
 
 
 const FooterComp = () => {

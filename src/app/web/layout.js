@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { segoe } from '@/app/fonts';
 import { PrimeReactProvider } from 'primereact/api';
-import Provider from "@/components/layout/provider";
+import Provider from "@/components/layout/provider/index";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "primereact/resources/themes/saga-blue/theme.css";

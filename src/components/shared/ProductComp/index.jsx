@@ -147,7 +147,7 @@ const ProductGridComp = ({ data, cssClass, type, speed, autoplay, speedAutoplay,
  * @returns
  */
 const ProductComp = ({ data, cssClass, type, model, speed, autoplay, speedAutoplay, arrows, slides, separator, dots }) => {
-  console.log(`ProductComp - > ${type}`, data)
+
   return (
     <>
       <div className={` ${cssClass} mx-auto !w-[100%] md:!w-[90%] `}>

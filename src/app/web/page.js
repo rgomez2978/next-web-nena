@@ -2,14 +2,17 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 import { useEffect, useState } from 'react'
+import { LayoutComp } from '@/components/layout';
+import {
+  SectionHero,
+  SectionProducsTop,
+  SectionProductsFeatured,
+  SectionLastsVideos,
+  SectionBusinessPartners
+} from '@/components/blocks';
+
 import { getDataHomeFetch } from '@/services/servicesWeb'
-import LayoutComp from '@/components/layout/index';
 import useStore from '@/stores/index';
-import SectionProducsTop from '@/components/blocks/SectionProducsTop';
-import SectionProductsFeatured from '@/components/blocks/SectionProductsFeatured';
-import SectionHero from '@/components/blocks/SectionHero';
-import SectionLastsVideos from '@/components/blocks/SectionLastsVideos';
-import SectionBusinessPartners from '@/components/blocks/SectionBusinessPartners';
 
 export default function PageInicio() {
   const [loadHeader, setLoadHeader] = useState([])

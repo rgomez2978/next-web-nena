@@ -1,0 +1,83 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Nosotros",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/header_interno.png",
+      "links": [
+        {
+          "id": 1,
+          "order": 1,
+          "text": "Postulate como proveedor",
+          "type": "link",
+          "icon": "",
+          "url": "",
+          "title": "Ver video",
+          "description": ""
+        }
+      ],
+      "type": 1,
+      "status": true
+    }
+  ],
+  "about_content": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "¿Quiénes Somos?",
+      "description": "Droguería Nena, es una empresa con más de 30 años de experiencia en la distribución de medicamentos y productos misceláneos al mayor con una fuerte posición y trayectoria en el mercado venezolano, donde nos mantenemos con el compromiso de llevar Salud y Bienestar a toda Venezuela.<br><br> Nos caracterizamos por ser un distribuidor puro, que no compite con proveedores ni clientes, con una excelente cultura de servicio, altos niveles de inventario y las mejores promociones. <br><br>Cultivamos la excelencia y la mejora continua de los procesos, apoyados en un excelente capital humano y soportado en tecnología de punta, especializada en procesos logísticos de almacenamiento y distribución. Ambos elementos amparados por 2 gigantescas edificaciones, totalmente inteligentes y modernas, que brindan confianza, tranquilidad y confort, logrando resultados eficientes e innovadores.",
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "title": "Misión",
+          "description": "Proporcionar a nuestros clientes productos y servicios de la más alta calidad que contribuyan a su bienestar físico, <br>mental y emocional.",
+          "status": true
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "title": "Visión",
+          "description": "Convertirnos en la marca líder en servicios y desarrollo de soluciones integrales de salud, bienestar y <br>logística en Venezuela. ",
+          "status": true
+        }
+      ],
+      "status": true
+    }
+  ],
+  "our_values": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Nuestros Valores",
+      "description": "",
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "title": "Compromiso",
+          "description": "Con nuestros clientes, colaboradores y comunidades para ofrecer productos y servicios de la más alta calidad.",
+          "status": true
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "title": "Honradez",
+          "description": "Actuamos con integridad, manteniendo siempre la transparencia, la honestidad y la ética en nuestro comportamiento.",
+          "status": true
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "title": "Responsabilidad",
+          "description": "Asumimos la responsabilidad de nuestras acciones y su impacto en todas las partes interesadas.",
+          "status": true
+        }
+      ],
+      "status": true
+    }
+  ]
+}

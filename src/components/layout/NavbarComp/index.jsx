@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
 import useScrollPosition from '@/hooks/useScrollPosition'
-import SidebarComp from '@/components/layout/SidebarComp';
+import { SidebarComp } from '@/components/layout/index';
 import useStore from '@/stores/index';
 
 /**

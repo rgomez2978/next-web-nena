@@ -1,6 +1,4 @@
-import React, { useRef, useState } from 'react'
-import TitleComp from '@/components/shared/TitleComp'
-import MediaComp from '@/components/shared/MediaComp';
+import { TitleComp, MediaComp } from '@/components/shared/index'
 
 const SectionLastsVideos = ({
   title,

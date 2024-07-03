@@ -1,4 +1,4 @@
-import HeroComp from '@/components/shared/HeroComp/index'
+import { HeroComp } from '@/components/shared/index'
 import React from 'react'
 
 const SectionHero = ({ data, type }) => {

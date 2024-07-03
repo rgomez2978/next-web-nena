@@ -15,6 +15,24 @@ export const getDataHomeFetch = (type, section) => {
 
 
 /**
+ * Endpoint Next - Para consultar listado banner
+ * @param {string} obj objeto de filtro
+ * @returns json
+ */
+export const getDataAboutFetch = (type, section) => {
+  return type !== 'file'
+    ? fetchData(`/api/web/${section}`)
+    : fetchData(`http://localhost:3000/json/${section}.json`)
+}
+
+
+
+
+
+
+
+
+/**
  * Endpoint Next - Para consultar listado productos top
  * @param {string} obj objeto de filtro
  * @returns json

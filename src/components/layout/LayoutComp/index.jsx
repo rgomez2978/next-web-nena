@@ -1,7 +1,5 @@
-import NavbarComp from '@/components/layout/NavbarComp'
-import SidebarComp from '@/components/layout/SidebarComp'
-import FooterComp from '@/components/layout/FooterComp'
-import LoadingComp from '@/components/shared/LoadingComp';
+'use client'
+import { NavbarComp, SidebarComp, LoadingComp, FooterComp } from '@/components/layout/index'
 import useStore from '@/stores/index';
 
 const LayoutComp = ({ type, model, children }) => {

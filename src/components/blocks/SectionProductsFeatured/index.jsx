@@ -1,6 +1,4 @@
-import ProductComp from '@/components/shared/ProductComp'
-import TitleComp from '@/components/shared/TitleComp'
-import React from 'react'
+import { ProductComp, TitleComp } from '@/components/shared/index'
 
 const SectionProductsFeatured = ({
   titleType,
