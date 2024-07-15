@@ -1,14 +1,19 @@
+const path = require('path');
+
 module.exports = {
   reactStrictMode: false,
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/web',
-        permanent: true,
-      },
-    ]
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/',
+  //       destination: '/',
+  //       permanent: true,
+  //     },
+  //   ]
+  // },
   async headers() {
     return [
       {

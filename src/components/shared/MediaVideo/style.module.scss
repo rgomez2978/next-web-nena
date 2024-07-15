@@ -1,0 +1,27 @@
+.video_container {
+  @apply flex w-[100%] md:w-[80%] lg:w-[90%] xl:w-[90%] h-full;
+
+  & video {
+    @apply flex w-full rounded-2xl;
+  }
+
+  & .overlay {
+    @apply absolute flex justify-center items-center cursor-pointer group-hover:scale-110  h-full w-[100%] md:w-[80%] lg:w-[90%] xl:w-[90%];
+
+    & .overlay_play {
+      @apply flex justify-center items-center w-full h-full text-white transition-transform duration-150 opacity-90 hover:opacity-100;
+
+      & svg {
+        @apply w-10 h-10 sm:w-14 sm:h-14;
+      }
+    }
+
+    & .overlay_pause {
+      @apply flex justify-center items-center w-full h-full text-white transition-transform duration-150;
+
+      & svg {
+        @apply w-10 h-10 sm:w-14 sm:h-14;
+      }
+    }
+  }
+}

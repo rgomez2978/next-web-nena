@@ -1,0 +1,33 @@
+.carousel_slide_container {
+  @apply flex h-screen w-full items-center justify-center;
+
+  & .slide_image {
+    @apply object-cover object-center w-full h-full;
+  }
+
+  & .slide_overlay {
+    @apply absolute inset-0 bg-nena-primary bg-opacity-70;
+  }
+
+  & .slide_content {
+    @apply absolute flex flex-col items-center justify-center w-[60%] text-center;
+
+    & h1 {
+      @apply text-5xl lg:text-6xl text-white font-black;
+    }
+    & p {
+      @apply text-2xl text-white mt-4;
+    }
+  }
+  & button {
+    @apply fixed justify-center bottom-10 p-6 text-white;
+
+    & svg {
+      @apply animate-[wiggle_1s_ease-in-out_infinite] h-8 w-8;
+    }
+  }
+}
+
+.carousel_container {
+  @apply w-[100%] h-[250px] lg:h-[500px] shadow-xl;
+}

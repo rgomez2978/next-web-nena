@@ -1,0 +1,10 @@
+.loading_contanier {
+  @apply flex bg-nena-primary flex-col items-center justify-center w-full h-screen;
+
+  & .image_container {
+    @apply flex flex-col animate-pulse;
+    & Image {
+      @apply object-cover outline-none;
+    }
+  }
+}

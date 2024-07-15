@@ -7,6 +7,8 @@
       "description": "",
       "alt": "",
       "url": "/images/banners/header/header_interno.png",
+      "type": 1,
+      "status": true,
       "links": [
         {
           "id": 1,
@@ -18,34 +20,35 @@
           "title": "Ver video",
           "description": ""
         }
-      ],
-      "type": 1,
-      "status": true
+      ]
     }
   ],
   "about_content": [
     {
       "id": 1,
       "order": 1,
+      "theme": "dark",
       "title": "¿Quiénes Somos?",
       "description": "Droguería Nena, es una empresa con más de 30 años de experiencia en la distribución de medicamentos y productos misceláneos al mayor con una fuerte posición y trayectoria en el mercado venezolano, donde nos mantenemos con el compromiso de llevar Salud y Bienestar a toda Venezuela.<br><br> Nos caracterizamos por ser un distribuidor puro, que no compite con proveedores ni clientes, con una excelente cultura de servicio, altos niveles de inventario y las mejores promociones. <br><br>Cultivamos la excelencia y la mejora continua de los procesos, apoyados en un excelente capital humano y soportado en tecnología de punta, especializada en procesos logísticos de almacenamiento y distribución. Ambos elementos amparados por 2 gigantescas edificaciones, totalmente inteligentes y modernas, que brindan confianza, tranquilidad y confort, logrando resultados eficientes e innovadores.",
+      "status": true,
       "items": [
         {
           "id": 1,
           "order": 1,
+          "icon": "<svg fill=\"currentColor\" height=\"200px\" width=\"200px\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 508 508\" xml:space=\"preserve\"> <path d=\"M409.8,220.9C403.3,149.6,341.4,79.2,254,79.2c-86.4,0-156.6,70.3-156.6,156.6c0,61.7,36.8,118,92.6,143v16h-0.2 c-7.8,0-14.1,6.3-14.1,14.1S182,423,189.8,423h0.2v16.5h-0.2c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1h4.8 C204,491.3,227,508,253.9,508s49.9-16.7,59.3-40.3h4.9c7.8,0,14.1-6.3,14.1-14.1c0-7.8-6.3-14.1-14.1-14.1h-0.3V423h0.3 c7.8,0,14.1-6.3,14.1-14.1c0-7.8-6.3-14.1-14.1-14.1h-0.3v-16C378.6,351.6,416.1,288.1,409.8,220.9z M298.8,356.1 c-5.5,2.1-9.2,7.3-9.2,13.2V444c0,19.7-16,35.7-35.7,35.7c-19.7,0-35.7-16-35.7-35.7v-74.7c0-5.9-3.7-11.2-9.2-13.2 c-49.9-18.6-83.5-67-83.5-120.3c0-70.8,57.6-128.4,128.4-128.4c68.3,0,122.4,57.7,127.8,116.1 C387.2,281.4,353.1,335.9,298.8,356.1z\"> </path> <path d=\"M325.3,184.1c-5.5-5.6-14.4-5.6-19.9-0.1l-73.8,73.8l-29-29c-5.5-5.5-14.4-5.5-20,0c-5.5,5.5-5.5,14.4,0,20l39,39 c2.8,2.8,6.4,4.1,10,4.1c3.6,0,7.2-1.4,10-4.1l83.7-83.7C330.8,198.6,330.8,189.7,325.3,184.1z\"> </path> <path d=\"M61.3,221.7h-29c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1h29c7.8,0,14.1-6.3,14.1-14.1S69.1,221.7,61.3,221.7z\"> </path> <path d=\"M475.7,221.7h-29c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1h29c7.8,0,14.1-6.3,14.1-14.1 C489.8,228,483.5,221.7,475.7,221.7z\"> </path> <path d=\"M254,0c-7.8,0-14.1,6.3-14.1,14.1v29c0,7.8,6.3,14.1,14.1,14.1s14.1-6.3,14.1-14.1v-29C268.1,6.3,261.8,0,254,0z\"> </path> <path d=\"M127.7,89.5L107.2,69c-5.5-5.5-14.4-5.5-20,0c-5.5,5.5-5.5,14.4,0,20l20.5,20.5c5.6,5.5,14.5,5.5,20,0 S133.2,95.1,127.7,89.5z\"> </path> <path d=\"M420.7,69c-5.5-5.4-14.4-5.4-19.9,0.1l-20.5,20.5c-5.5,5.5-5.5,14.4,0,20c5.5,5.5,14.4,5.5,20,0L420.7,89 C426.2,83.5,426.2,74.6,420.7,69z\"> </path> </svg>",
           "title": "Misión",
-          "description": "Proporcionar a nuestros clientes productos y servicios de la más alta calidad que contribuyan a su bienestar físico, <br>mental y emocional.",
+          "description": "Proporcionar a nuestros clientes productos y servicios de la más alta calidad que contribuyan a su bienestar físico, mental y emocional.",
           "status": true
         },
         {
           "id": 2,
           "order": 2,
+          "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 32 32\" id=\"icon\" xmlns=\"http://www.w3.org/2000/svg\"> <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g> <g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g> <g id=\"SVGRepo_iconCarrier\"> <defs> <style> .cls-1 { fill: none; } </style> </defs> <rect x=\"10\" y=\"12\" width=\"2\" height=\"2\"></rect> <rect x=\"6\" y=\"12\" width=\"2\" height=\"2\"></rect> <rect x=\"2\" y=\"12\" width=\"2\" height=\"2\"></rect> <path d=\"M26,30H24V27H20a5.0055,5.0055,0,0,1-5-5V20.7207l-2.3162-.772a1,1,0,0,1-.5412-1.4631L15,13.7229V11a9.01,9.01,0,0,1,9-9h5V4H24a7.0078,7.0078,0,0,0-7,7v3a.9991.9991,0,0,1-.1426.5144l-2.3586,3.9312,1.8174.6057A1,1,0,0,1,17,20v2a3.0033,3.0033,0,0,0,3,3h5a1,1,0,0,1,1,1Z\"></path> <rect x=\"19.0001\" y=\"12\" width=\"4\" height=\"2\"></rect> <rect id=\"_Transparent_Rectangle_\" data-name=\"<Transparent Rectangle>\" class=\"cls-1\" width=\"32\" height=\"32\"></rect> </g> </svg>",
           "title": "Visión",
-          "description": "Convertirnos en la marca líder en servicios y desarrollo de soluciones integrales de salud, bienestar y <br>logística en Venezuela. ",
+          "description": "Convertirnos en la marca líder en servicios y desarrollo de soluciones integrales de salud, bienestar y logística en Venezuela. ",
           "status": true
         }
-      ],
-      "status": true
+      ]
     }
   ],
   "our_values": [
@@ -54,10 +57,13 @@
       "order": 1,
       "title": "Nuestros Valores",
       "description": "",
+      "theme": "dark",
+      "status": true,
       "items": [
         {
           "id": 1,
           "order": 1,
+          "icon": "<svg version=\"1.1\" id=\"_x32_\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 512 512\" xml:space=\"preserve\" fill=\"currentColor\"> <path class=\"st0\" d=\"M403.166,74.249c-13.439,7.624-29.668,13.939-44.089,11.532c-22.738-3.783-81.345-3.533-120.246,10.609 c-38.901,14.141-109.628,58.346-130.844,65.432c-21.226,7.066-22.989,35.368,24.75,40.663c47.748,5.313,90.182-24.76,100.79-30.055 c10.609-5.313,113.17,10.609,113.17,10.609l32.268,7.951l74.394,100.56c13.053-11.34,38.872-35.406,45.409-53.696 c2.378-6.662,5.919-12.784,9.819-18.224l0.818,1.126C526.916,181.615,451.828,57.075,403.166,74.249z\"></path> <path class=\"st0\" d=\"M359.077,205.585l-15.634-1.578c-20.514-3.177-78.524-11.437-100.309-11.437c-0.952,0-1.713,0.01-2.281,0.038 c-0.876,0.501-1.887,1.078-2.878,1.656c-15.461,9.001-51.656,30.074-93.821,30.074c-4.63,0-9.252-0.26-13.756-0.761 c-6.834-0.76-12.842-1.935-18.156-3.418c5.035,2.205,9.665,5.362,13.641,9.415c6.228,6.373,10.098,14.19,11.629,22.363 c3.63-0.973,7.393-1.512,11.244-1.512c11.802,0,22.834,4.64,31.084,13.073c8.116,8.298,12.525,19.272,12.4,30.882 c0,0.115-0.02,0.232-0.02,0.347c11.744,0.038,22.738,4.678,30.959,13.073c8.125,8.298,12.534,19.272,12.409,30.882 c-0.048,4.004-0.664,7.913-1.742,11.668c8.336,1.742,15.97,5.891,22.073,12.129c16.77,17.145,16.471,44.725-0.664,61.495 l-8.587,8.394c0.038,0,0.087,0,0.125,0c14.411-1.04,26.56-9.934,29.958-23.335c5.872,4.63,13.265,7.412,21.323,7.412 c19.041,0,34.482-15.431,34.482-34.482c0-2.002-0.212-3.947-0.539-5.854c6.066,5.286,13.968,8.51,22.642,8.51 c19.042,0,34.483-15.441,34.483-34.482c4.081,1.703,8.557,2.656,13.255,2.656c19.041,0,34.482-15.441,34.482-34.482 c0-14.459-7.075-23.874-23.873-43.32L359.077,205.585z\"></path> <path class=\"st0\" d=\"M110.72,244.419c-8.606-8.789-22.699-8.944-31.488-0.347l-31.816,31.142 c-8.789,8.597-8.943,22.69-0.346,31.479c8.597,8.789,22.69,8.943,31.48,0.336l31.825-31.132 C119.163,267.301,119.317,253.208,110.72,244.419z\"></path> <path class=\"st0\" d=\"M164.668,278.343c-8.597-8.799-22.69-8.953-31.48-0.347l-42.434,41.51c-8.789,8.606-8.933,22.699-0.336,31.478 c8.596,8.799,22.689,8.952,31.488,0.347l42.424-41.51C173.12,301.225,173.274,287.132,164.668,278.343z\"></path> <path class=\"st0\" d=\"M208.016,322.644c-8.596-8.789-22.689-8.953-31.478-0.346l-42.434,41.519 c-8.789,8.596-8.943,22.689-0.337,31.488c8.597,8.779,22.69,8.934,31.48,0.327l42.434-41.51 C216.469,345.517,216.612,331.423,208.016,322.644z\"></path> <path class=\"st0\" d=\"M240.756,377.323c-8.606-8.789-22.699-8.953-31.478-0.347l-24.751,24.221 c-8.789,8.596-8.943,22.689-0.346,31.478c8.596,8.789,22.699,8.934,31.488,0.347l24.75-24.22 C249.199,400.205,249.353,386.112,240.756,377.323z\"></path> <path class=\"st0\" d=\"M94.798,216.501c3.35,0,6.623,0.424,9.8,1.145c-26.733-10.252-31.161-29.004-31.864-35.618 c-1.887-17.81,9.588-34.03,28.533-40.345c7.625-2.541,27.619-13.439,46.94-23.97c20.736-11.312,43.493-23.72,63.295-32.847 c-25.088-2.03-48.595-1.174-61.158,0.915c-13.507,2.252-28.601-3.148-41.51-10.098C60.171,58.5-14.916,183.039,2.595,222.191 c3.186,4.784,6.046,10.021,8.058,15.663c2.974,8.317,9.943,17.828,17.886,26.8c1.242-1.598,2.561-3.158,4.034-4.612l31.816-31.141 C72.57,220.91,83.361,216.501,94.798,216.501z\"></path> </svg>",
           "title": "Compromiso",
           "description": "Con nuestros clientes, colaboradores y comunidades para ofrecer productos y servicios de la más alta calidad.",
           "status": true
@@ -65,6 +71,7 @@
         {
           "id": 2,
           "order": 2,
+          "icon": " <svg viewBox=\"0 0 512 512\" fill=\"currentColor\" > <path d=\"M256 336c-5.22 0-10.4-.24-15.51-.69a176.12 176.12 0 01-131.29-78.37L20 416h115l58 96 82.53-177.09A177.53 177.53 0 01256 336zM403 256.74a176.9 176.9 0 01-88.18 69.14L273.7 415.5 319 512l58-96h115z\" /> <path d=\"M304.02 160 A48 48 0 0 1 256.02 208 A48 48 0 0 1 208.01999999999998 160 A48 48 0 0 1 304.02 160 z\" /> <path d=\"M256 16c-79.4 0-144 64.6-144 144s64.6 144 144 144 144-64.6 144-144S335.4 16 256 16zm0 224a80 80 0 1180-80 80.09 80.09 0 01-80 80z\" /> </svg>",
           "title": "Honradez",
           "description": "Actuamos con integridad, manteniendo siempre la transparencia, la honestidad y la ética en nuestro comportamiento.",
           "status": true
@@ -72,12 +79,80 @@
         {
           "id": 3,
           "order": 3,
+          "icon": "<svg fill=\"currentColor\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z\"></path> </svg>",
           "title": "Responsabilidad",
           "description": "Asumimos la responsabilidad de nuestras acciones y su impacto en todas las partes interesadas.",
           "status": true
         }
-      ],
-      "status": true
+      ]
+    }
+  ],
+  "our_history": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Nuestra Historia",
+      "description": "",
+      "theme": "ligth",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "year": "1976",
+          "title": "La fundación",
+          "description": "Fundada por Don Miguel Aizpurua y su esposa Josefina, Perfumería Nena S.R.L, nace en un pequeño local de la calle 23 en la ciudad de Barquisimeto, con el capital apenas necesario y 5 empleados que empacaban champú de forma manual, junto con productos de proveedores de cosméticos nacionales y multinacionales, que comercializaban y se distribuían en varias ciudades del país."
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "year": "1985",
+          "title": "El gran avance",
+          "description": "Fundada por Don Miguel Aizpurua y su esposa Josefina, Perfumería Nena S.R.L, nace en un pequeño local de la calle 23 en la ciudad de Barquisimeto, con el capital apenas necesario y 5 empleados que empacaban champú de forma manual, junto con productos de proveedores de cosméticos nacionales y multinacionales, que comercializaban y se distribuían en varias ciudades del país."
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "year": "1986",
+          "title": "Nace Droguería Nena C.A.",
+          "description": "En 1986, mudados a la carrera 16, se define de nuevo la misión de la empresa, estableciendo que la misma se fundamentaba en la comercialización y distribución mayorista de productos farmacéuticos, dando paso al nacimiento de DROGUERÍA NENA C.A., ampliando la gama de productos y empleando a unos 440 venezolanos."
+        },
+        {
+          "id": 4,
+          "order": 4,
+          "year": "2000",
+          "title": "La Gran Mudanza",
+          "description": "Droguería Nena se muda a una nueva sede con un Edificación imponente de más de 9.000 metros cuadrados, que marca hito en el desarrollo de la \"construcción inteligente\" del país, concebida y diseñada para alojar todos los elementos que la tecnología moderna puede proveerle a un negocio de su estilo, logrando la automatización total de sus procesos tanto de almacén, despacho y administrativos. Droguería NENA, culmina así un ciclo, e inicia uno nuevo en el que los objetivos y las metas trascienden la excelencia y buscan la perfección, dentro del reto constante de desarrollo para ofrecer al mercado farmacéutico un servicio cada día mejor."
+        },
+        {
+          "id": 5,
+          "order": 5,
+          "year": "2004",
+          "title": "Llegamos a La Gran Caracas",
+          "description": "Debido al crecimiento continuo y la demanda de las zonas Centro y Oriente del país, Droguería Nena decide mudar las operaciones de su galpón en Maracay, instalando en Guarenas la Sucursal capital, con funciones administrativas de almacenamiento y despacho automatizados, conformando así una plataforma tecnológica en el área de preparación de mercancía que cumple con los más altos estándares en el mundo."
+        },
+        {
+          "id": 6,
+          "order": 6,
+          "year": "2007",
+          "title": "Pasión por el Servicio",
+          "description": "Son ampliados y mejorados los centros de distribución de Barquisimeto y Guarenas, estos gigantescos almacenes automatizados trabajan minimizando el tiempo y los errores en el empaque, además en toda la Comunidad Nena inicia la implementación del Sistema de Gestión de Calidad el cual busca la mejora continua de sus gente y los procesos, logrando ofrecer mejor servicio al cliente interno y externo."
+        },
+        {
+          "id": 7,
+          "order": 7,
+          "year": "2009",
+          "title": "Servicio repotenciado",
+          "description": "Nuestra flota de transporte es mejorada e incrementada, mejorando nuestra capacidad de distribución logrando mayor rapidez y eficiencia en la entrega de los pedidos de nuestros clientes."
+        },
+        {
+          "id": 8,
+          "order": 8,
+          "year": "2010",
+          "title": "Mayor capacidad de almacenaje",
+          "description": "Nuestra sede Barquisimeto es protagonista de la construcción de un nuevo galpón anexo de más de 3420 mts2 de construcción, ampliando así nuestra capacidad de almacenamiento y despacho, así como nuestro recurso humano, brindando nuevas fuentes de trabajo a cientos de venezolanos."
+        }
+      ]
     }
   ]
 }

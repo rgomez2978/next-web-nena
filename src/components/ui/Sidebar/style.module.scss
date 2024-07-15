@@ -1,0 +1,46 @@
+.bg_blue {
+  @apply fixed md:hidden top-0 left-0 w-screen h-screen z-10 bg-nena-primary opacity-30;
+}
+
+.bg_blur {
+  @apply fixed md:hidden  top-0 left-0 w-screen h-screen z-10 backdrop-filter backdrop-blur-sm;
+}
+
+.sidebar_container {
+  @apply fixed md:hidden p-5 left-0 top-0 w-[300px] h-screen bg-white z-30 shadow-2xl transform transition-all duration-200;
+
+  & .sidebar_header {
+    @apply flex justify-between;
+
+    & button {
+      @apply text-nena-menu-text bg-transparent hover:bg-nena-menu  hover:text-gray-700 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center;
+
+      & svg {
+        @apply w-5 h-5;
+      }
+
+      & span {
+        @apply sr-only;
+      }
+    }
+  }
+
+  & .sidebar_menu {
+    @apply mt-5 py-4 overflow-y-auto;
+
+    & ul {
+      @apply space-y-2 font-medium;
+
+      & .li_link {
+        @apply flex items-center px-3 py-2 text-nena-menu-text transition-colors duration-300 transform rounded-lg hover:bg-nena-menu  hover:text-gray-700;
+
+        & .li_icon {
+          @apply w-6 h-6;
+        }
+        & span {
+          @apply mx-2 text-base font-bold uppercase;
+        }
+      }
+    }
+  }
+}

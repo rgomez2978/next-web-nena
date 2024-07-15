@@ -1,0 +1,59 @@
+.navbar_contain {
+  @apply fixed py-2 p-4 z-30 w-full text-white transition-colors duration-500 ease-in-out;
+
+  & .navbar_structure {
+    @apply w-full h-16 px-3 md:px-8 md:flex items-center justify-center md:mx-auto;
+
+    & .sidebar_section {
+      @apply flex md:hidden w-full justify-between;
+
+      & button {
+        @apply flex md:hidden items-center px-3 py-2 font-semibold text-white rounded-md  bg-transparent hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase;
+
+        & span {
+          @apply sr-only;
+        }
+
+        & svg {
+          @apply w-6 h-6;
+        }
+      }
+    }
+
+    & nav {
+      @apply flex w-full h-16 justify-center items-center lg:-ml-5;
+
+      & ul {
+        @apply hidden md:flex flex-row mx-3 lg:mx-6 sm:space-x-3 xl:space-x-6;
+
+        & li {
+          @apply flex items-center;
+
+          & .li_link {
+            @apply font-bold text-white uppercase text-sm lg:text-base hover:text-nena-secondary hover:font-bold text-nowrap flex items-center items-center gap-2 w-auto;
+          }
+        }
+      }
+
+      & .button_contain {
+        @apply hidden md:flex justify-center;
+
+        & button {
+          @apply flex px-3 lg:px-2 py-2 font-semibold text-white  rounded-md hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase;
+
+          & span {
+            @apply pl-2 text-nowrap text-xs md:hidden lg:text-xs lg:flex;
+          }
+
+          & svg {
+            @apply w-5 h-5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  @apply w-52 h-[58px];
+}

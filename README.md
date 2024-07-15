@@ -103,3 +103,36 @@ FooterComp
 
 
 
+
+
+src 
+  -app
+    - favicon.ico
+    - auth
+    - (default)
+      - admin
+        
+        - _components  => (blocks)
+          - heroProducBlock.jsx
+          - featuredProductBlock.jsx
+
+        - products
+          - [id] => carpeta para obtener el id o detalle 
+          - [slug] => carpeta para errores 404 personalizados
+        
+        - layout.jsx
+        - pages.jsx
+
+      - _components  => (blocks)
+        - heroBlock.jsx
+        - featuredBlock.jsx
+
+  - components  ==> shared components
+    - card.jsx
+
+    - ui
+      - sidebar.jsx
+      - navbar.jsx
+      - footer.jsx
+
+

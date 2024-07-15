@@ -1,0 +1,7 @@
+.button_container {
+  @apply rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary;
+
+  & svg {
+    @apply text-gray-500 hover:text-white w-6 md:w-8 h-6 md:h-8 scale-[65%];
+  }
+}

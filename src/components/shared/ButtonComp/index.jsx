@@ -1,14 +1,14 @@
 import React from 'react'
-import { Button } from 'primereact/button';
+
 
 const ButtonComp = ({ cssClassName, cssIcon, cssText, text }) => {
   console.log('ButtonComp', cssClassName, cssIcon)
   return (
-    <Button
+    <button
       className={`${cssClassName}`} aria-label="sesion">
       <i className={`${cssIcon}`}></i>
       <span className={`${cssText}`}>{text}</span>
-    </Button>
+    </button>
   )
 }
 

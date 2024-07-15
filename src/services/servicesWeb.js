@@ -1,4 +1,4 @@
-import { fetchData } from '@/utils/index'
+import { fetchData } from '@/utilities/index'
 
 
 /**
@@ -9,8 +9,8 @@ import { fetchData } from '@/utils/index'
 export const getDataHomeFetch = (type, section) => {
   // console.log('getDataHomeFetch', type, section)
   return type !== 'file'
-    ? fetchData(`/api/web/${section}`)
-    : fetchData(`http://localhost:3000/json/${section}.json`)
+    ? fetchData(`${process.env.NEXT_PUBLIC_API_URL}/${section}`)
+    : fetchData(`http://localhost:3001/json/${section}.json`)
 }
 
 
@@ -22,7 +22,7 @@ export const getDataHomeFetch = (type, section) => {
 export const getDataAboutFetch = (type, section) => {
   return type !== 'file'
     ? fetchData(`/api/web/${section}`)
-    : fetchData(`http://localhost:3000/json/${section}.json`)
+    : fetchData(`http://localhost:3001/json/${section}.json`)
 }
 
 

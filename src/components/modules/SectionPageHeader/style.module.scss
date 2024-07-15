@@ -1,0 +1,19 @@
+.section_header_container {
+  @apply w-full h-60 mt-16 flex flex-col items-center justify-center;
+
+  & .header_overlay {
+    @apply flex w-full h-60  bg-nena-primary bg-opacity-70;
+  }
+
+  & .header_content {
+    @apply absolute flex flex-col items-center justify-center w-[60%] text-center text-white;
+
+    & h1 {
+      @apply text-5xl lg:text-6xl text-white font-black;
+    }
+
+    & p {
+      @apply text-2xl text-white mt-4;
+    }
+  }
+}

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Distribuimos salud y bienestar a toda venezuela",
-      "description": "Siempre listos y preparados para hacer llegar tus pedidos.",
+      "description": "",
       "alt": "",
       "url": "/images/banners/header/1.jpg",
       "links": [
@@ -65,180 +65,219 @@
   "products_top": [
     {
       "id": 1,
+      "title": "Productos Top",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "title": "Productos Top",
+          "description": "",
+          "theme": "dark",
+          "items": [
+            {
+              "id": 1,
+              "title": "",
+              "alt": "",
+              "url": "/images/banners/products_top/1.jpg",
+              "status": true
+            },
+            {
+              "id": 2,
+              "title": "",
+              "alt": "",
+              "url": "/images/banners/products_top/2.jpg",
+              "status": true
+            },
+            {
+              "id": 3,
+              "title": "",
+              "alt": "",
+              "url": "/images/banners/products_top/3.jpg",
+              "status": true
+            },
+            {
+              "id": 4,
+              "title": "",
+              "alt": "",
+              "url": "/images/banners/products_top/6.jpg",
+              "status": true
+            }
+          ],
+          "status": true
+        },
+        {
+          "id": 2,
+          "title": "banner 2",
+          "alt": "banner 2",
+          "url": "/images/banners/products_top/4.png",
+          "type": "single",
+          "items": [],
+          "status": true
+        },
+        {
+          "id": 3,
+          "title": "banner 3",
+          "alt": "banner 3",
+          "url": "/images/banners/products_top/5.jpg",
+          "type": "single",
+          "items": [],
+          "status": true
+        }
+      ]
+    }
+  ],
+  "products_featured": [
+    {
+      "id": 1,
+      "title": "Productos Destacados",
+      "description": "",
+      "theme": "ligth",
+      "status": true,
       "items": [
         {
           "id": 1,
           "title": "",
           "alt": "",
-          "url": "/images/banners/products_top/1.jpg",
+          "url": "/images/banners/products_featured/1.jpg",
+          "type": "single",
+          "items": [],
           "status": true
         },
         {
           "id": 2,
           "title": "",
           "alt": "",
-          "url": "/images/banners/products_top/2.jpg",
+          "url": "/images/banners/products_featured/2.jpg",
+          "type": "single",
+          "items": [],
           "status": true
         },
         {
           "id": 3,
           "title": "",
           "alt": "",
-          "url": "/images/banners/products_top/3.jpg",
+          "url": "/images/banners/products_featured/3.jpg",
+          "type": "single",
+          "items": [],
           "status": true
         },
         {
           "id": 4,
           "title": "",
           "alt": "",
-          "url": "/images/banners/products_top/6.jpg",
+          "url": "/images/banners/products_featured/4.jpg",
+          "type": "single",
+          "items": [],
           "status": true
         }
-      ],
-      "status": true
-    },
-    {
-      "id": 2,
-      "title": "banner 2",
-      "alt": "banner 2",
-      "url": "/images/banners/products_top/4.png",
-      "type": "single",
-      "items": [],
-      "status": true
-    },
-    {
-      "id": 3,
-      "title": "banner 3",
-      "alt": "banner 3",
-      "url": "/images/banners/products_top/5.jpg",
-      "type": "single",
-      "items": [],
-      "status": true
-    }
-  ],
-  "products_featured": [
-    {
-      "id": 1,
-      "title": "",
-      "alt": "",
-      "url": "/images/banners/products_featured/1.jpg",
-      "type": "single",
-      "items": [],
-      "status": true
-    },
-    {
-      "id": 2,
-      "title": "",
-      "alt": "",
-      "url": "/images/banners/products_featured/2.jpg",
-      "type": "single",
-      "items": [],
-      "status": true
-    },
-    {
-      "id": 3,
-      "title": "",
-      "alt": "",
-      "url": "/images/banners/products_featured/3.jpg",
-      "type": "single",
-      "items": [],
-      "status": true
-    },
-    {
-      "id": 4,
-      "title": "",
-      "alt": "",
-      "url": "/images/banners/products_featured/4.jpg",
-      "type": "single",
-      "items": [],
-      "status": true
+      ]
     }
   ],
   "last_videos": [
     {
       "id": 1,
-      "order": 1,
-      "title": "Mejoramos tu experiencia en nuestra plataforma ",
+      "title": "Últimos Videos",
       "description": "",
+      "theme": "dark",
+      "status": true,
       "items": [
         {
           "id": 1,
-          "title": "Lorem Ipsum is simply dummy.",
-          "status": true
-        },
-        {
-          "id": 2,
-          "title": "Industry's standard dummy text .",
-          "status": true
-        },
-        {
-          "id": 3,
-          "title": "Scrambled it to make a type.",
-          "status": true
-        }
-      ],
-      "videos": [
-        {
-          "id": 1,
           "order": 1,
-          "url": "/videos/test.mp4",
-          "url2": "https://www.youtube.com/watch?v=S_15MSgqu-E&t=1s&ab_channel=DrogueriaNena",
-          "idUrl": "S_15MSgqu-E",
+          "title": "Mejoramos tu experiencia en nuestra plataforma ",
+          "description": "",
+          "bullets": [
+            {
+              "id": 1,
+              "title": "Lorem Ipsum is simply dummy.",
+              "status": true
+            },
+            {
+              "id": 2,
+              "title": "Industry's standard dummy text .",
+              "status": true
+            },
+            {
+              "id": 3,
+              "title": "Scrambled it to make a type.",
+              "status": true
+            }
+          ],
+          "videos": [
+            {
+              "id": 1,
+              "order": 1,
+              "url": "/videos/test.mp4",
+              "url2": "https://www.youtube.com/watch?v=S_15MSgqu-E&t=1s&ab_channel=DrogueriaNena",
+              "idUrl": "S_15MSgqu-E",
+              "status": true
+            }
+          ],
           "status": true
         }
-      ],
-      "status": true
+      ]
     }
   ],
   "business_partners": [
     {
       "id": 1,
-      "order": 1,
-      "title": "logo lasante",
-      "url": "/images/partners/lasante.png",
-      "status": true
-    },
-    {
-      "id": 2,
-      "order": 2,
-      "title": "logo fc",
-      "url": "/images/partners/fc.png",
-      "status": true
-    },
-    {
-      "id": 3,
-      "order": 3,
-      "title": "logo calox",
-      "url": "/images/partners/calox.png",
-      "status": true
-    },
-    {
-      "id": 4,
-      "order": 4,
-      "title": "logo farmacorp",
-      "url": "/images/partners/farmacorp.png",
-      "status": true
-    },
-    {
-      "id": 5,
-      "order": 5,
-      "title": "logo vincenti",
-      "url": "/images/partners/vincenti.png",
-      "status": true
-    },
-    {
-      "id": 6,
-      "order": 6,
-      "title": "logo leti",
-      "url": "/images/partners/leti.png",
-      "status": true
-    },
-    {
-      "id": 7,
-      "order": 7,
-      "title": "logo colmed",
-      "url": "/images/partners/colmed.png",
-      "status": true
+      "title": "Nuestros Socios comerciales",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "title": "logo lasante",
+          "url": "/images/partners/lasante.png",
+          "status": true
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "title": "logo fc",
+          "url": "/images/partners/fc.png",
+          "status": true
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "title": "logo calox",
+          "url": "/images/partners/calox.png",
+          "status": true
+        },
+        {
+          "id": 4,
+          "order": 4,
+          "title": "logo farmacorp",
+          "url": "/images/partners/farmacorp.png",
+          "status": true
+        },
+        {
+          "id": 5,
+          "order": 5,
+          "title": "logo vincenti",
+          "url": "/images/partners/vincenti.png",
+          "status": true
+        },
+        {
+          "id": 6,
+          "order": 6,
+          "title": "logo leti",
+          "url": "/images/partners/leti.png",
+          "status": true
+        },
+        {
+          "id": 7,
+          "order": 7,
+          "title": "logo colmed",
+          "url": "/images/partners/colmed.png",
+          "status": true
+        }
+      ]
     }
   ]
 }

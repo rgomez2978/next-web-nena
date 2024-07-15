@@ -1,0 +1,7 @@
+.layout_body {
+  @apply h-full antialiased;
+
+  & main {
+    @apply flex flex-col items-center justify-between w-full min-h-screen;
+  }
+}

@@ -1,0 +1,19 @@
+.product_grid_container {
+  @apply mx-auto px-6 md:px-0 lg:px-12;
+
+  & .product_grid_content {
+    @apply flex flex-col md:flex-row md:space-y-0 md:space-x-3 lg:space-x-2;
+
+    & .product_grid_slide {
+      @apply md:w-[60%] lg:w-[60%] xl:w-[70%] mb-3 h-full;
+    }
+
+    & .product_grid_group {
+      @apply mx-auto md:w-[40%] flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-3 lg:space-y-2;
+
+      & .product_grid_group_image {
+        @apply rounded-xl w-full h-[80px] sm:h-[120px]  md:h-full  text-white;
+      }
+    }
+  }
+}
