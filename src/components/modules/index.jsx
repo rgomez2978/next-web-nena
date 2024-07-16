@@ -6,3 +6,5 @@ export { default as SectionBusinessPartners } from './SectionBusinessPartners';
 export { default as SectionPageHeader } from './SectionPageHeader';
 export { default as SectionAboutUs } from './SectionAboutUs';
 export { default as SectionOurValues } from './SectionOurValues';
+export { default as SectionOurHistory } from './SectionOurHistory';
+export { default as SectionOurPeopleCulture } from './SectionOurPeopleCulture';

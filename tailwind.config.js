@@ -30,6 +30,7 @@ module.exports = {
         "nena-primary": "#114C78",
         "nena-secondary": "#62B1DB",
         "nena-secondary-dark": "#5ba3c9",
+        "nena-secondary-dark2": "#5faad2",
         "nena-menu": "#E0EFF8",
         "nena-menu-text": "#3A6C90",
       },

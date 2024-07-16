@@ -154,5 +154,61 @@
         }
       ]
     }
+  ],
+  "our_pepople_culture": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "title": "Nuestra Gente",
+          "description": "El éxito de Droguería Nena no es producto del azar, la fortuna o el destino, sino el resultado del esfuerzo sostenido de NUESTRA GENTE. Cada almacenista, transportistas y personal administrativo, han sido pilares fundamentales sobre los que se ha cimentado Dronena. Más que una estructura organizacional o una maquina laboral, somos una forma de ser, con carácter y personalidad propia, somos una empresa emocional, cuyo norte es mantener la armonía y la motivación, para lograr el bienestar de todos nuestros trabajadores.</br></br> No en vano, durante el 2009 Droguería Nena fue reconocida; por la Organización Pitágoras, empresa promotora de la EXPOEMPLEO; como la segunda empresa empleadora por excelencia del Estado Lara, premio que nos posiciona como una de las empresas más aspiracionales de la región.  Reconocimiento posible, gracias a nuestros excelentes beneficios sociales, extraordinario clima organizacional y la excelente labor de nuestra GENTE NENA. <strong>¡Nuestro éxito depende de NUESTRA GENTE!</strong> ",
+          "theme": "dark",
+          "status": true,
+          "images": [
+            {
+              "id": 1,
+              "order": 1,
+              "alt": "",
+              "url": "/images/content/people_1.jpg"
+            },
+            {
+              "id": 2,
+              "order": 2,
+              "alt": "",
+              "url": "/images/content/people_2.jpg"
+            },
+            {
+              "id": 3,
+              "order": 3,
+              "alt": "",
+              "url": "/images/content/people_3.jpg"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "title": "Nuestra Cultura",
+          "description": "Cultivamos la excelencia a través de un Sistema de Gestión de Calidad, que ha logrado a lo largo del tiempo, la mejora continua de nuestros procesos, convirtiéndonos en una empresa de nivel mundial, altamente competitiva y preparada en cada una de nuestras áreas de desempeño.</br></br> Con miras hacia la implementación de la Gestión por Procesos, teniendo como principal objetivo generar valor agregado a lo largo de toda la cadena de suministro, Dronena– Farmacia / Dronena– Proveedor, logrando mejor servicio y satisfacción ante los requerimientos de nuestros clientes.",
+          "theme": "dark",
+          "status": true,
+          "images": [
+            {
+              "id": 1,
+              "order": 1,
+              "alt": "",
+              "url": "/images/content/culture_1.jpg"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

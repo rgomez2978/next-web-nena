@@ -5,10 +5,9 @@ import { useEffect, useState } from 'react'
 import { Layout } from "@/components/ui";
 import { getDataFetch } from '@/services/web.services'
 
-import { SectionAboutUs, SectionOurValues, SectionPageHeader } from '@/components/modules';
+import { SectionAboutUs, SectionOurValues, SectionPageHeader, SectionOurHistory, SectionOurPeopleCulture } from '@/components/modules';
 import useStore from '@/stores/index';
 import styles from "./style.module.scss";
-import SectionOurHistory from '@/components/modules/SectionOurHistory';
 
 
 
@@ -17,6 +16,7 @@ export default function PageNosotros() {
   const [loadAboutContent, setLoadAboutContent] = useState([])
   const [loadOurValues, setLoadOurValues] = useState([])
   const [loadOurHistory, setLoadOurHistory] = useState([])
+  const [loadOurPeopleCulture, setLoadOurPeopleCulture] = useState([])
   const { setLoading, data, setData } = useStore();
 
   /**
@@ -44,6 +44,7 @@ export default function PageNosotros() {
         case 'about_content': setLoadAboutContent(filteredData); break;
         case 'our_values': setLoadOurValues(filteredData); break;
         case 'our_history': setLoadOurHistory(filteredData); break;
+        case 'our_pepople_culture': setLoadOurPeopleCulture(filteredData); break;
         default: break;
       }
       setLoading(true);
@@ -64,11 +65,11 @@ export default function PageNosotros() {
     getDataFilter('about_content')
     getDataFilter('our_values')
     getDataFilter('our_history')
+    getDataFilter('our_pepople_culture')
   }, [data])
 
   return (
     <Layout>
-
       <div className={`${styles.page_container}`}>
         <div className={`${styles.hero_content}`}>
           <SectionPageHeader data={loadHeader} />
@@ -77,26 +78,9 @@ export default function PageNosotros() {
           <SectionAboutUs data={loadAboutContent} />
           <SectionOurValues data={loadOurValues} />
           <SectionOurHistory data={loadOurHistory} />
+          <SectionOurPeopleCulture data={loadOurPeopleCulture} />
         </div>
       </div>
-
-      {/* <div className="mx-auto z-10 w-full h-full">
-        <HeroComp
-          data={loadHeader}
-          cssClass={'w-full h-60 mt-16'}
-        />
-
-        <SectionContentAbout
-          data={loadAboutContent}
-          titleType={'dark'}
-          cssClass={'w-full h-full mt-0 lg:mt-5 xl:mt-14 mb- '}
-        />
-
-        <SectionOurValues
-          data={loadOurValues}
-          titleType={'dark'}
-          cssClass={'w-full h-full  mb-10 border border-red-500'}
-        /> */}
     </Layout >
   );
 }
