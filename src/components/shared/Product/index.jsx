@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import React, { useRef } from "react";
-import { Carousel, ProductGrid, ProductBanner } from "@/components/shared";
+import { Carousel, ProductGrid, ProductBanner, ProductCard } from "@/components/shared";
 import styles from "./style.module.scss";
 /**
  * Select template products

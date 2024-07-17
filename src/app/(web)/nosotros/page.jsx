@@ -70,8 +70,9 @@ export default function PageNosotros() {
 
   return (
     <Layout>
-      <div className={`${styles.page_container}`}>
-        <div className={`${styles.hero_content}`}>
+      <div className={`${styles.page_container}`} data-aos="fade-in">
+
+        <div className={`${styles.hero_content}`} >
           <SectionPageHeader data={loadHeader} />
         </div>
         <div className={`${styles.page_content}`}>

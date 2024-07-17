@@ -2,7 +2,7 @@
   @apply block w-full justify-center items-center px-10 py-10;
 
   & .list_items_container {
-    @apply lg:container mx-auto px-0 xl:px-16 md:py-8 relative overflow-hidden space-y-6 md:space-y-0;
+    @apply lg:container mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl md:py-8 relative overflow-hidden space-y-6 md:space-y-0;
 
     & .list_items_bar {
       @apply border border-opacity-30 absolute  border-gray-100 h-full left-6 md:left-1/2;

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-assign-module-variable */
 // import { getToken } from 'next-auth/jwt'
 
 
@@ -73,7 +74,7 @@ export const getURL = (pathName, searchParams) => {
  */
 export const getPath = (path) => {
   let lenghtPath = path.split('/').length
-  let model, module, submodule, action
+  let model, module, submodule, action;
 
   model = path.split('/')[1]
   module = path.split('/')[2]

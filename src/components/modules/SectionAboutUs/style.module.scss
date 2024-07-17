@@ -1,7 +1,7 @@
 .section_aboutus_container {
-  @apply flex w-full  flex-col mx-auto text-center mt-5 pb-0;
+  @apply flex w-full flex-col mx-auto text-center mt-5 pb-0;
   & .content_top {
-    @apply w-full mb-10;
+    @apply w-full mb-10 px-7 sm:px-10;
 
     & p {
       @apply flex flex-row mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl -mt-5 font-semibold text-base  md:text-base text-center;

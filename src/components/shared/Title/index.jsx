@@ -33,7 +33,7 @@ const TitleComp = ({ title, description, type }) => {
 
 
   return (
-    <section className={`flex flex-col  w-full items-start justify-center ${description !== '' ? 'mb-8' : 'mb-4'}`}>
+    <section className={`flex flex-col  w-full items-start justify-center ${description !== '' ? 'mb-8' : 'mb-4'}`} >
 
       <div className="flex flex-row items-center justify-center w-full mb-2 font-black text-xl normal-case sm:text-xl md:text-xl lg:text-2xl xl:text-3xl ">
         <div className="flex flex-col w-auto">

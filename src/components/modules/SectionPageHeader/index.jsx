@@ -24,20 +24,10 @@ const SectionPageHeader = ({ data }) => {
         <div className={`${styles.header_overlay}`}></div>
 
         <div className={`${styles.header_content}`}>
-          <h1
-            data-aos="fade-in"
-            data-aos-easing="linear"
-            data-aos-duration="750"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-offset="500"
-          >
+          <h1 data-aos="fade-in" >
             {title}
           </h1>
-          <p
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-easing="linear"
-          >
+          <p data-aos="fade-in" >
             {description}
           </p>
         </div>

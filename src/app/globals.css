@@ -53,3 +53,7 @@ body {
 .custom-next-arrow {
   right: 0;
 }
+
+.my_border {
+  @apply border  border-black sm:border-purple-500 md:border-green-500 lg:border-blue-500 xl:border-red-500 2xl:border-yellow-500;
+}

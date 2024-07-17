@@ -1,16 +1,17 @@
-import { getToken } from 'next-auth/jwt'
+// import { getToken } from 'next-auth/jwt'
 
 export default async function handler(req, res) {
   console.log('process.env :>> ', process.env);
   const { API_URL } = process.env
-  const token = await getToken({ req })
+  // const token = await getToken({ req })
 
   const data = await fetch(`${API_URL}/home`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      'Authorization': `${String(token?.accessToken)}`
+      // 'Authorization': `${String(token?.accessToken)}`
+      'Authorization': ``
     },
     // body: JSON.stringify(req.body)
   }).then((response) => {

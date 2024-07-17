@@ -14,8 +14,11 @@ const SectionOurHistory = ({ data }) => {
           {items.map(({ id, year, title, description }, index) => (
             <div key={id} class={`${styles.list_items_content} ${index % 2 === 0 && 'flex-row md:flex-row-reverse'}`}>
               <div className={`${styles.empty_space}`}></div>
-              <div className={`${styles.bullet_year}`}> <h1>{year}</h1> </div>
-              <div className={`${styles.item_content}`}>
+              <div className={`${styles.bullet_year}`}
+                data-aos="fade-in"
+                data-aos-duration="300"
+                data-aos-easing="linear"> <h1>{year}</h1> </div>
+              <div className={`${styles.item_content} `} data-aos={`${index % 2 === 0 ? 'fade-right' : 'fade-left'}`} >
                 <h3>{title}</h3>
                 <p>{description}</p>
               </div>

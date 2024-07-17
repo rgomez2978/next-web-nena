@@ -15,12 +15,16 @@ const SectionOurValues = ({ data }) => {
 
     return (
       <section className={` ${styles.section_values_container} ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'}   `}>
-        <Title title={title} type={theme} />
-        <div className={` ${styles.cards_values_container}   ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'} `}>
+        <div >
+          <Title title={title} type={theme} />
+        </div>
+        <div className={` ${styles.cards_values_container}   ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'} `} data-aos="fade-up">
           {items.map(({ id, title, icon, description }) => (
             <div
               key={id}
-              class={`${styles.card_content} ${theme !== 'dark' ? 'text-white hover:text-nena-secondary' : 'text-nena-secondary hover:text-white bg-transparent hover:bg-nena-secondary-dark '}
+              class={`${styles.card_content} ${theme !== 'dark'
+                ? 'text-white hover:text-nena-secondary'
+                : 'text-nena-secondary hover:text-white bg-transparent hover:bg-nena-secondary-dark '}
                 `}>
               <div dangerouslySetInnerHTML={{ __html: icon }} />
               <h5> {title} </h5>
