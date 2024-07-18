@@ -8,10 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "server": "json-server -w ./src/pages/api/apiFake.json --port 3002",
-    "deploy": "rm -rf .next && npm run build && git a && git cm \"add export dist\" && git push my_git main && npm run dev"
+    "deploy": "rm -rf .next && npm run build && git a && git cm \"add export dist\" && git push my_git main && git push my_origin main && npm run dev"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "next": "14.2.3",
     "node-sass": "^9.0.0",
     "react": "^18",
@@ -21,6 +20,7 @@
     "sharp": "^0.33.4",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
+    "tailwindcss-animated": "^1.1.2",
     "zustand": "^4.5.4"
   },
   "devDependencies": {

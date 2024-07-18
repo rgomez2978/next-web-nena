@@ -54,14 +54,8 @@ const Navbar = () => {
 
         {/* SIDEBAR */}
         <div className={`${styles.sidebar_section}`}>
-          <Link href={'/'} >
-            <Logo />
-          </Link>
-          <button
-            type="button"
-            onClick={setIsToggleSidebar}
-          >
-            <span>Open sidebar</span>
+          <Link href={'/'} > <Logo /> </Link>
+          <button type="button" onClick={setIsToggleSidebar} >
             <SVGMenuOpen />
           </button>
         </div>

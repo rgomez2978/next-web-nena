@@ -70,15 +70,36 @@ export default function PageNosotros() {
 
   return (
     <Layout>
-      <div className={`${styles.page_container}`} data-aos="fade-in">
+      <div className={`${styles.page_container}`} >
         <div className={`${styles.hero_content}`} >
           <SectionPageHeader data={loadHeader} />
         </div>
         <div className={`${styles.page_content}`}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde eaque ducimus alias itaque at blanditiis error, placeat voluptate aut eos. Repudiandae eligendi hic facilis magnam quis alias numquam asperiores?
+          Cupiditate animi nemo quo in, sequi temporibus unde totam quos fugiat aperiam velit id illum delectus inventore? Inventore debitis veniam voluptatem mollitia magnam dolorem hic error incidunt maxime veritatis. Animi.
+          Quo illo esse placeat vitae ipsum, voluptas ipsam voluptatem minus sequi, error molestias fuga exercitationem asperiores. Natus numquam placeat quisquam facere eos dignissimos rem esse magnam veritatis. Omnis, voluptates repellat?
+          Omnis, asperiores. Eum iste doloremque harum a deleniti ut quos quaerat, impedit accusamus explicabo sapiente odio necessitatibus eaque iure, consectetur blanditiis repudiandae facere maiores nemo vitae ipsam aut quam cum!
+          Corporis ab magnam ea quos ipsum provident recusandae repellendus corrupti consequatur optio vitae doloribus a quod velit nam laboriosam, voluptates fugiat sint, quo consequuntur temporibus iusto soluta! Ipsum, distinctio incidunt.
+          Inventore magni accusantium soluta! Vel alias, illum in labore quia cumque nostrum atque doloremque possimus voluptatibus deserunt voluptate placeat. Porro nostrum, tenetur vitae animi repudiandae exercitationem molestiae sequi autem eaque?
+          Minus, reiciendis laborum. A, debitis minima ullam iusto id natus sint repellendus consequuntur, nisi quas sapiente! Ratione praesentium, debitis dolorum similique numquam odio doloremque explicabo, suscipit ipsa error consequuntur aut.
+          Quod, enim atque et fugit error quis, nostrum, rem vero optio reiciendis quaerat illum! Non dolor labore illum voluptate voluptates ab? Perspiciatis, beatae rerum cumque repellat aliquam debitis dolorum quo!
+          Eum numquam qui mollitia cum voluptatem quibusdam voluptates nobis excepturi pariatur non, tempora obcaecati explicabo. Iure facere corporis voluptatum perspiciatis quae totam a suscipit aliquam accusantium saepe, fugiat deserunt odit.
+          Illum quasi saepe similique voluptas sunt consequatur quaerat dolore quas tempore velit voluptatem veniam, ad corporis. Reprehenderit officia modi est iusto, tenetur labore. Laudantium ducimus, necessitatibus officiis soluta facere architecto!
           <SectionAboutUs data={loadAboutContent} />
-          <SectionOurValues data={loadOurValues} />
-          <SectionOurHistory data={loadOurHistory} />
-          <SectionOurPeopleCulture data={loadOurPeopleCulture} />
+          {/* <SectionOurValues data={loadOurValues} /> */}
+          {/* <SectionOurHistory data={loadOurHistory} /> */}
+          {/* <SectionOurPeopleCulture data={loadOurPeopleCulture} /> */}
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde eaque ducimus alias itaque at blanditiis error, placeat voluptate aut eos. Repudiandae eligendi hic facilis magnam quis alias numquam asperiores?
+          Cupiditate animi nemo quo in, sequi temporibus unde totam quos fugiat aperiam velit id illum delectus inventore? Inventore debitis veniam voluptatem mollitia magnam dolorem hic error incidunt maxime veritatis. Animi.
+          Quo illo esse placeat vitae ipsum, voluptas ipsam voluptatem minus sequi, error molestias fuga exercitationem asperiores. Natus numquam placeat quisquam facere eos dignissimos rem esse magnam veritatis. Omnis, voluptates repellat?
+          Omnis, asperiores. Eum iste doloremque harum a deleniti ut quos quaerat, impedit accusamus explicabo sapiente odio necessitatibus eaque iure, consectetur blanditiis repudiandae facere maiores nemo vitae ipsam aut quam cum!
+          Corporis ab magnam ea quos ipsum provident recusandae repellendus corrupti consequatur optio vitae doloribus a quod velit nam laboriosam, voluptates fugiat sint, quo consequuntur temporibus iusto soluta! Ipsum, distinctio incidunt.
+          Inventore magni accusantium soluta! Vel alias, illum in labore quia cumque nostrum atque doloremque possimus voluptatibus deserunt voluptate placeat. Porro nostrum, tenetur vitae animi repudiandae exercitationem molestiae sequi autem eaque?
+          Minus, reiciendis laborum. A, debitis minima ullam iusto id natus sint repellendus consequuntur, nisi quas sapiente! Ratione praesentium, debitis dolorum similique numquam odio doloremque explicabo, suscipit ipsa error consequuntur aut.
+          Quod, enim atque et fugit error quis, nostrum, rem vero optio reiciendis quaerat illum! Non dolor labore illum voluptate voluptates ab? Perspiciatis, beatae rerum cumque repellat aliquam debitis dolorum quo!
+          Eum numquam qui mollitia cum voluptatem quibusdam voluptates nobis excepturi pariatur non, tempora obcaecati explicabo. Iure facere corporis voluptatum perspiciatis quae totam a suscipit aliquam accusantium saepe, fugiat deserunt odit.
+          Illum quasi saepe similique voluptas sunt consequatur quaerat dolore quas tempore velit voluptatem veniam, ad corporis. Reprehenderit officia modi est iusto, tenetur labore. Laudantium ducimus, necessitatibus officiis soluta facere architecto!
         </div>
       </div>
     </Layout>

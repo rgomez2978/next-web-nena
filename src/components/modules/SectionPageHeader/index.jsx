@@ -24,13 +24,10 @@ const SectionPageHeader = ({ data }) => {
         <div className={`${styles.header_overlay}`}></div>
 
         <div className={`${styles.header_content}`}>
-          <h1 data-aos="fade-in" >
-            {title}
-          </h1>
-          <p data-aos="fade-in" >
-            {description}
-          </p>
+          <h1 data-aos="fade-in" > {title} </h1>
+          <p data-aos="fade-in" > {description} </p>
         </div>
+
       </section>
     )
   }

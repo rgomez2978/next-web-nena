@@ -1,5 +1,5 @@
 .navbar_contain {
-  @apply fixed py-2 p-4 z-30 w-full text-white transition-colors duration-500 ease-in-out;
+  @apply fixed py-2 p-4 z-30 w-screen text-white transition-colors duration-500 ease-in-out;
 
   & .navbar_structure {
     @apply w-full h-16 px-0 md:px-8 md:flex items-center justify-center md:mx-auto;
