@@ -47,7 +47,7 @@ const SectionLatestVideos = ({ data }) => {
             <div className={`${styles.videos} `}>
               {items[0].videos.map((item) => (
                 <div key={item.id} className={`${styles.media}`}>
-                  {isValidURL(item.url) ? <MediaYoutube data={item} /> : <MediaVideo data={item} />}
+                  {isValidURL(item.url2) ? <MediaYoutube data={item} /> : <MediaVideo data={item} />}
                 </div>
               ))}
             </div>

@@ -1,8 +1,8 @@
 .section_latest_videos_container {
-  @apply flex flex-col justify-center items-center w-[87%] mx-auto h-full mt-10 bg-transparent;
+  @apply flex flex-col justify-center items-center w-[100%] md:w-[87%] mx-auto h-full mt-5 md:mt-10 bg-transparent;
 
   & .latest_videos_content_container {
-    @apply flex w-[90%] lg:w-[95%] h-auto px-4 mt-5 mb-5 md:mb-10 md:px-5 lg:px-0 xl:px-20 2xl:px-32;
+    @apply flex w-[90%] lg:w-[95%] h-auto px-4 mt-3 md:mt-5 mb-5 md:mb-10 md:px-5 lg:px-0 xl:px-20 2xl:px-32;
 
     & .latest_videos_content {
       @apply flex flex-col-reverse lg:flex-row w-full h-full;
