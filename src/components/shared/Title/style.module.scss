@@ -1,5 +1,31 @@
-.button_container {
-  @apply rounded-full bg-white opacity-60 focus:outline-none transition-colors duration-300 ease-in-out hover:bg-nena-primary;
+.section_title_container {
+  @apply flex flex-col w-full items-start justify-center;
+
+  & .title_container {
+    @apply flex flex-row items-center justify-center w-full mb-2 font-black text-2xl normal-case sm:text-xl md:text-xl lg:text-2xl xl:text-3xl;
+
+    & .title_split {
+      @apply flex flex-col w-auto;
+      & .border_split {
+        @apply flex flex-row items-center w-full px-0 -mt-1;
+
+        & .border_left {
+          @apply flex w-full h-2 border-b-[0.4rem];
+        }
+        & .border_right {
+          @apply flex w-4 h-3 mt-1 transform scale-50  rounded-full;
+        }
+      }
+    }
+  }
+
+  & .paragraph_container {
+    @apply flex w-full flex-row justify-center items-center px-10 md:px-10 xl:px-52 text-gray-500 font-semibold;
+
+    & p {
+      @apply flex text-base md:text-base text-center;
+    }
+  }
 
   & .button_icon {
     @apply text-gray-500 w-6 md:w-8 h-6 md:h-8;

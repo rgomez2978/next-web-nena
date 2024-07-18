@@ -10,7 +10,7 @@
   }
 
   & .slide_content {
-    @apply absolute flex flex-col items-center justify-center w-[60%] text-center;
+    @apply absolute flex flex-col items-center justify-center w-[70%] md:w-[60%] text-center;
 
     & h1 {
       @apply text-4xl md:text-5xl lg:text-6xl text-white font-black;
