@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "server": "json-server -w ./src/pages/api/apiFake.json --port 3002",
-    "deploy": "rm -rf .next && npm run build && git a && git cm \"add export dist\" && git push my_git main && npm run start"
+    "deploy": "rm -rf .next && npm run build && git a && git cm \"add export dist\" && git push my_git main && npm run dev"
   },
   "dependencies": {
     "aos": "^2.3.4",
