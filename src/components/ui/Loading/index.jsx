@@ -9,7 +9,7 @@ const Loading = () => {
       <div className={`${styles.image_container}`}>
         <picture>
           <Image
-            src={`/images/Logo.png`}
+            src={`/images/logo.png`}
             width={250}
             height={100}
             alt={`logo loading`}

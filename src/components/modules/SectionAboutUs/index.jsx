@@ -27,10 +27,13 @@ const SectionAboutUs = ({ data }) => {
               <li key={id} data-aos={`${index % 2 === 0 ? 'fade-right' : 'fade-left'}`}>
                 <div dangerouslySetInnerHTML={{ __html: icon }} />
                 <h5> {title} </h5>
-                <p> <div dangerouslySetInnerHTML={{ __html: description }} /> </p>
+                <p>
+                  <div dangerouslySetInnerHTML={{ __html: description }} />
+                </p>
               </li>
             ))}
           </ul>
+
         </div>
       </section >
     )

@@ -3,9 +3,9 @@ const path = require('path');
 module.exports = {
   distDir: "dist",
   reactStrictMode: false,
-  images: {
-    unoptimized: true,
-  },
+  // images: {
+  //   unoptimized: true,
+  // },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },

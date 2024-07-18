@@ -71,7 +71,6 @@ export default function PageNosotros() {
   return (
     <Layout>
       <div className={`${styles.page_container}`} data-aos="fade-in">
-
         <div className={`${styles.hero_content}`} >
           <SectionPageHeader data={loadHeader} />
         </div>
@@ -82,6 +81,6 @@ export default function PageNosotros() {
           <SectionOurPeopleCulture data={loadOurPeopleCulture} />
         </div>
       </div>
-    </Layout >
+    </Layout>
   );
 }

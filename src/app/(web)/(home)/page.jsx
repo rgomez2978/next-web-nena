@@ -68,7 +68,7 @@ export default function PageInicio() {
 
   return (
     <Layout>
-      <div className={`${styles.page_container}`}>
+      <div className={`${styles.page_container}`} data-aos="fade-in">
         <div className={`${styles.hero_content}`}>
           <SectionHero data={loadHeader} />
         </div>

@@ -11,26 +11,6 @@ import { SVGMenuClose } from '@/components/svg';
 //   return DOMPurify.sanitize(htmlString);
 // }
 
-/**
- * Component: Header personalizado para el sidebar
- * @returns
- */
-const Logo = () => {
-  return (
-    <Link href="/">
-      <Image
-        src="/images/logo-dark.png"
-        alt="Drogueria NENA"
-        width={200}
-        height={100}
-        priority
-      />
-    </Link>
-  )
-}
-
-
-
 
 const Sidebar = () => {
   const { isSidebarOpen, setIsToggleSidebar, menuTop } = useStore()
@@ -53,7 +33,15 @@ const Sidebar = () => {
       >
         {/* Side Menu - Header */}
         <div className={`${styles.sidebar_header}`}>
-          <Logo />
+          <Link href="/">
+            <Image
+              src="/images/logo-dark.png"
+              alt="Drogueria NENA"
+              width={200}
+              height={100}
+              priority
+            />
+          </Link>
           <button type="button"
             onClick={setIsToggleSidebar}
           >

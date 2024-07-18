@@ -3,29 +3,10 @@ import Link from 'next/link';
 import useStore from '@/stores/index';
 import styles from "./style.module.scss";
 
-/**
- * Component: Logo del navbar
- * @returns
- */
-const Logo = () => {
-  return (
-    <Image
-      alt="logo nena"
-      width={300}
-      height={0}
-      src="/images/logo_rif.png"
-      className='w-64 h-18'
-      priority
-    />
-  )
-}
-
-
 
 const Footer = () => {
 
   const { menuFooter } = useStore();
-
   const { address, options, copy } = menuFooter[0]
 
   return (
@@ -34,7 +15,14 @@ const Footer = () => {
       <div className={`${styles.content_top}`}>
         <div className={`${styles.address_container}`}>
           <div className={`${styles.address_content}`}>
-            <Logo />
+            <Image
+              src="/images/logo_rif.png"
+              alt="logo nena"
+              width={300}
+              height={100}
+              className='w-64 h-18'
+              priority
+            />
             <ul>
               {address.map(({ id, description, icon, phoneNumber }) => (
                 <li key={id} >

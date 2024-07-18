@@ -12,24 +12,6 @@ import styles from './style.module.scss';
 import { SVGMenuOpen, SVGSignIn } from '@/components/svg';
 
 
-
-/**
- * Component: Logo del navbar
- */
-const Logo = () => {
-  return (
-    <Image
-      alt="logo nena"
-      width={200}
-      height={100}
-      src="/images/logo.png"
-      className={`${styles.logo}`}
-      priority
-    />
-  )
-}
-
-
 /**
  * Layout: Navbar
  */
@@ -55,7 +37,14 @@ const Navbar = () => {
         {/* SIDEBAR */}
         <div className={`${styles.sidebar_section}`}>
           <Link href={'/'} >
-            <Logo />
+            <Image
+              src="/images/logo.png"
+              alt="logo nena"
+              width={200}
+              height={100}
+              className={`${styles.logo}`}
+              priority
+            />
           </Link>
           <button
             type="button"
@@ -74,7 +63,16 @@ const Navbar = () => {
                 <Link
                   href={name === 'logo' ? '/' : link} passHref
                   className={`${styles.li_link}`}>
-                  {name === 'logo' ? <Logo /> : name}
+                  {name === 'logo' ? (
+                    <Image
+                      src="/images/logo.png"
+                      alt="logo nena"
+                      width={200}
+                      height={100}
+                      className={`${styles.logo}`}
+                      priority
+                    />
+                  ) : name}
                 </Link>
               </li>
             ))}

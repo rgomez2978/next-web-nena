@@ -1,11 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(web)/(home)/page": "app/(web)/(home)/page.js",
-  "/(web)/fundacion/page": "app/(web)/fundacion/page.js",
   "/(web)/clientes/page": "app/(web)/clientes/page.js",
+  "/(web)/(home)/page": "app/(web)/(home)/page.js",
   "/(web)/contactanos/page": "app/(web)/contactanos/page.js",
-  "/(web)/nosotros/page": "app/(web)/nosotros/page.js",
+  "/(web)/fundacion/page": "app/(web)/fundacion/page.js",
   "/(web)/proveedores/page": "app/(web)/proveedores/page.js",
+  "/(web)/nosotros/page": "app/(web)/nosotros/page.js",
   "/admin/page": "app/admin/page.js"
 }
