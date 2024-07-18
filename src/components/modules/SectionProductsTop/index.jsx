@@ -25,7 +25,7 @@ const SectionProductsTop = ({ data }) => {
             arrows={true}
             dots={false}
             slides={1}
-            cssClass="rounded-2xl w-full h-[130px] sm:h-[180px] md:h-[220px] lg:h-[300px] xl:h-[320px]"
+            cssClass="rounded-2xl w-full h-[180px] md:h-[220px] lg:h-[300px] xl:h-[320px]"
           />
         )}
 
