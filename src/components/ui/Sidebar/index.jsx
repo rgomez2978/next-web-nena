@@ -19,7 +19,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <Image
-        src={`${process.env.NEXT_PUBLIC_RUTA_IMG}/logos/logo-dark.png`}
+        src={`${process.env.NEXT_PUBLIC_RUTA_IMG}/logos/logo_dark.png`}
         alt="Drogueria NENA"
         width={200}
         height={100}
