@@ -38,12 +38,11 @@ const Navbar = () => {
         <div className={`${styles.sidebar_section}`}>
           <Link href={'/'} >
             <Image
-              src="/images/logo.png"
+              src="./images/logos/logo.png"
               alt="logo nena"
               width={200}
               height={100}
               className={`${styles.logo}`}
-              priority
             />
           </Link>
           <button
@@ -65,12 +64,11 @@ const Navbar = () => {
                   className={`${styles.li_link}`}>
                   {name === 'logo' ? (
                     <Image
-                      src="/images/logo.png"
+                      src="./images/logos/logo.png"
                       alt="logo nena"
                       width={200}
                       height={100}
                       className={`${styles.logo}`}
-                      priority
                     />
                   ) : name}
                 </Link>

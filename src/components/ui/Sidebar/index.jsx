@@ -35,7 +35,7 @@ const Sidebar = () => {
         <div className={`${styles.sidebar_header}`}>
           <Link href="/">
             <Image
-              src="/images/logo-dark.png"
+              src="./images/logos/logo_dark.png"
               alt="Drogueria NENA"
               width={200}
               height={100}
