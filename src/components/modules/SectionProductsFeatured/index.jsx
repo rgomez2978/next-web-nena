@@ -24,7 +24,7 @@ const SectionProductsFeatured = ({ data, }) => {
             dots={false}
             slides={3}
             separator={`mx-3 md:mx-3 lg:mx-4`}
-            cssClass="rounded-xl w-auto h-[170px] md:h-[170px] xl:h-[200px] px-4 md:px-0 "
+            cssClass="rounded-xl w-auto h-[170px] md:h-[200px] xl:h-[200px] px-4 md:px-0 "
           />
         )}
       </section>
