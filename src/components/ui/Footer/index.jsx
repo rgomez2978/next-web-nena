@@ -16,7 +16,7 @@ const Footer = () => {
         <div className={`${styles.address_container}`}>
           <div className={`${styles.address_content}`}>
             <Image
-              src="images/logos/logo_rif.png"
+              src={`${process.env.NEXT_PUBLIC_RUTA_IMG}/logos/logo_rif.png`}
               alt="logo nena"
               width={300}
               height={100}
