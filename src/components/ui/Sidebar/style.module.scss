@@ -1,9 +1,9 @@
 .bg_blue {
-  @apply fixed md:hidden top-0 left-0 w-screen h-screen z-10 bg-nena-primary opacity-30;
+  @apply fixed md:hidden top-0 left-0 w-screen h-screen z-20 bg-nena-primary opacity-30;
 }
 
 .bg_blur {
-  @apply fixed md:hidden  top-0 left-0 w-screen h-screen z-10 backdrop-filter backdrop-blur-sm;
+  @apply fixed md:hidden  top-0 left-0 w-screen h-screen z-20 backdrop-filter backdrop-blur-sm;
 }
 
 .sidebar_container {
