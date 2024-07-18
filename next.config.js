@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  distDir: "dist",
+  // distDir: "dist",
   reactStrictMode: false,
   // images: {
   //   unoptimized: true,
