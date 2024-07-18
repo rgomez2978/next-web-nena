@@ -1,8 +1,8 @@
 .footer_container {
-  @apply pt-10 w-full px-8 md:px-20 bg-nena-primary text-white;
+  @apply py-4 md:pt-10 w-full px-8 md:px-20 bg-nena-primary text-white;
 
   & .content_top {
-    @apply grid gap-10 mb-8 grid-cols-1 md:grid-cols-1 lg:grid-cols-3;
+    @apply hidden md:grid gap-10 mb-8 grid-cols-1 md:grid-cols-1 lg:grid-cols-3;
 
     & .address_container {
       @apply border-b lg:border-b-0 lg:border-r border-gray-400;
@@ -57,7 +57,7 @@
   }
 
   & .content_bottom {
-    @apply flex justify-center items-center pt-5 md:pt-0 pb-10 lg:flex-row;
+    @apply flex justify-center items-center md:pt-0 md:pb-10 lg:flex-row;
 
     & p {
       @apply text-sm text-white;
