@@ -77,7 +77,7 @@ export default function PageNosotros() {
         <div className={`${styles.page_content}`}>
           <SectionAboutUs data={loadAboutContent} />
           <SectionOurValues data={loadOurValues} />
-          {/* <SectionOurHistory data={loadOurHistory} /> */}
+          <SectionOurHistory data={loadOurHistory} />
           {/* <SectionOurPeopleCulture data={loadOurPeopleCulture} /> */}
         </div>
       </div>

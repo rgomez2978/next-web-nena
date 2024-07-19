@@ -62,7 +62,7 @@ const initialStateMenuTop = [
 const initialStateMenuFooter = [
   {
     id: 1,
-    copy: 'Copyright © 2024 | <strong>Drogueria NENA C.A </strong>| Venezuela',
+    copy: 'Copyright © 2024 | <strong>Droguería NENA C.A </strong>| Venezuela',
 
     address: [
       {
