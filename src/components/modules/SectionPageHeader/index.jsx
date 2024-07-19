@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+import { useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import styles from "./style.module.scss";
 
 
@@ -8,6 +10,12 @@ import styles from "./style.module.scss";
  * @returns
  */
 const SectionPageHeader = ({ data }) => {
+
+  const myRef = useRef();
+  const myRefUP = useRef();
+  useIntersectionObserver(myRefUP, 'animate-fade-down');
+  useIntersectionObserver(myRef, 'animate-fade');
+
 
   if (data && data.length > 0) {
     const { title, description, url } = data[0];
@@ -24,8 +32,8 @@ const SectionPageHeader = ({ data }) => {
         <div className={`${styles.header_overlay}`}></div>
 
         <div className={`${styles.header_content}`}>
-          <h1 data-aos="fade-in" > {title} </h1>
-          <p data-aos="fade-in" > {description} </p>
+          <h1 ref={myRefUP} > {title} </h1>
+          <p ref={myRef} > {description} </p>
         </div>
 
       </section>

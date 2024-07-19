@@ -1,6 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import styles from "./style.module.scss";
 
 const TitleComp = ({ title, description, type }) => {
@@ -30,10 +32,11 @@ const TitleComp = ({ title, description, type }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title])
 
-
+  const myRef = useRef();
+  useIntersectionObserver(myRef, 'animate-fade');
 
   return (
-    <div className={` ${styles.section_title_container} ${description !== '' ? 'mb-8' : 'mb-4'}`} >
+    <div className={` ${styles.section_title_container} ${description !== '' ? 'mb-8' : 'mb-4'}`} ref={myRef} >
 
       <div className={`${styles.title_container}`}>
         <div className={`${styles.title_split}`}>

@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+'use client';
+import { useEffect, useRef } from 'react'
 import { Product, Title } from '@/components/shared'
 import styles from "./style.module.scss";
 
@@ -6,12 +9,14 @@ import styles from "./style.module.scss";
  * @param {*} data informacion del titulo e imagenes
  * @returns
  */
-const SectionProductsFeatured = ({ data, }) => {
+const SectionProductsFeatured = ({ data }) => {
+  const myRef = useRef();
+
   if (data && data.length > 0) {
     const { title, description, theme, items } = data[0]
 
     return (
-      <section className={`${styles.section_products_featured_container}`}>
+      <section className={`${styles.section_products_featured_container}`} ref={myRef} >
         <Title title={title} description={description} type={theme} />
         {(items && items.length > 0) && (
           <Product

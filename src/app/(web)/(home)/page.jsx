@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Layout } from '@/components/ui';
 import { SectionHero, SectionProductsTop, SectionProductsFeatured, SectionLatestVideos, SectionBusinessPartners } from '@/components/modules';
 import { getDataFetch } from '@/services/web.services'
@@ -68,7 +68,7 @@ export default function PageInicio() {
 
   return (
     <Layout>
-      <div className={`${styles.page_container}`} data-aos="fade-in">
+      <div className={`${styles.page_container}`}>
         <div className={`${styles.hero_content}`}>
           <SectionHero data={loadHeader} />
         </div>

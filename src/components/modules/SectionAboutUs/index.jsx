@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+import { useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { Title } from '@/components/shared'
 import styles from "./style.module.scss";
 
@@ -8,6 +10,12 @@ import styles from "./style.module.scss";
  * @returns
  */
 const SectionAboutUs = ({ data }) => {
+  const myRefUp = useRef();
+  const myRefLeft = useRef();
+  const myRefRight = useRef();
+  useIntersectionObserver(myRefUp, 'animate-fade-up');
+  useIntersectionObserver(myRefLeft, 'animate-fade-left');
+  useIntersectionObserver(myRefRight, 'animate-fade-right');
 
   if (data && data.length > 0) {
     const { theme, title, description, items } = data[0]
@@ -17,7 +25,7 @@ const SectionAboutUs = ({ data }) => {
       ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'}`}>
         <Title title={title} type={theme} />
 
-        <div className={`${styles.content_top}`} data-aos="fade">
+        <div className={`${styles.content_top}`} ref={myRefUp}>
           <p className={`${theme === 'dark' ? 'text-gray-500' : 'text-white'} `}>
             <div dangerouslySetInnerHTML={{ __html: description }} />
           </p>
@@ -26,8 +34,8 @@ const SectionAboutUs = ({ data }) => {
         <div className={` ${styles.content_bottom} ${theme === 'dark' ? 'bg-nena-secondary' : 'bg-transparent'}`}>
           <ul>
             {items.map(({ id, title, icon, description }, index) => (
-              // <li key={id} data-aos={`${index % 2 === 0 ? 'fade-right' : 'fade-left'}`}>
-              <li key={id} data-aos="fade-right">
+              // <li key={id} ref={`${index % 2 === 0 ? myRefRight : myRefLeft}`}>
+              <li key={id} ref={index % 2 === 0 ? myRefRight : myRefLeft} >
                 <div dangerouslySetInnerHTML={{ __html: icon }} />
                 <h5> {title} </h5>
                 <p> <div dangerouslySetInnerHTML={{ __html: description }} /> </p>

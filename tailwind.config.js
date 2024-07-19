@@ -59,10 +59,15 @@ module.exports = {
         '98': '.98'
       },
       animation: {
+        fadeIn: 'fadeIn 2s ease-in-out',
         wiggle: 'wiggle 1s ease-in-out infinite',
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
       keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
         wiggle: {
           '0%, 100%': { transform: 'translateY(-5px)' },
           '70%': { transform: 'translateY(5px)' },
@@ -72,10 +77,16 @@ module.exports = {
           to: { transform: 'translateX(-100%)' },
         },
 
-      }
+      },
+      variants: {
+        extend: {
+          animation: ['responsive'],
+        },
+      },
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwindcss-animated')
   ],
 };

@@ -1,3 +1,6 @@
+'use client';
+import { useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { Title, MediaVideo, MediaYoutube } from '@/components/shared'
 import { SVGBullet } from '@/components/svg';
 import styles from "./style.module.scss";
@@ -10,6 +13,10 @@ import styles from "./style.module.scss";
  * @returns
  */
 const SectionLatestVideos = ({ data }) => {
+  const myRefLeft = useRef();
+  const myRefRight = useRef();
+  useIntersectionObserver(myRefLeft, 'animate-fade-left');
+  useIntersectionObserver(myRefRight, 'animate-fade-right');
 
   if (data && data.length > 0) {
 
@@ -28,9 +35,10 @@ const SectionLatestVideos = ({ data }) => {
     return (
       <section className={`${styles.section_latest_videos_container}`}>
         <Title title={title} description={description} type={theme} />
+
         <div className={`${styles.latest_videos_content_container}`}>
           <div className={`${styles.latest_videos_content} `}>
-            <div className={`${styles.content_container}`}>
+            <div className={`${styles.content_container}`} ref={myRefRight}>
               <div className={`${styles.content}`}>
                 <h2> {items[0].title} </h2>
                 <p > {items[0].description} </p>
@@ -44,7 +52,7 @@ const SectionLatestVideos = ({ data }) => {
                 </ul>
               </div>
             </div>
-            <div className={`${styles.videos} `}>
+            <div className={`${styles.videos} `} ref={myRefLeft}>
               {items[0].videos.map((item) => (
                 <div key={item.id} className={`${styles.media}`}>
                   {isValidURL(item.url2) ? <MediaYoutube data={item} /> : <MediaVideo data={item} />}

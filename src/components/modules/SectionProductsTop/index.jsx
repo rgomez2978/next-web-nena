@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Product, Title } from '@/components/shared'
 import styles from "./style.module.scss";
 
@@ -8,12 +9,10 @@ import styles from "./style.module.scss";
  * @returns
  */
 const SectionProductsTop = ({ data }) => {
-
   if (data && data.length > 0) {
     const { title, description, theme, items } = data[0]
-
     return (
-      <section className={`${styles.section_products_top_container}`} >
+      <section className={`${styles.section_products_top_container}`}  >
         <Title title={title} description={description} type={theme} />
         {(items && items.length > 0) && (
           <Product

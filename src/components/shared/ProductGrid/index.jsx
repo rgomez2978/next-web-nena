@@ -1,4 +1,3 @@
-import React from 'react'
 import { Carousel, ProductBanner } from "@/components/shared";
 import styles from "./style.module.scss";
 
@@ -18,6 +17,8 @@ const ProductGrid = ({
   slides,
   dots
 }) => {
+
+
   return (
     <div className={`${cssClass} ${styles.product_grid_container} `}>
       <div className={` ${cssClass} ${styles.product_grid_content}`}>

@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+import { useEffect, useState, useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { Title } from '@/components/shared'
 import styles from "./style.module.scss";
 
@@ -9,16 +11,16 @@ import styles from "./style.module.scss";
  * @returns
  */
 const SectionOurValues = ({ data }) => {
+  const myRef = useRef();
+  useIntersectionObserver(myRef, 'animate-fade-up');
 
   if (data && data.length > 0) {
     const { theme, title, description, items } = data[0]
 
     return (
       <section className={` ${styles.section_values_container} ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'}   `}>
-        <div >
-          <Title title={title} type={theme} />
-        </div>
-        <div className={` ${styles.cards_values_container}   ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'} `} data-aos="fade-up">
+        <Title title={title} type={theme} />
+        <div className={` ${styles.cards_values_container}   ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'} `} ref={myRef}>
           {items.map(({ id, title, icon, description }) => (
             <div
               key={id}

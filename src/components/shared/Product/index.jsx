@@ -1,7 +1,6 @@
-
-/* eslint-disable @next/next/no-img-element */
 'use client';
-import React, { useRef } from "react";
+import { useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { Carousel, ProductGrid, ProductBanner, ProductCard } from "@/components/shared";
 import styles from "./style.module.scss";
 /**
@@ -22,10 +21,12 @@ const Product = ({
   separator,
   dots
 }) => {
+  const myRef = useRef();
+  useIntersectionObserver(myRef, type === 'grid' ? 'animate-fade-up' : 'animate-fade');
 
   return (
     <>
-      <div className={` ${cssClass} ${styles.product_container} `}>
+      <div className={` ${cssClass} ${styles.product_container} `} ref={myRef}>
         {type && type === 'grid' ? (
           <ProductGrid
             data={data}
@@ -50,7 +51,9 @@ const Product = ({
             arrows={arrows}
             dots={dots}
             slides={slides}
-            cssClass={cssClass}>
+            cssClass={cssClass}
+          >
+
             {data && data.map(({ id, title, url, buttonText }) => {
               return (
                 type !== undefined && type === 'slide'
