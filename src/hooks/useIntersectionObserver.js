@@ -1,7 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useCallback } from 'react';
+//TODO: validar cantidad de clases ymostrar defomra iterada
 
 const useIntersectionObserver = (myRef, animate, options = {}) => {
+
+  console.log('animate', animate.split(' ').length, animate.split(' '))
+
   const observerCallback = useCallback(([entry]) => {
     if (entry.isIntersecting) {
       entry.target.classList.add(animate);

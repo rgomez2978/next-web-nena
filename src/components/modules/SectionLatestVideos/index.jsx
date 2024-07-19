@@ -13,6 +13,7 @@ import styles from "./style.module.scss";
  * @returns
  */
 const SectionLatestVideos = ({ data }) => {
+
   const myRefLeft = useRef();
   const myRefRight = useRef();
   useIntersectionObserver(myRefLeft, 'animate-fade-left');

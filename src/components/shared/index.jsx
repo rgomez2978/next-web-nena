@@ -7,6 +7,8 @@ export { default as ProductBanner } from './ProductBanner';
 export { default as MediaVideo } from './MediaVideo';
 export { default as MediaYoutube } from './MediaYoutube';
 export { default as Marquee } from './Marquee';
+export { default as HistoryCard } from './HistoryCard';
+export { default as ValueCard } from './ValueCard';
 
 
 
