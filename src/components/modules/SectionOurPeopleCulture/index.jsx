@@ -1,11 +1,16 @@
-import React from 'react'
+import { useRef } from 'react'
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import { Title } from '@/components/shared';
 import styles from "./style.module.scss";
 import Image from 'next/image';
 
 const SectionOurPeopleCulture = ({ data }) => {
-  // console.log('SectionOurPeopleCulture', data[0])
-
+  const myRefUp = useRef();
+  const myRefLeft = useRef();
+  const myRefRight = useRef();
+  useIntersectionObserver(myRefUp, 'animate-fade-up');
+  useIntersectionObserver(myRefLeft, 'animate-fade-left');
+  useIntersectionObserver(myRefRight, 'animate-fade-right');
 
   if (data && data.length > 0) {
     const { theme, items } = data[0]
@@ -15,7 +20,7 @@ const SectionOurPeopleCulture = ({ data }) => {
         <div className={` ${styles.items_ourpeopleculture_container}   ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'}  `}>
           <ul>
             <li>
-              <div className={`${styles.li_image_container}`} data-aos="fade-up">
+              <div className={`${styles.li_image_container}`} ref={myRefUp}>
                 <div className={`${styles.li_image_top}`}>
                   <Image
                     alt="foto_people1"
@@ -42,10 +47,8 @@ const SectionOurPeopleCulture = ({ data }) => {
                   />
                 </div>
               </div>
-
-
               <div
-                className={`${styles.li_content_container} md:pl-5 text-left`} data-aos="fade-left">
+                className={`${styles.li_content_container} md:pl-5 text-left`} ref={myRefLeft}>
                 <h1 className="font-bold text-xl text-nena-secondary mb-2">Nuestra Gente</h1>
                 <p className="text-base text-gray-500 mb-4 space-y-3">
                   <p>
@@ -59,7 +62,7 @@ const SectionOurPeopleCulture = ({ data }) => {
             </li>
 
             <li>
-              <div className={`${styles.li_image_container} !h-48 md:!h-64 xl:!h-72 md:!pl-5 md:!order-1`} data-aos="fade-up">
+              <div className={`${styles.li_image_container} !h-48 md:!h-64 xl:!h-72 md:!pl-5 md:!order-1`} ref={myRefUp}>
                 <Image
                   alt="foto_people1"
                   width={500}
@@ -69,7 +72,7 @@ const SectionOurPeopleCulture = ({ data }) => {
                 />
               </div>
 
-              <div className={`${styles.li_content_container}`} data-aos="fade-right">
+              <div className={`${styles.li_content_container}`} ref={myRefRight}>
                 <div className="text-right">
                   <h1 className="font-bold text-xl text-nena-secondary mb-2">
                     Nuestra Cultura

@@ -1,9 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useCallback } from 'react';
-//TODO: validar cantidad de clases ymostrar defomra iterada
 
 const useIntersectionObserver = (myRef, animate, options = {}) => {
-
+  //TODO: validar cantidad de clases ymostrar defomra iterada
   // console.log('animate xxxx', animate.split(' ').length, animate.split(' '))
 
   const observerCallback = useCallback(([entry]) => {

@@ -78,7 +78,7 @@ export default function PageNosotros() {
           <SectionAboutUs data={loadAboutContent} />
           <SectionOurValues data={loadOurValues} />
           <SectionOurHistory data={loadOurHistory} />
-          {/* <SectionOurPeopleCulture data={loadOurPeopleCulture} /> */}
+          <SectionOurPeopleCulture data={loadOurPeopleCulture} />
         </div>
       </div>
     </Layout>
