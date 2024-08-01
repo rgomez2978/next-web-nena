@@ -11,7 +11,7 @@ const HistoryCard = ({ idx, title, description }) => {
   return (
     <div className={`${styles.item_content} `} ref={myRef} >
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p dangerouslySetInnerHTML={{ __html: description }} />
     </div>
   )
 }

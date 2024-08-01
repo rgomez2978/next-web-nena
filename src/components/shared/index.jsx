@@ -1,5 +1,6 @@
 export { default as Carousel } from './Carousel';
 export { default as Title } from './Title';
+export { default as TitleBorder } from './TitleBorder';
 export { default as Product } from './Product';
 export { default as ProductGrid } from './ProductGrid';
 export { default as ProductCard } from './ProductCard';

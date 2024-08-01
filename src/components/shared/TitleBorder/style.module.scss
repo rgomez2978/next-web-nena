@@ -1,0 +1,20 @@
+.border_split {
+  @apply flex flex-row items-center w-full px-0 -mt-1;
+
+  & .border_left {
+    @apply flex w-full h-2 border-b-[0.4rem] rounded-bl-lg border-nena-menu-text;
+  }
+
+  & .circle_left {
+    @apply w-2 h-[6.3px] mt-[1.8px] bg-nena-menu-text mr-1;
+  }
+
+  & .border_right {
+    @apply flex w-full h-2 border-b-[0.4rem] rounded-br-lg border-nena-secondary ml-1;
+  }
+
+  & .circle_right {
+    @apply w-2 h-[6.3px] mt-[1.8px] bg-nena-secondary ml-1;
+  }
+
+}

@@ -4,23 +4,31 @@
 import { useEffect, useState, useRef } from 'react'
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import styles from "./style.module.scss";
+import { TitleBorder } from '..';
 
 const TitleComp = ({ title, description, type }) => {
   const [activeCicle, setActiveCicle] = useState(false)
-  const [words, setWords] = useState([])
+  const [wordsLeft, setWordsLeft] = useState([])
+  const [wordsRight, setWordsRight] = useState([])
   const [wordscant, setWordscant] = useState(0)
 
-  const transformTitle = (split) => {
-    if (split.length === 1) {
-      words.push(title.substr(0, Math.round(title.length / 2) - 1));
-      words.push(title.substr(Math.round(title.length / 2) - 1, title.length));
-      setWordscant(1);
+  const transformTitle = (myWords) => {
+    if (myWords.length <= 1) {
+      setWordsLeft(myWords)
+      setActiveCicle(true);
+      setWordscant(1)
     } else {
-      words.push(split[0], split[1]);
-      setWordscant(2)
+      const indiceMedio = Math.floor(myWords.length / 2);
+      const parte1 = myWords.slice(0, indiceMedio);
+      const parte2 = myWords.slice(indiceMedio);
+      setWordsLeft(parte1)
+      setWordsRight(parte2)
+      setWordscant(myWords.length)
+      setActiveCicle(true);
     }
-    setActiveCicle(true);
   }
+
+
 
   useEffect(() => {
     if (title !== '') {
@@ -35,57 +43,37 @@ const TitleComp = ({ title, description, type }) => {
   const myRef = useRef();
   useIntersectionObserver(myRef, 'animate-fade');
 
+
   return (
     <div className={` ${styles.section_title_container} ${description !== '' ? 'mb-8' : 'mb-4'}`} ref={myRef} >
-
       <div className={`${styles.title_container}`}>
         <div className={`${styles.title_split}`}>
-          <h5 className={`${type === 'dark' ? 'text-nena-menu-text' : 'text-white'} ${wordscant === 2 ? 'pr-1 pl-2' : 'pl-2 pr-0'}`}>
-            {words[0]}
+          <h5 className={`${type === 'dark' ? 'text-nena-menu-text' : 'text-white'} ${wordscant !== 1 ? 'pr-1 pl-2' : 'pl-2 pr-0'}`}>
+            {wordsLeft.map((part, index) => (
+              <span key={index}>&nbsp;{part}</span>
+            ))}
           </h5>
-          <div className={`${styles.border_split}`}>
-            <span className={`rounded-bl-lg ${styles.border_left}
-            ${type === 'dark'
-                ? 'border-nena-menu-text'
-                : 'border-white'}`}>
-              &nbsp;</span>
-            <span className={`${styles.border_right}
-            ${type === 'dark'
-                ? 'bg-nena-menu-text'
-                : 'bg-white'}`}></span>
-          </div>
+          <TitleBorder cant={wordscant} type={type} direction={'left'} />
         </div>
 
-        <div className={`${styles.title_split}`}>
-          <h5 className={`
-           ${type === 'dark'
-              ? 'text-nena-secondary'
-              : 'text-white'}
-            ${wordscant === 2
-              ? 'pr-2 pl-1'
-              : 'pl-0 pr-2'}`}>
-            {words[1]}
-          </h5>
-          <div className={`${styles.border_split}`} >
-            <div className={` ${styles.border_right}
-              ${type === 'dark'
-                ? 'bg-nena-secondary'
-                : 'bg-white'}`}></div>
-            <div className={`rounded-br-lg ${styles.border_left}
-            ${type === 'dark'
-                ? 'border-nena-secondary'
-                : 'border-white'}`}>&nbsp;</div>
+        {(wordscant !== 0 && wordscant > 1) && (
+          <div className={`${styles.title_split}`}>
+            <h5 className={`
+           ${type === 'dark' ? 'text-nena-secondary' : 'text-white'} ${wordscant > 1 ? 'pr-2 pl-1' : 'pl-0 pr-2'}`}>
+              {wordsRight.map((part, index) => (
+                <span key={index}>{part}&nbsp;</span>
+              ))}
+            </h5>
+            <TitleBorder cant={wordscant} type={type} direction={'right'} />
           </div>
-        </div>
+        )}
       </div>
 
       <div className={`${styles.paragraph_container}`} >
-        <p className={` ${type === 'dark' ? 'text-gray-500' : 'text-white'} `}>
-          {description}
-        </p>
+        <p className={` ${type === 'dark' ? 'text-gray-500' : 'text-white'} `} dangerouslySetInnerHTML={{ __html: description }} />
       </div>
 
-    </div>
+    </div >
   )
 }
 

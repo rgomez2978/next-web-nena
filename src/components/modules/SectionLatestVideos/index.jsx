@@ -42,7 +42,7 @@ const SectionLatestVideos = ({ data }) => {
             <div className={`${styles.content_container}`} ref={myRefRight}>
               <div className={`${styles.content}`}>
                 <h2> {items[0].title} </h2>
-                <p > {items[0].description} </p>
+                <p dangerouslySetInnerHTML={{ __html: description }} />
                 <ul>
                   {items[0].bullets.map((item) => (
                     <li key={item.id}>

@@ -6,16 +6,7 @@
 
     & .title_split {
       @apply flex flex-col w-auto;
-      & .border_split {
-        @apply flex flex-row items-center w-full px-0 -mt-1;
 
-        & .border_left {
-          @apply flex w-full h-2 border-b-[0.4rem];
-        }
-        & .border_right {
-          @apply flex w-4 h-3 mt-1 transform scale-50  rounded-full;
-        }
-      }
     }
   }
 
