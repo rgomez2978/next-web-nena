@@ -1,0 +1,63 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "CONTACTANOS",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/header_interno.png",
+      "type": 1,
+      "status": true
+    }
+  ],
+  "benefits": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Complete el siguiente formulario para comunicarse con nosotros",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "icon": "",
+          "title": "Atencion al cliente",
+          "description": "0500 - DRONENA",
+          "status": true
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "icon": "",
+          "title": "Sede principal",
+          "description": "+58-251-269.01.11",
+          "status": true
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "icon": "",
+          "title": "Sede sucursal",
+          "description": "+58-212-219.42.00",
+          "status": true
+        }
+      ]
+    }
+  ],
+  "form_section": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [],
+      "title_form": "Formulario de contacto",
+      "description_form": ""
+    }
+  ]
+}

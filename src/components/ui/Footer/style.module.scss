@@ -12,6 +12,7 @@
 
         & ul {
           @apply mt-6 lg:max-w-sm space-y-5;
+
           & li {
             @apply space-y-2;
 
@@ -49,7 +50,7 @@
           @apply space-y-2;
 
           & .li_link {
-            @apply font-normal text-white text-sm  hover:text-nena-secondary hover:font-normal text-nowrap flex items-center  w-auto;
+            @apply font-normal text-white text-sm hover:text-nena-secondary hover:font-normal text-nowrap flex items-center w-auto;
           }
         }
       }
@@ -57,7 +58,7 @@
   }
 
   & .content_bottom {
-    @apply flex justify-center items-center md:pt-0 md:pb-10 lg:flex-row;
+    @apply flex justify-center items-center md:pt-0 md:pb-3 lg:flex-row;
 
     & p {
       @apply text-sm text-white;

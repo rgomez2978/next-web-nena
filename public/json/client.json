@@ -1,0 +1,96 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Cliente Nena",
+      "description": "Únete a la empresa de distribución de medicamentos más exitosa de venezuela.  Durante más de 34 años hemos distribuido medicinas y misceláneos a farmacias de todo el país. Hoy, seguimos impulsando nuevos negocios, siempre con la mejor calidad. <strong>¿Te nos unes?</strong>",
+      "alt": "",
+      "url": "/images/banners/header/header_interno.png",
+      "type": 1,
+      "status": true
+    }
+  ],
+  "benefits": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Beneficios de ser cliente NENA",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "icon": "",
+          "title": "Inventario",
+          "description": "Lograr negociaciones rentables con nuestros proveedores nos permite ofrecerte las mejores promociones y los más competitivos precios.",
+          "status": true
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "icon": "",
+          "title": "Inventario",
+          "description": "Tenemos disponible la más amplia variedad de medicamentos y misceláneos del mercado. Lo que tu farmacia necesita en Dronena lo consigues.",
+          "status": true
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "icon": "",
+          "title": "Cobertura nacional",
+          "description": "Contamos con capacidad de entrega a todo el territorio nacional, todos los días de la semana, dependiendo de la ubicación geográfica de la farmaia. ",
+          "status": true
+        },
+        {
+          "id": 4,
+          "order": 4,
+          "icon": "",
+          "title": "Tecnología",
+          "description": "Aceleramos la productividad de las farmacias gracias a nuestras plataformas de autogestión de pedidos, tracking y pagos.",
+          "status": true
+        }
+      ]
+    }
+  ],
+  "form_section": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Cuando contacten contigo es necesario que tengas actualizados y a la mano:",
+      "description": "",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "title": "RIF",
+          "theme": "dark"
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "title": "Registro Mercantil",
+          "theme": "dark"
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "title": "Permiso de instalación",
+          "theme": "dark"
+        },
+        {
+          "id": 4,
+          "order": 4,
+          "title": "Permiso de funcionamiento",
+          "theme": "dark"
+        }
+      ],
+      "title_form": "Registro de datos",
+      "description_form": "Gracias por tu interés en convertirte en cliente Nena. Por favor, completa el formulario y uno de nuestros asesores comerciales te contactará a la brevedad."
+    }
+  ]
+}

@@ -14,7 +14,7 @@ const SectionPageHeader = ({ data }) => {
   const myRef = useRef();
   const myRefUP = useRef();
   useIntersectionObserver(myRefUP, 'animate-fade-down');
-  useIntersectionObserver(myRef, 'animate-fade');
+  useIntersectionObserver(myRef, 'animate-fade-up');
 
 
   if (data && data.length > 0) {
@@ -33,7 +33,7 @@ const SectionPageHeader = ({ data }) => {
 
         <div className={`${styles.header_content}`}>
           <h1 ref={myRefUP} > {title} </h1>
-          <p ref={myRef} > {description} </p>
+          <p ref={myRef} dangerouslySetInnerHTML={{ __html: description }} />
         </div>
 
       </section>

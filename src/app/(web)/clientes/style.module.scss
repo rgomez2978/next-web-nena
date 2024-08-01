@@ -1,0 +1,11 @@
+.page_container {
+  @apply mx-auto z-10 w-full;
+
+  & .hero_content {
+    @apply w-full h-full;
+  }
+
+  & .page_content {
+    @apply flex flex-col items-start justify-center;
+  }
+}

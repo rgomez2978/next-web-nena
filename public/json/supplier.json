@@ -1,0 +1,63 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Proveedor Nena",
+      "description": "",
+      "alt": "",
+      "url": "/images/banners/header/header_interno.png",
+      "type": 1,
+      "status": true
+    }
+  ],
+  "supplies_services": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Proveedores de Suministros y Servicios",
+      "description": "<p>Nos mantenemos abiertos y en la búsqueda de las mejores opciones para satisfacer las necesidades en compras insumos de oficina, repuestos mecánicos y electrónicos, equipos tecnológicos y  Servicios en General para la operación continua de nuestra infraestructura.</p>  <p>Para formar parte de nuestra red de aliados, envíenos sus datos, con el Asunto : \"Nuevo Proveedor\" por los siguientes canales, indicando Rubro y Ubicación.</p>",
+      "theme": "dark",
+      "status": true,
+      "items": [
+        {
+          "id": 1,
+          "order": 1,
+          "icon": "",
+          "title": "Gcia.ComprasyServicios@dronena.com",
+          "description": "",
+          "status": true
+        },
+        {
+          "id": 2,
+          "order": 2,
+          "icon": "",
+          "title": "ServiciosGenerales@dronena.com",
+          "description": "",
+          "status": true
+        },
+        {
+          "id": 3,
+          "order": 3,
+          "icon": "",
+          "title": "+58-251-2690111",
+          "description": "",
+          "status": true
+        }
+      ]
+    }
+  ],
+  "form_section": [
+    {
+      "id": 1,
+      "order": 1,
+      "title": "Proveedor de Mercadería",
+      "description": "Somos una empresa líder en distribución, y nos mantenemos siempre en la continua búsqueda de proveedores que ofrezcan productos de calidad para nuestros clientes. Si te interesa en ser uno de nuestros aliados comerciales te invitamos a enviarnos tu información.",
+      "theme": "dark",
+      "status": true,
+      "items": [],
+      "title_form": "Registro de solicitud",
+      "description_form": ""
+    }
+  ]
+}
