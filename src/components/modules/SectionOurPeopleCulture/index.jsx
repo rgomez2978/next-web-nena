@@ -47,6 +47,7 @@ const SectionOurPeopleCulture = ({ data }) => {
                   />
                 </div>
               </div>
+
               <div
                 className={`${styles.li_content_container} md:pl-5 text-left`} ref={myRefLeft}>
                 <h1 className="font-bold text-xl text-nena-secondary mb-2">Nuestra Gente</h1>
