@@ -1,7 +1,6 @@
 // import { getToken } from 'next-auth/jwt'
 
 export default async function handler(req, res) {
-  console.log('process.env :>> ', process.env);
   const { API_URL } = process.env
   // const token = await getToken({ req })
 
@@ -15,7 +14,6 @@ export default async function handler(req, res) {
     },
     // body: JSON.stringify(req.body)
   }).then((response) => {
-    console.log('response', response)
     if (response.status === 401) {
       // return res.redirect('/auth/logout')
     }

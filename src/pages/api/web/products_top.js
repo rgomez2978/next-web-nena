@@ -14,7 +14,6 @@ export default async function handler(req, res) {
     },
     // body: JSON.stringify(req.body)
   }).then((response) => {
-    console.log('response', response)
     if (response.status === 401) {
       // return res.redirect('/auth/logout')
     }
