@@ -1,0 +1,11 @@
+.section_benefits_container {
+  @apply block w-full justify-center items-center mt-0 pt-5 px-10 mb-10;
+
+  & .cards_benefits_container {
+    @apply flex flex-wrap md:flex-nowrap justify-center items-stretch mx-auto max-w-md sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl mt-0 mb-5 space-y-10 md:space-y-0 md:space-x-8;
+
+    & .grid_benifts_container {
+      @apply md:grid md:grid-cols-2 xl:grid-cols-4 gap-0 lg:gap-8;
+    }
+  }
+}

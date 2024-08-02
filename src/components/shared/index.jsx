@@ -11,6 +11,7 @@ export { default as Marquee } from './Marquee';
 export { default as HistoryCard } from './HistoryCard';
 export { default as ValueCard } from './ValueCard';
 export { default as OurPeopleCultureContent } from './OurPeopleCultureContent';
+export { default as BenefitsCard } from './BenefitsCard';
 
 
 

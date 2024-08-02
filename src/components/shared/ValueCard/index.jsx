@@ -12,7 +12,7 @@ import styles from "./style.module.scss";
  * @param {*} description Descripcion del card
  * @returns
  */
-const ValueCard = ({ theme, title, icon, description, }) => {
+const ValueCard = ({ theme, title, icon, description }) => {
   const myRef = useRef();
   useIntersectionObserver(myRef, 'animate-fade-up');
 

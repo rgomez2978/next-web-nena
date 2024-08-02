@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { Layout } from "@/components/ui";
 import { getDataFetch } from '@/services/web.services'
 
-import { SectionAboutUs, SectionOurValues, SectionPageHeader, SectionOurHistory, SectionOurPeopleCulture } from '@/components/modules';
+import { SectionAboutUs, SectionOurValues, SectionPageHeader, SectionOurHistory, SectionOurPeopleCulture, SectionOurBenefits } from '@/components/modules';
 import useStore from '@/stores/index';
 import styles from "./style.module.scss";
 
@@ -75,8 +75,9 @@ export default function PageClientes() {
           <SectionPageHeader data={loadHeader} />
         </div>
         <div className={`${styles.page_content}`}>
+          <SectionOurBenefits data={loadBenefits} />
           {/* <SectionAboutUs data={loadAboutContent} /> */}
-          <SectionOurValues data={loadBenefits} />
+          {/* <SectionOurValues data={loadBenefits} /> */}
           {/* <SectionOurHistory data={loadOurHistory} /> */}
           {/* <SectionOurPeopleCulture data={loadOurPeopleCulture} /> */}
         </div>

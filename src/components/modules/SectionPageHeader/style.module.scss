@@ -6,14 +6,14 @@
   }
 
   & .header_content {
-    @apply absolute flex flex-col items-center justify-center w-[60%] text-center text-white;
+    @apply absolute flex flex-col items-center justify-center w-[90%] md:w-[70%] lg:w-[70%] xl:w-[60%] text-center text-white;
 
     & h1 {
       @apply text-4xl lg:text-6xl text-white font-black;
     }
 
     & p {
-      @apply text-xl text-white mt-0;
+      @apply text-xs sm:text-sm md:text-base lg:text-xl text-white mt-0;
     }
   }
 }

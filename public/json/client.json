@@ -23,7 +23,7 @@
         {
           "id": 1,
           "order": 1,
-          "icon": "",
+          "icon": "<svg fill=\"currentColor\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g> <g> <path d=\"M46.05,60.163H31.923c-0.836,0-1.513,0.677-1.513,1.513v21.934c0,0.836,0.677,1.513,1.513,1.513H46.05 c0.836,0,1.512-0.677,1.512-1.513V61.675C47.562,60.839,46.885,60.163,46.05,60.163z\"></path> </g> <g> <path d=\"M68.077,14.878H53.95c-0.836,0-1.513,0.677-1.513,1.513v67.218c0,0.836,0.677,1.513,1.513,1.513h14.127 c0.836,0,1.513-0.677,1.513-1.513V16.391C69.59,15.555,68.913,14.878,68.077,14.878z\"></path> </g> <g> <path d=\"M90.217,35.299H76.09c-0.836,0-1.513,0.677-1.513,1.513v46.797c0,0.836,0.677,1.513,1.513,1.513h14.126 c0.836,0,1.513-0.677,1.513-1.513V36.812C91.729,35.977,91.052,35.299,90.217,35.299z\"></path> </g> <g> <path d=\"M23.91,35.299H9.783c-0.836,0-1.513,0.677-1.513,1.513v46.797c0,0.836,0.677,1.513,1.513,1.513H23.91 c0.836,0,1.513-0.677,1.513-1.513V36.812C25.423,35.977,24.746,35.299,23.91,35.299z\"></path> </g> </g> </g></svg>",
           "title": "Inventario",
           "description": "Lograr negociaciones rentables con nuestros proveedores nos permite ofrecerte las mejores promociones y los más competitivos precios.",
           "status": true
@@ -31,7 +31,7 @@
         {
           "id": 2,
           "order": 2,
-          "icon": "",
+          "icon": "<svg viewBox=\"0 0 24 24\" id=\"meteor-icon-kit__regular-inventory\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"> <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g> <g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g> <g id=\"SVGRepo_iconCarrier\"> <g clip-path=\"url(#clip0_525_147)\"> <path fill-rule= \"evenodd\" clip-rule= \"evenodd\" d= \"M2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1V23C0 23.5523 0.447715 24 1 24C1.55228 24 2 23.5523 2 23V22H22V23C22 23.5523 22.4477 24 23 24C23.5523 24 24 23.5523 24 23V1C24 0.447715 23.5523 0 23 0C22.4477 0 22 0.447715 22 1V8H20V3C20 2.44772 19.5523 2 19 2H11C10.4477 2 10 2.44772 10 3V4H5C4.44772 4 4 4.44772 4 5V8H2V1ZM10 6H6V8H10V6ZM2 10V20H4V13C4 12.4477 4.44772 12 5 12H13C13.5523 12 14 12.4477 14 13V14H19C19.5523 14 20 14.4477 20 15V20H22V10H2ZM18 8V4H12V8H18ZM12 20H6V14H12V20ZM14 20V16H18V20H14Z\" fill= \"currentColor\"></path> </g> <defs> <clipPath id=\"clip0_525_147\"> <rect width=\"24\" height=\"24\" fill=\"white\"></rect> </clipPath> </defs> </g> </svg>",
           "title": "Inventario",
           "description": "Tenemos disponible la más amplia variedad de medicamentos y misceláneos del mercado. Lo que tu farmacia necesita en Dronena lo consigues.",
           "status": true
@@ -39,7 +39,7 @@
         {
           "id": 3,
           "order": 3,
-          "icon": "",
+          "icon": "<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" > <path d=\"M18 15a3 3 0 013 3 3 3 0 01-3 3 2.99 2.99 0 01-2.83-2H14v-2h1.17c.41-1.17 1.52-2 2.83-2m0 2a1 1 0 00-1 1 1 1 0 001 1 1 1 0 001-1 1 1 0 00-1-1m0-9a1.43 1.43 0 001.43-1.43 1.43 1.43 0 10-2.86 0A1.43 1.43 0 0018 8m0-5.43a4 4 0 014 4C22 9.56 18 14 18 14s-4-4.44-4-7.43a4 4 0 014-4M8.83 17H10v2H8.83A2.99 2.99 0 016 21a3 3 0 01-3-3c0-1.31.83-2.42 2-2.83V14h2v1.17c.85.3 1.53.98 1.83 1.83M6 17a1 1 0 00-1 1 1 1 0 001 1 1 1 0 001-1 1 1 0 00-1-1M6 3a3 3 0 013 3c0 1.31-.83 2.42-2 2.83V10H5V8.83A2.99 2.99 0 013 6a3 3 0 013-3m0 2a1 1 0 00-1 1 1 1 0 001 1 1 1 0 001-1 1 1 0 00-1-1m5 14v-2h2v2h-2m-4-6H5v-2h2v2z\" /> </svg>",
           "title": "Cobertura nacional",
           "description": "Contamos con capacidad de entrega a todo el territorio nacional, todos los días de la semana, dependiendo de la ubicación geográfica de la farmaia. ",
           "status": true
@@ -47,7 +47,7 @@
         {
           "id": 4,
           "order": 4,
-          "icon": "",
+          "icon": "<svg data-name=\"Layer 1\" viewBox=\"0 0 24 24\" fill=\"currentColor\" > <path d=\"M15 17a1 1 0 101 1 1 1 0 00-1-1zm-6 0H6a1 1 0 000 2h3a1 1 0 000-2zm9 0a1 1 0 101 1 1 1 0 00-1-1zm-3-6a1 1 0 101 1 1 1 0 00-1-1zm-6 0H6a1 1 0 000 2h3a1 1 0 000-2zm9-6a1 1 0 101 1 1 1 0 00-1-1zm0 6a1 1 0 101 1 1 1 0 00-1-1zm4-6a3 3 0 00-3-3H5a3 3 0 00-3 3v2a3 3 0 00.78 2A3 3 0 002 11v2a3 3 0 00.78 2A3 3 0 002 17v2a3 3 0 003 3h14a3 3 0 003-3v-2a3 3 0 00-.78-2 3 3 0 00.78-2v-2a3 3 0 00-.78-2A3 3 0 0022 7zm-2 14a1 1 0 01-1 1H5a1 1 0 01-1-1v-2a1 1 0 011-1h14a1 1 0 011 1zm0-6a1 1 0 01-1 1H5a1 1 0 01-1-1v-2a1 1 0 011-1h14a1 1 0 011 1zm0-6a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h14a1 1 0 011 1zm-5-2a1 1 0 101 1 1 1 0 00-1-1zM9 5H6a1 1 0 000 2h3a1 1 0 000-2z\" /> </svg>",
           "title": "Tecnología",
           "description": "Aceleramos la productividad de las farmacias gracias a nuestras plataformas de autogestión de pedidos, tracking y pagos.",
           "status": true
