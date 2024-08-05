@@ -70,7 +70,7 @@ export default function PageClientes() {
         </div>
         <div className={`${styles.page_content}`}>
           <SectionOurBenefits data={loadBenefits} />
-          <SectionForms data={loadForm} />
+          <SectionForms data={loadForm} type={'client'} />
         </div>
       </div>
     </Layout>

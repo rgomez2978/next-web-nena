@@ -2,7 +2,6 @@ import React from 'react'
 
 
 const ButtonComp = ({ cssClassName, cssIcon, cssText, text }) => {
-  console.log('ButtonComp', cssClassName, cssIcon)
   return (
     <button
       className={`${cssClassName}`} aria-label="sesion">

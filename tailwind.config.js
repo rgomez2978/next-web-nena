@@ -87,7 +87,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms")({
-      strategy: 'class', // only generate classes
+      strategy: 'base',
     }),
     require('tailwindcss-animated')
   ],

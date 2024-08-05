@@ -15,7 +15,7 @@
     {
       "id": 1,
       "order": 1,
-      "title": "Proveedores de Suministros y Servicios",
+      "title": "Suministros y Servicios",
       "description": "<p>Nos mantenemos abiertos y en la búsqueda de las mejores opciones para satisfacer las necesidades en compras insumos de oficina, repuestos mecánicos y electrónicos, equipos tecnológicos y  Servicios en General para la operación continua de nuestra infraestructura.</p>  <p>Para formar parte de nuestra red de aliados, envíenos sus datos, con el Asunto : \"Nuevo Proveedor\" por los siguientes canales, indicando Rubro y Ubicación.</p>",
       "theme": "dark",
       "status": true,
@@ -23,7 +23,7 @@
         {
           "id": 1,
           "order": 1,
-          "icon": "",
+          "icon": "<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" > <path d=\"M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 01-.9 0L4 9.62V18h16V9.62z\" /> </svg>",
           "title": "Gcia.ComprasyServicios@dronena.com",
           "description": "",
           "status": true
@@ -31,7 +31,7 @@
         {
           "id": 2,
           "order": 2,
-          "icon": "",
+          "icon": "<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" > <path d=\"M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 01-.9 0L4 9.62V18h16V9.62z\" /> </svg>",
           "title": "ServiciosGenerales@dronena.com",
           "description": "",
           "status": true
@@ -39,8 +39,8 @@
         {
           "id": 3,
           "order": 3,
-          "icon": "",
-          "title": "+58-251-2690111",
+          "icon": "<svg viewBox=\"0 0 512 512\" fill=\"currentColor\" > <path d=\"M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64c0 247.4 200.6 448 448 448 18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368c-70.4-33.3-127.4-90.3-160.7-160.7l49.3-40.3c13.7-11.2 18.4-30 11.6-46.3l-40-96z\" /> </svg>",
+          "title": "+58-251-269.01.11",
           "description": "",
           "status": true
         }
@@ -53,7 +53,7 @@
       "order": 1,
       "title": "Proveedor de Mercadería",
       "description": "Somos una empresa líder en distribución, y nos mantenemos siempre en la continua búsqueda de proveedores que ofrezcan productos de calidad para nuestros clientes. Si te interesa en ser uno de nuestros aliados comerciales te invitamos a enviarnos tu información.",
-      "theme": "dark",
+      "theme": "light",
       "status": true,
       "items": [],
       "title_form": "Registro de solicitud",

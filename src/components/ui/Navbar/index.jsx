@@ -67,7 +67,9 @@ const Navbar = () => {
               <li key={id} >
                 <Link
                   href={name === 'logo' ? '/' : link} passHref
-                  className={`${styles.li_link}`}>
+                  className={`${styles.li_link}`}
+                  target={name === 'fundacion' ? "_blank" : null}
+                >
                   {name === 'logo' ? <Logo /> : name}
                 </Link>
               </li>

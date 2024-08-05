@@ -1,16 +1,4 @@
 import localFont from 'next/font/local'
-// import { Inter, Mulish } from "next/font/google";
-
-
-// const mulish = Mulish({
-//   subsets: ['latin'],
-//   weight: ['400', '700']
-// });
-
-
-
-// const inter = Inter({ subsets: ["latin"] });
-
 
 export const segoe = localFont({
   src: [
