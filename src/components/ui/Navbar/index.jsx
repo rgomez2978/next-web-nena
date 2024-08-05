@@ -48,6 +48,9 @@ const Navbar = () => {
   const backgroundColorClassButton = path !== undefined && path !== ''
     ? 'bg-nena-secondary' : scrollPosition > 100 ? 'bg-nena-secondary' : 'bg-nena-primary';
 
+
+
+
   return (
     <section className={`${styles.navbar_contain} ${backgroundColorClass}  `}>
       <div className={`${styles.navbar_structure}`}>
@@ -78,8 +81,15 @@ const Navbar = () => {
           <div className={`${styles.button_contain}`}>
             <button type="button"
               className={`${backgroundColorClassButton} `}>
-              <SVGSignIn />
-              <span>iniciar sesion</span>
+              <Link
+                href={'https://www.dronena.com/NuevaExperiencia/'} passHref
+                className={`${styles.li_link}`}
+                target={"_blank"}
+              >
+                <SVGSignIn />
+                <span>iniciar sesion</span>
+              </Link>
+
             </button>
           </div>
         </nav>

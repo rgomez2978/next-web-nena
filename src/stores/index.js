@@ -165,7 +165,7 @@ const initialStateMenuFooter = [
           {
             id: 3,
             name: 'Procesar solicitud de proveedor',
-            link: '/fundacion',
+            link: 'https://fundacionnena.org/',
             active: false,
           }
         ],

@@ -30,23 +30,27 @@
           @apply flex items-center;
 
           & .li_link {
-            @apply font-bold text-white uppercase text-sm lg:text-base hover:text-nena-secondary hover:font-bold text-nowrap flex items-center items-center gap-2 w-auto;
+            @apply font-bold text-white uppercase text-sm lg:text-base hover:text-nena-secondary hover:font-bold text-nowrap flex items-center gap-2 w-auto;
           }
         }
       }
 
       & .button_contain {
-        @apply hidden md:flex justify-center;
+        @apply hidden md:flex md:flex-row justify-center;
 
         & button {
-          @apply flex px-3 lg:px-2 py-2 font-semibold text-white  rounded-md hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase;
+          @apply flex flex-row px-3 lg:px-2 py-2 font-semibold text-white  rounded-md hover:bg-nena-secondary-dark focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 uppercase;
 
-          & span {
-            @apply pl-2 text-nowrap text-xs md:hidden lg:text-xs lg:flex;
-          }
+          & .li_link {
+            @apply flex flex-row justify-center items-center w-auto;
 
-          & svg {
-            @apply w-5 h-5;
+            & span {
+              @apply pl-2 text-nowrap text-xs md:hidden lg:text-xs lg:flex;
+            }
+
+            & svg {
+              @apply w-5 h-5;
+            }
           }
         }
       }
