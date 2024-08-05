@@ -9,5 +9,6 @@ export { default as SectionOurValues } from './SectionOurValues';
 export { default as SectionOurHistory } from './SectionOurHistory';
 export { default as SectionOurPeopleCulture } from './SectionOurPeopleCulture';
 export { default as SectionOurBenefits } from './SectionOurBenefits';
+export { default as SectionForms } from './SectionForms';
 
 

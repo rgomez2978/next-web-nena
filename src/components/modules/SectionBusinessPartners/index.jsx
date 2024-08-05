@@ -12,7 +12,8 @@ const SectionBusinessPartners = ({ data }) => {
     const { title, description, theme, items } = data[0]
 
     return (
-      <div className={`${styles.section_partners_container}`}>
+
+      <div className={` ${styles.section_partners_container} ${theme !== 'dark' ? 'bg-nena-secondary' : 'bg-transparent'}   `}>
         <Title title={title} description={description} type={theme} />
         {(items && items.length > 0) && (
           <Marquee data={items} />

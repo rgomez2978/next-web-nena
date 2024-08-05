@@ -12,8 +12,9 @@ export { default as HistoryCard } from './HistoryCard';
 export { default as ValueCard } from './ValueCard';
 export { default as OurPeopleCultureContent } from './OurPeopleCultureContent';
 export { default as BenefitsCard } from './BenefitsCard';
-
-
+export { default as FormClient } from './Forms/FormClient';
+export { default as FormSupplier } from './Forms/FormSupplier';
+export { default as FormContact } from './Forms/FormContact';
 
 
 export { default as BreadcrumbsComp } from './BreadcrumbsComp';

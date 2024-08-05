@@ -1,0 +1,21 @@
+.form_container {
+  @apply h-full w-full bg-white rounded-xl p-7;
+
+  & h3 {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  & p {
+    @apply text-sm text-left text-gray-400 mb-4;
+  }
+
+  & section {
+
+    & .form_element {
+      // @apply w-full border-gray-300 bg-gray-50 rounded-lg placeholder:text-slate-300;
+
+
+      @apply h-full p-3 w-full shadow-sm rounded-lg border border-gray-300 bg-transparent text-gray-400 placeholder:text-slate-400 text-base focus:border-transparent;
+    }
+  }
+}

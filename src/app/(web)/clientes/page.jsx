@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { Layout } from "@/components/ui";
 import { getDataFetch } from '@/services/web.services'
 
-import { SectionAboutUs, SectionOurValues, SectionPageHeader, SectionOurHistory, SectionOurPeopleCulture, SectionOurBenefits } from '@/components/modules';
+import { SectionPageHeader, SectionOurBenefits, SectionForms } from '@/components/modules';
 import useStore from '@/stores/index';
 import styles from "./style.module.scss";
 
@@ -14,9 +14,7 @@ import styles from "./style.module.scss";
 export default function PageClientes() {
   const [loadHeader, setLoadHeader] = useState([])
   const [loadBenefits, setLoadBenefits] = useState([])
-  // const [loadOurValues, setLoadOurValues] = useState([])
-  // const [loadOurHistory, setLoadOurHistory] = useState([])
-  // const [loadOurPeopleCulture, setLoadOurPeopleCulture] = useState([])
+  const [loadForm, setLoadForm] = useState([])
   const { setLoading, data, setData } = useStore();
 
   /**
@@ -42,9 +40,7 @@ export default function PageClientes() {
       switch (fil) {
         case 'header': setLoadHeader(filteredData); break;
         case 'benefits': setLoadBenefits(filteredData); break;
-        // case 'our_values': setLoadOurValues(filteredData); break;
-        // case 'our_history': setLoadOurHistory(filteredData); break;
-        // case 'our_pepople_culture': setLoadOurPeopleCulture(filteredData); break;
+        case 'form_section': setLoadForm(filteredData); break;
         default: break;
       }
       setLoading(true);
@@ -63,9 +59,7 @@ export default function PageClientes() {
   useEffect(() => {
     getDataFilter('header')
     getDataFilter('benefits')
-    // getDataFilter('our_values')
-    // getDataFilter('our_history')
-    // getDataFilter('our_pepople_culture')
+    getDataFilter('form_section')
   }, [data])
 
   return (
@@ -76,10 +70,7 @@ export default function PageClientes() {
         </div>
         <div className={`${styles.page_content}`}>
           <SectionOurBenefits data={loadBenefits} />
-          {/* <SectionAboutUs data={loadAboutContent} /> */}
-          {/* <SectionOurValues data={loadBenefits} /> */}
-          {/* <SectionOurHistory data={loadOurHistory} /> */}
-          {/* <SectionOurPeopleCulture data={loadOurPeopleCulture} /> */}
+          <SectionForms data={loadForm} />
         </div>
       </div>
     </Layout>
